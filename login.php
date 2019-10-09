@@ -34,7 +34,8 @@ $reuslt3 = textdomain("messages");
 echo("result3 = $result3");
 $temp = _("char");
 echo _('char');
-echo _("char");
+$temp2 =_("cake");
+echo _("cake");
 if(isset($_POST["form"]))
 {
 
@@ -157,7 +158,7 @@ if(isset($_POST["form"]))
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title><?php echo $temp; ?></title>
+<title><?php echo  $temp2 ?></title>
 
 </head>
 
