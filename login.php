@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 //
 /*
 
@@ -35,6 +35,8 @@ echo("result3 = $result3");
 $temp = _("char");
 echo _('char');
 $temp2 =_("cake");
+$temp3 =_("Очень крутое веб-приложение !");
+
 echo _("cake");
 if(isset($_POST["form"]))
 {
