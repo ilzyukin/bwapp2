@@ -24,7 +24,48 @@ msgstr "привет"
 
 
 
-msgid "cake"
-msgstr "Пирог"
+msgid "Very good !"
+msgstr "Очень крутое веб-приложение!"
+
+msgid "New user"
+msgstr "Новый пользователь"
+
+msgid "Information"
+msgstr "Информация"
+
+msgid "Training"
+msgstr "Тренировочные задания"
+
+
+msgid "Blog"
+msgstr "Блог"
+
+
+msgid "Enter your credentials"
+msgstr "Введите ваши данные"
+
+
+msgid "password"
+msgstr "Пароль"
+
+msgid "Training"
+msgstr "Тренировочные задания"
+
+
+msgid "Сheck security_level"
+msgstr "Установите уровень безопасности:"
+
+
+msgid "low"
+msgstr "низкий"
+
+
+msgid "middle"
+msgstr "средний"
+
+
+msgid "high"
+msgstr "высокий"
+
 
 

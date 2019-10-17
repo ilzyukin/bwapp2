@@ -25,11 +25,30 @@ $message = "";
 
 //set on locale from $locale = /bWapp/lang/ru_RU/ or standart /usr/share/locale/
 $temp = setlocale(LC_ALL, "ru_RU.utf8");
-
 $temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
-
 echo($temp);
 $reuslt3 = textdomain("messages");
+
+//___________________
+
+$temp3 = _("Very good !"); // Очень крутое веб-приложение!
+$temp4 = _("Login");// echo($temp4) Логин
+$temp5 = _("New user");// echo($temp5) Новый пользователь
+$temp6 = _("Information");// echo($temp6) Информация
+$temp7 = _("Training");//  echo($temp7) Тренировочные задания
+$temp8 = _("Blog");///  echo($temp8) Блог
+$temp9 =  _("Enter your credentials");//echo($temp9) Введите ваши данные
+$temp10 =  _("password");// echo($temp10)        Пароль
+$temp11= _("Check security_level");//echo($temp11)        Установите уровень безопасности:
+$temp12=  _("low");//echo($temp12)   низкий
+$temp13 =  _("middle");//echo($temp12)   средний
+$temp14 =  _("high");// echo($temp14)   высокий
+
+//___________________
+
+
+
+
 
 echo("result3 = $result3");
 $temp = _("char");
@@ -170,7 +189,7 @@ if(isset($_POST["form"]))
 
 <h1>bWAPP</h1>
 
-<h2>Очень крутое веб-приложение !</h2>
+<h2>echo($temp3)</h2>
 
 </header>
 
@@ -180,11 +199,11 @@ if(isset($_POST["form"]))
 
         <tr>
 
-            <td><font color="#ffb717">Логин</font></td>
-            <td><a href="user_new.php">Новый пользователь</a></td>
-            <td><a href="info.php">Информация</a></td>
-            <td><a href="training.php">Тренировочные задания</a></td>
-            <td><a href="http://itsecgames.blogspot.com" target="_blank">Блог</a></td>
+            <td><font color="#ffb717">echo($temp4)</font></td>
+            <td><a href="user_new.php">echo($temp5)</a></td>
+            <td><a href="info.php">echo($temp6)</a></td>
+            <td><a href="training.php">echo($temp7)</a></td>
+            <td><a href="http://itsecgames.blogspot.com" target="_blank">echo($temp8)</a></td>
 
         </tr>
 
@@ -194,31 +213,31 @@ if(isset($_POST["form"]))
 
 <div id="main">
 
-    <h1>Логин</h1>
+    <h1>echo($temp4)</h1>
 
-    <p>Введите ваши данные <i>(bee/bug)</i>.</p>
+    <p>echo($temp9) <i>(bee/bug)</i>.</p>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <p><label for="login">Логин:</label><br />
+        <p><label for="login">echo($temp4):</label><br />
         <input type="text" id="login" name="login" size="20" autocomplete="off"></p> 
 
-        <p><label for="password">Пароль:</label><br />
+        <p><label for="password">echo($temp6):</label><br />
         <input type="password" id="password" name="password" size="20" autocomplete="off"></p>
 
-        <p><label for="security_level">Установите уровень безопасности:</label><br />
+        <p><label for="security_level">echo($temp11)</label><br />
 
         <select name="security_level">
 
-            <option value="0">низкий</option>
-            <option value="1">средний</option>
-            <option value="2">высокий</option>
+            <option value="0">echo($temp12)</option>
+            <option value="1">echo($temp13)</option>
+            <option value="2">echo($temp14)</option>
 
         </select>
 
         </p>
 
-        <button type="submit" name="form" value="submit">Логин</button>
+        <button type="submit" name="form" value="submit">echo($temp4)</button>
 
     </form>
 
