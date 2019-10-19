@@ -22,6 +22,46 @@ include("connect_i.php");
 include("selections.php");
 
 $message = "";
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+$reuslt3 = textdomain("messages");
+//________________________
+
+$temp1 = _("bWAPP - Change Password");
+$temp2 = _("bWAPP");
+$temp3 = _("an extremely buggy web app !");
+$temp4 = _("Bugs");
+$temp5 = _("Change Password");
+$temp6 = _("Create User");
+$temp7 = _("Set Security Level");
+$temp8 = _("Reset");
+$temp9 = _("Credits");
+$temp10 = _("Blog");
+$temp11 = _("Logout");
+$temp12= _("Welcome");
+
+$temp13 = _("Change Password");
+$temp14 = _("Please change your password");
+$temp15 = _("Current password");
+$temp16 = _("New password:");
+$temp17 = _("Re-type new password:");
+$temp18 = _("bWAPP is licensed under");
+$temp19 = _("2014 MME BVBA / Follow");
+$temp20= _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive ");
+$temp21 = _("training");
+
+$temp22 = _("Set your security level:");
+$temp14 = _("low");
+$temp15 = _("medium");
+$temp16 = _("high");
+$temp17 = _("Set");
+//_________________________
+
+
+
+
+
+
 
 if(isset($_REQUEST["action"]))
 {
@@ -135,7 +175,7 @@ if(isset($_REQUEST["action"]))
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title>bWAPP - Change Password</title>
+<title>echo($temp1)</title>
 
 </head>
 
@@ -143,9 +183,9 @@ if(isset($_REQUEST["action"]))
 
 <header>
 
-<h1>bWAPP</h1>
+<h1>echo($temp2)</h1>
 
-<h2>an extremely buggy web app !</h2>
+<h2>echo($temp3)</h2>
 
 </header>
 
@@ -155,15 +195,15 @@ if(isset($_REQUEST["action"]))
 
         <tr>
 
-            <td><a href="portal.php">Bugs</a></td>
-            <td><font color="#ffb717">Change Password</font></td>
-            <td><a href="user_extra.php">Create User</a></td>
-            <td><a href="security_level_set.php">Set Security Level</a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');">Reset</a></td>
-            <td><a href="credits.php">Credits</a></td>
-            <td><a href="http://itsecgames.blogspot.com" target="_blank">Blog</a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a></td>
-            <td><font color="red">Welcome <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
+            <td><a href="portal.php">echo($temp4)</a></td>
+            <td><font color="#ffb717">echo($temp5)</font></td>
+            <td><a href="user_extra.php">echo($temp6)</a></td>
+            <td><a href="security_level_set.php">echo($temp7)</a></td>
+            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');">echo($temp8)</a></td>
+            <td><a href="credits.php">echo($temp9)</a></td>
+            <td><a href="http://itsecgames.blogspot.com" target="_blank">echo($temp10)</a></td>
+            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');">echo($temp11)</a></td>
+            <td><font color="red">echo($temp12) <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>
 
@@ -173,19 +213,19 @@ if(isset($_REQUEST["action"]))
 
 <div id="main">
 
-    <h1>Change Password</h1>
+    <h1>echo($temp13)</h1>
 
-    <p>Please change your password <b><?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);} ?></b>.</p>
+    <p>echo($temp14) <b><?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);} ?></b>.</p>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <p><label for="password_curr">Current password:</label><br />
+        <p><label for="password_curr">echo($temp15)</label><br />
         <input type="password" id="password_curr" name="password_curr"></p>
 
-        <p><label for="password_new">New password:</label><br />
+        <p><label for="password_new">echo($temp16)</label><br />
         <input type="password" id="password_new" name="password_new"></p>
 
-        <p><label for="password_conf">Re-type new password:</label><br />
+        <p><label for="password_conf">echo($temp17)</label><br />
         <input type="password" id="password_conf" name="password_conf"></p>
 
         <button type="submit" name="action" value="change">Change</button>
@@ -213,7 +253,7 @@ if(isset($_REQUEST["action"]))
 
 <div id="disclaimer">
 
-    <p>bWAPP is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; 2014 MME BVBA / Follow <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive <a href="http://www.mmebvba.com" target="_blank">training</a>?</p>
+    <p>echo($temp18) <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; echo($temp19) <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> echo($temp20) <a href="http://www.mmebvba.com" target="_blank">echo($temp21)</a>?</p>
 
 </div>
 
@@ -227,18 +267,18 @@ if(isset($_REQUEST["action"]))
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <label>Set your security level:</label><br />
+        <label>echo($temp22)</label><br />
 
         <select name="security_level">
 
-            <option value="0">low</option>
-            <option value="1">medium</option>
-            <option value="2">high</option>
+            <option value="0">echo($temp23)</option>
+            <option value="1">echo($temp24)</option>
+            <option value="2">echo($temp25)</option>
 
         </select>
 
-        <button type="submit" name="form_security_level" value="submit">Set</button>
-        <font size="4">Current: <b><?php echo $security_level?></b></font>
+        <button type="submit" name="form_security_level" value="submit">echo($temp26)</button>
+        <font size="4">echo ($temp27) <b><?php echo $security_level?></b></font>
 
     </form>
 
