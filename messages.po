@@ -130,6 +130,8 @@ msgstr "тренировка"
 
 msgid "Set" 
 msgstr "Установить" 
-msgid "Current:"  
+msgid "Current:"
 msgstr "Текущий"
 
+msgid "Change:"  
+msgstr "Изменить"

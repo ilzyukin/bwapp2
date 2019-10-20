@@ -51,10 +51,12 @@ $temp20= _("on Twitter and ask for our cheat sheet, containing all solutions! / 
 $temp21 = _("training");
 
 $temp22 = _("Set your security level:");
-$temp14 = _("low");
-$temp15 = _("medium");
-$temp16 = _("high");
-$temp17 = _("Set");
+$temp23 = _("low");
+$temp24 = _("medium");
+$temp25 = _("high");
+$temp26 = _("Set");
+$temp27 = _("Change");
+
 //_________________________
 
 
@@ -175,7 +177,7 @@ if(isset($_REQUEST["action"]))
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title>echo($temp1)</title>
+<title> <?php echo($temp1) ?></title>
 
 </head>
 
@@ -183,9 +185,9 @@ if(isset($_REQUEST["action"]))
 
 <header>
 
-<h1>echo($temp2)</h1>
+<h1 <?php echo($temp2) ?></h1>
 
-<h2>echo($temp3)</h2>
+<h2> <?php echo($temp3) ?></h2>
 
 </header>
 
@@ -195,15 +197,15 @@ if(isset($_REQUEST["action"]))
 
         <tr>
 
-            <td><a href="portal.php">echo($temp4)</a></td>
-            <td><font color="#ffb717">echo($temp5)</font></td>
-            <td><a href="user_extra.php">echo($temp6)</a></td>
-            <td><a href="security_level_set.php">echo($temp7)</a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');">echo($temp8)</a></td>
-            <td><a href="credits.php">echo($temp9)</a></td>
-            <td><a href="http://itsecgames.blogspot.com" target="_blank">echo($temp10)</a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');">echo($temp11)</a></td>
-            <td><font color="red">echo($temp12) <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
+            <td><a href="portal.php"> <?php echo($temp4) ?></a></td>
+            <td><font color="#ffb717"> <?php echo($temp5) ?></font></td>
+            <td><a href="user_extra.php"> <?php echo($temp6) ?></a></td>
+            <td><a href="security_level_set.php"> <?php echo($temp7) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"> <?php echo($temp8) ?></a></td>
+            <td><a href="credits.php"> <?php echo($temp9) ?></a></td>
+            <td><a href="http://itsecgames.blogspot.com" target="_blank"> <?php echo($temp10) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"> <?php echo($temp11) ?></a></td>
+            <td><font color="red"> <?php echo($temp12) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>
 
@@ -213,22 +215,22 @@ if(isset($_REQUEST["action"]))
 
 <div id="main">
 
-    <h1>echo($temp13)</h1>
+    <h1> <?php echo($temp13) ?> </h1>
 
-    <p>echo($temp14) <b><?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);} ?></b>.</p>
+    <p> <?php echo($temp14) ?>  <b><?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);} ?></b>.</p>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <p><label for="password_curr">echo($temp15)</label><br />
+        <p><label for="password_curr"> <?php echo($temp15) ?></label><br />
         <input type="password" id="password_curr" name="password_curr"></p>
 
-        <p><label for="password_new">echo($temp16)</label><br />
+        <p><label for="password_new"> <?php echo($temp16) ?></label><br />
         <input type="password" id="password_new" name="password_new"></p>
 
-        <p><label for="password_conf">echo($temp17)</label><br />
+        <p><label for="password_conf"> <?php echo($temp17) ?></label><br />
         <input type="password" id="password_conf" name="password_conf"></p>
 
-        <button type="submit" name="action" value="change">Change</button>
+        <button type="submit" name="action" value="change"><?php echo($temp27) ?></button>
 
     </form>
 
@@ -253,7 +255,7 @@ if(isset($_REQUEST["action"]))
 
 <div id="disclaimer">
 
-    <p>echo($temp18) <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; echo($temp19) <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> echo($temp20) <a href="http://www.mmebvba.com" target="_blank">echo($temp21)</a>?</p>
+    <p><?php echo($temp18) ?><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy;<?php  echo($temp19) <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> <?php  echo($temp20) ?><a href="http://www.mmebvba.com" target="_blank"><?php echo($temp21) ?></a>?</p>
 
 </div>
 
@@ -267,18 +269,18 @@ if(isset($_REQUEST["action"]))
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <label>echo($temp22)</label><br />
+        <label> <?php echo($temp22) ?></label><br />
 
         <select name="security_level">
 
-            <option value="0">echo($temp23)</option>
-            <option value="1">echo($temp24)</option>
-            <option value="2">echo($temp25)</option>
+            <option value="0"> <?php echo($temp23) ?></option>
+            <option value="1"> <?php echo($temp24) ?></option>
+            <option value="2"> <?phpecho($temp25) ?></option>
 
         </select>
 
-        <button type="submit" name="form_security_level" value="submit">echo($temp26)</button>
-        <font size="4">echo ($temp27) <b><?php echo $security_level?></b></font>
+        <button type="submit" name="form_security_level" value="submit"> <?php echo($temp26) ?></button>
+        <font size="4"> <?php echo ($temp27) ?><b><?php echo $security_level?></b></font>
 
     </form>
 
