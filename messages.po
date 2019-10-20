@@ -48,8 +48,7 @@ msgstr "Введите ваши данные"
 msgid "password"
 msgstr "Пароль"
 
-msgid "Training"
-msgstr "Тренировочные задания"
+
 
 
 msgid "Сheck security_level"
@@ -95,8 +94,7 @@ msgstr "Сбросить"
 msgid "Credits"
 msgstr "Контактные данные"
 
-msgid "Blog"
-msgstr "Блог"
+
 
 msgid "Logout"
 msgstr "Выйти из аккаунта"
@@ -129,11 +127,7 @@ msgstr "на мой твиттер. Нужна эксклюзивная"
 msgid "training"  
 msgstr "тренировка"
 
-msgid "Set your security level:"  
 
-msgid "low"  
-msgid "medium"  
-msgid "high"  
 msgid "Set" 
 msgstr "Установить" 
 msgid "Current:"  
