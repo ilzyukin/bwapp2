@@ -23,6 +23,23 @@ include("connect_i.php");
 include("selections.php");
 include("admin/settings.php");
 
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+
+$temp3 = _("bWAPP - Broken Authentication"); // Очень крутое веб-приложение!
+$temp4 = _("an extremely buggy web app !");// echo($temp4) Логин
+$temp5 = _("New user");// echo($temp5) Новый пользователь
+$temp6 = _("Information");// echo($temp6) Информация
+$temp7 = _("Training");//  echo($temp7) Тренировочные задания
+$temp8 = _("Blog");///  echo($temp8) Блог
+$temp9 =  _("Enter your credentials");//echo($temp9) Введите ваши данные
+$temp10 =  _("password");// echo($temp10)        Пароль
+$temp11= _("Check security_level");//echo($temp11)        Установите уровень безопасности:
+$temp12=  _("low");//echo($temp12)   низкий
+$temp13 =  _("middle");//echo($temp12)   средний
+$temp14 =  _("high");// echo($temp14)   высокий
+
+
 $message = "";
 
 if(isset($_POST["action"]))
@@ -244,7 +261,7 @@ if(isset($_POST["action"]))
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title>bWAPP - Broken Authentication</title>
+<title> <?php echo $temp3 ?> </title>
 
 </head>
 
@@ -254,7 +271,7 @@ if(isset($_POST["action"]))
 
 <h1>bWAPP</h1>
 
-<h2>an extremely buggy web app !</h2>
+<h2> <?php echo $temp4 ?> </h2>
 
 </header>
 

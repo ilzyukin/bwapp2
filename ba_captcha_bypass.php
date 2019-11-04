@@ -130,7 +130,7 @@ if(isset($_POST["form"]))
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title>bWAPP - Broken Authentication</title>
+<title> <?php echo $temp3 ?> </title>
 
 </head>
 
