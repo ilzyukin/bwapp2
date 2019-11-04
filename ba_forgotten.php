@@ -26,6 +26,8 @@ include("admin/settings.php");
 $temp = setlocale(LC_ALL, "ru_RU.utf8");
 $temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
 
+//___________________
+
 $temp3 = _("bWAPP - Broken Authentication"); // Очень крутое веб-приложение!
 $temp4 = _("an extremely buggy web app !");// echo($temp4) Логин
 $temp5 = _("New user");// echo($temp5) Новый пользователь
@@ -34,10 +36,30 @@ $temp7 = _("Training");//  echo($temp7) Тренировочные задани�
 $temp8 = _("Blog");///  echo($temp8) Блог
 $temp9 =  _("Enter your credentials");//echo($temp9) Введите ваши данные
 $temp10 =  _("password");// echo($temp10)        Пароль
-$temp11= _("Check security_level");//echo($temp11)        Установите уровень безопасности:
-$temp12=  _("low");//echo($temp12)   низкий
+$temp11 = _("Check security_level");//echo($temp11)        Установите уровень безопасности:
+$temp12 =  _("low");//echo($temp12)   низкий
 $temp13 =  _("middle");//echo($temp12)   средний
 $temp14 =  _("high");// echo($temp14)   высокий
+$temp15 =  _("Bugs");// echo($temp15)   баги
+$temp16 =  _("Change Password");// echo($temp16)   Изменить пароль
+$temp17 =  _("Create User");// echo($temp17)   Создать пользователя
+$temp18 =  _("Set Security Level");// echo($temp18)   Установить уровень безопасности
+$temp19 =  _("Reset");// echo($temp19)   Сбросить
+$temp20 =  _("Credits");// echo($temp20)   Контактные данные
+$temp21 =  _("Logout");// echo($temp21)   Выйти из аккаунта
+$temp22 =  _("Welcome");// echo($temp22)   Добро пожаловать
+$temp23 =  _("Broken Auth. - Forgotten Function");// echo($temp23)   Уязвимая аутентификация - забытая функция
+$temp24 =  _("Apparently you forgot your secret...");// echo($temp24)   Очевидно, Вы забыли свой секрет...
+$temp25 =  _("E-mail:");// echo($temp25)   Почта
+$temp26 =  _("Forgot");// echo($temp26)   Забыл свои данные
+$temp27 =  _("bWAPP is licensed under");// echo($temp27)   Лицензия БИВАП от
+$temp28 =  _("2014 MME BVBA / Follow");// echo($temp28)   2014 MME BVBA / Подписывайтесь
+$temp29 =  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp29)   
+$temp30 =  _("training");// echo($temp30)   Тренировка
+$temp31 =  _("Set your security level:");// echo($temp31)   Введите Ваш уровень безопасности
+$temp32 =  _("medium");// echo($temp32)   средний
+$temp33 =  _("Set");// echo($temp33)   Установить
+$temp34 =  _("Current:");// echo($temp34)   Текущий
 
 
 $message = "";
@@ -281,15 +303,15 @@ if(isset($_POST["action"]))
 
         <tr>
 
-            <td><a href="portal.php">Bugs</a></td>
-            <td><a href="password_change.php">Change Password</a></td>
-            <td><a href="user_extra.php">Create User</a></td>
-            <td><a href="security_level_set.php">Set Security Level</a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');">Reset</a></td>
-            <td><a href="credits.php">Credits</a></td>
-            <td><a href="http://itsecgames.blogspot.com" target="_blank">Blog</a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a></td>
-            <td><font color="red">Welcome <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
+            <td><a href="portal.php"><?php echo $temp15 ?></a></td>
+            <td><a href="password_change.php"><?php echo $temp16 ?></a></td>
+            <td><a href="user_extra.php"><?php echo $temp17 ?></a></td>
+            <td><a href="security_level_set.php"><?php echo $temp18 ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo $temp19 ?></a></td>
+            <td><a href="credits.php"><?php echo $temp20 ?></a></td>
+            <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo $temp8 ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo $temp21 ?></a></td>
+            <td><font color="red"><?php echo $temp22 ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>
 
@@ -299,16 +321,16 @@ if(isset($_POST["action"]))
 
 <div id="main">
 
-    <h1>Broken Auth. - Forgotten Function</h1>
+    <h1><?php echo $temp23 ?></h1>
 
-    <p>Apparently you forgot your secret...</p>
+    <p><?php echo $temp24 ?></p>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <p><label for="email">E-mail:</label><br />
+        <p><label for="email"><?php echo $temp25 ?></label><br />
         <input type="text" id="email" name="email"></p>
 
-        <button type="submit" name="action" value="forgot">Forgot</button>
+        <button type="submit" name="action" value="forgot"><?php echo $temp26 ?></button>
 
     </form>
 
@@ -334,7 +356,7 @@ if(isset($_POST["action"]))
 
 <div id="disclaimer">
 
-    <p>bWAPP is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; 2014 MME BVBA / Follow <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive <a href="http://www.mmebvba.com" target="_blank">training</a>?</p>
+    <p><?php echo $temp27 ?> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo $temp28 ?> <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> <?php echo $temp29 ?><a href="http://www.mmebvba.com" target="_blank"><?php echo $temp30 ?></a>?</p>
 
 </div>
 
@@ -348,18 +370,18 @@ if(isset($_POST["action"]))
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <label>Set your security level:</label><br />
+        <label><?php echo $temp31 ?></label><br />
 
         <select name="security_level">
 
-            <option value="0">low</option>
-            <option value="1">medium</option>
-            <option value="2">high</option>
+            <option value="0"><?php echo $temp12 ?></option>
+            <option value="1"><?php echo $temp32 ?></option>
+            <option value="2"><?php echo $temp14 ?></option>
 
         </select>
 
-        <button type="submit" name="form_security_level" value="submit">Set</button>
-        <font size="4">Current: <b><?php echo $security_level?></b></font>
+        <button type="submit" name="form_security_level" value="submit"><?php echo $temp33 ?></button>
+        <font size="4"><?php echo $temp34 ?> <b><?php echo $security_level?></b></font>
 
     </form>
 

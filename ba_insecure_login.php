@@ -19,6 +19,15 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 include("security.php");
 include("security_level_check.php");
 
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+
+
+
+
+
+//___________________
+
 switch($_COOKIE["security_level"])
 {
         

@@ -22,7 +22,6 @@ msgstr ""
 msgid "char"
 msgstr "привет"
 
-
 msgid "bWAPP - Broken Authentication"
 msgstr "BWAPP - Уязвимая Аутентификация"
 
@@ -38,36 +37,29 @@ msgstr "Информация"
 msgid "Training"
 msgstr "Тренировочные задания"
 
-
 msgid "Blog"
 msgstr "Блог"
 
-
 msgid "Enter your credentials"
-msgstr "Введите ваши данные"
+msgstr "Введите Ваши данные"
 
+msgid "Enter your credentials."
+msgstr "Введите Ваши данные."
 
 msgid "password"
 msgstr "Пароль"
 
-
-
-
 msgid "Сheck security_level"
 msgstr "Установите уровень безопасности:"
-
 
 msgid "low"
 msgstr "низкий"
 
-
 msgid "middle"
 msgstr "средний"
 
-
 msgid "high"
 msgstr "высокий"
-
 
 msgid "bWAPP - Change Password"
 msgstr "BWAPP - Измените пароль"
@@ -82,7 +74,7 @@ msgid "Bugs"
 msgstr "Баги"
 
 msgid "Change Password"
-msgstr "Измените пароль"
+msgstr "Изменить пароль"
 
 msgid "Create User"
 msgstr "Создать пользователя"
@@ -96,14 +88,11 @@ msgstr "Сбросить"
 msgid "Credits"
 msgstr "Контактные данные"
 
-
-
 msgid "Logout"
 msgstr "Выйти из аккаунта"
 
 msgid "Welcome"
 msgstr "Добро пожаловать"
-
 
 msgid "Please change your password"
 msgstr "Пожалуйста измените Ваш пароль"
@@ -113,7 +102,6 @@ msgstr "Текущий пароль"
 
 msgid "New password:"  
 msgstr "Новый пароль"
-
 
 msgid "Re-type new password:"  
 msgstr "Перенаберите пароль"
@@ -125,15 +113,58 @@ msgid "2014 MME BVBA / Follow"
 msgstr "2014 MME BVBA / Подписывайтесь"
 
 msgid"on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive "
-msgstr "на мой твиттер. Нужна эксклюзивная"
+msgstr "на мой Twitter и попросите нашу шпаргалку, содержащую все решения! / Нужен эксклюзив"
+
 msgid "training"  
 msgstr "тренировка"
 
-
 msgid "Set" 
 msgstr "Установить" 
+
 msgid "Current:"
 msgstr "Текущий"
 
 msgid "Change:"  
 msgstr "Изменить"
+
+msgid "Broken Auth. - CAPTCHA Bypassing"  
+msgstr "Уязвимая аутентификация - обход капчи"
+
+msgid "Login:"  
+msgstr "Логин:"
+
+msgid "Password:"  
+msgstr "Пароль:"
+
+msgid "Re-enter CAPTCHA:"  
+msgstr "Повторно введите капчу:"
+
+msgid "Login"  
+msgstr "Вход"
+
+msgid "Set your security level:"  
+msgstr "Введите Ваш уровень безопасности:"
+
+msgid "medium"  
+msgstr "средний"
+
+msgid "Broken Auth. - Forgotten Function"  
+msgstr "Уязвимая аутентификация - забытая функция"
+
+msgid "Apparently you forgot your secret..."  
+msgstr "Очевидно, Вы забыли свой секрет..."
+
+msgid "E-mail:"  
+msgstr "Почта:"
+
+msgid "Forgot"  
+msgstr "Забыл свои данные"
+
+msgid "Broken Auth. - Insecure Login Forms"  
+msgstr "Небезопасные формы входа"
+
+msgid "tonystark"  
+msgstr "Тони Старк"
+
+msgid "I am Iron Man"  
+msgstr "Я - железный человек"
