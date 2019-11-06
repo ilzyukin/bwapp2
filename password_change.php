@@ -60,7 +60,7 @@ $temp17 = _("Set");
 
 
 
-
+$temp2 = "fdfsf";
 
 
 if(isset($_REQUEST["action"]))
@@ -161,11 +161,14 @@ if(isset($_REQUEST["action"]))
 }
 
 ?>
+
+
+<?php $temp3 = "keeek";  ?>
 <!DOCTYPE html>
 <html>
 
 <head>
-
+ 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <!--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Architects+Daughter">-->
@@ -175,7 +178,7 @@ if(isset($_REQUEST["action"]))
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title>echo($temp1)</title>
+<title> echo $temp1</title>
 
 </head>
 
@@ -183,9 +186,9 @@ if(isset($_REQUEST["action"]))
 
 <header>
 
-<h1>echo($temp2)</h1>
+<h1> echo($temp2) </h1>
 
-<h2>echo($temp3)</h2>
+<h2> echo($temp3) </h2>
 
 </header>
 

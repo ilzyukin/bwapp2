@@ -22,7 +22,8 @@ msgstr ""
 msgid "char"
 msgstr "привет"
 
-
+msgid "cake"
+msgstr "Пирогэ"
 
 msgid "Very good !"
 msgstr "Очень крутое веб-приложение!"
