@@ -175,8 +175,7 @@ msgid "bWAPP - New User"
 msgstr "BWAPP - новый пользователь"
 
 
-msgid "an extremely buggy web app !"  
-msgstr "очень уязвимое приложение!"
+
 
 msgid "Info"  
 msgstr "Информация"
