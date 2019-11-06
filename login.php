@@ -187,9 +187,9 @@ if(isset($_POST["form"]))
 
 <header>
 
-<h1>bWAPP</h1>
+<h1><bWAPP</h1>
 
-<h2>echo($temp3)</h2>
+<h2><?php echo($temp3) ?></h2>
 
 </header>
 
@@ -199,11 +199,11 @@ if(isset($_POST["form"]))
 
         <tr>
 
-            <td><font color="#ffb717">echo($temp4)</font></td>
-            <td><a href="user_new.php">echo($temp5)</a></td>
-            <td><a href="info.php">echo($temp6)</a></td>
-            <td><a href="training.php">echo($temp7)</a></td>
-            <td><a href="http://itsecgames.blogspot.com" target="_blank">echo($temp8)</a></td>
+            <td><font color="#ffb717"> <?php echo($temp4) ?></font></td>
+            <td><a href="user_new.php"><?php echo($temp5) ?></a></td>
+            <td><a href="info.php"><?php echo($temp6) ?></a></td>
+            <td><a href="training.php"><?php echo($temp7) ?></a></td>
+            <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
 
         </tr>
 
@@ -213,31 +213,31 @@ if(isset($_POST["form"]))
 
 <div id="main">
 
-    <h1>echo($temp4)</h1>
+    <h1><?php echo($temp4) ?></h1>
 
-    <p>echo($temp9) <i>(bee/bug)</i>.</p>
+    <p><?php echo($temp9) ?><i>(bee/bug)</i>.</p>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <p><label for="login">echo($temp4):</label><br />
+        <p><label for="login"><?php echo($temp4): ?></label><br />
         <input type="text" id="login" name="login" size="20" autocomplete="off"></p> 
 
-        <p><label for="password">echo($temp6):</label><br />
+        <p><label for="password"><?php echo($temp6): ?></label><br />
         <input type="password" id="password" name="password" size="20" autocomplete="off"></p>
 
-        <p><label for="security_level">echo($temp11)</label><br />
+        <p><label for="security_level"><?php echo($temp11) ?></label><br />
 
         <select name="security_level">
 
-            <option value="0">echo($temp12)</option>
-            <option value="1">echo($temp13)</option>
-            <option value="2">echo($temp14)</option>
+            <option value="0"><?php echo($temp12) ?></option>
+            <option value="1"><?php echo($temp13) ?></option>
+            <option value="2"><?php echo($temp14) ?></option>
 
         </select>
 
         </p>
 
-        <button type="submit" name="form" value="submit">echo($temp4)</button>
+        <button type="submit" name="form" value="submit"><?php echo($temp4) ?></button>
 
     </form>
 
@@ -293,7 +293,7 @@ if(isset($_POST["form"]))
 
 <div id="disclaimer">
 
-    <p>bWAPP лицнзия <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; 2014 MME BVBA / Follow <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive <a href="http://www.mmebvba.com" target="_blank">training</a>?</p>
+    <p>bWAPP лицензия <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; 2014 MME BVBA / Follow <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive <a href="http://www.mmebvba.com" target="_blank">training</a>?</p>
 
 </div>
 

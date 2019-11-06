@@ -22,6 +22,39 @@ include("admin/settings.php");
 
 $message = "";
 
+//set on locale from $locale = /bWapp/lang/ru_RU/ or standart /usr/share/locale/
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+echo($temp);
+$reuslt3 = textdomain("messages");
+
+//___________________
+
+$temp3 = _("bWAPP - New User"); // Очень крутое веб-приложение!
+$temp4 = _("an extremely buggy web app !");// echo($temp4) Логин
+$temp6 = _("New user");// echo($temp5) Новый пользователь
+$temp5 = _("Login");// echo($temp6) Информация
+$temp7 = _("Info");//  echo($temp7) Тренировочные задания
+$temp8 = _("Talks & Training");///  echo($temp8) Блог
+$temp9 =  _("Blog");//echo($temp9) Введите ваши данные
+$temp10 =  _("Create a new user.");// echo($temp10)        Пароль
+$temp11= _("E-mail:");//echo($temp11)        Установите уровень безопасности:
+$temp12=  _("Password");//echo($temp12)   низкий
+$temp13 =  _("Re-type password:");//echo($temp12)   средний
+$temp14 =  _("Secret");// echo($temp14)   высокий
+$temp15=  _("E-mail activation:");//echo($temp12)   низкий
+$temp16 =  _("Create");//echo($temp12)   средний
+$temp17 =  _("Secret");// echo($temp14)   высокий
+
+$temp18=  _("bWAPP is licensed under");//echo($temp12)   низкий
+$temp19 =  _("2014 MME BVBA / Follow");//echo($temp12)   средний
+$temp20 =  _("n Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp14)   высокий
+$temp21 =  _("training");//echo($temp12)   средний
+
+
+
+//___________________
+
 if(isset($_REQUEST["action"]))
 {
 
@@ -262,7 +295,7 @@ if(isset($_REQUEST["action"]))
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title>bWAPP - New User</title>
+<title><?php echo($temp3) ?></title>
 
 </head>
 
@@ -272,7 +305,7 @@ if(isset($_REQUEST["action"]))
 
 <h1>bWAPP</h1>
 
-<h2>an extremely buggy web app !</h2>
+<h2><?php echo($temp4) ?></h2>
 
 </header>
 
@@ -282,11 +315,11 @@ if(isset($_REQUEST["action"]))
 
         <tr>
 
-            <td><a href="login.php">Login</font></a></td>
-            <td><font color="#ffb717">New User</font></td>
-            <td><a href="info.php">Info</a></td>
-            <td><a href="training.php">Talks & Training</a></td>
-            <td><a href="http://itsecgames.blogspot.com" target="_blank">Blog</a></td>
+            <td><a href="login.php"><?php echo($temp5) ?></font></a></td>
+            <td><font color="#ffb717"><?php echo($temp6) ?></font></td>
+            <td><a href="info.php"><?php echo($temp7) ?></a></td>
+            <td><a href="training.php"><?php echo($temp8) ?></a></td>
+            <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp9) ?></a></td>
 
         </tr>
 
@@ -296,9 +329,9 @@ if(isset($_REQUEST["action"]))
 
 <div id="main">
 
-    <h1>New User</h1>
+    <h1><?php echo($temp10) ?></h1>
 
-    <p>Create a new user.</p>
+    <p><?php echo($temp11) ?></p>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
@@ -306,7 +339,7 @@ if(isset($_REQUEST["action"]))
 
         <tr><td>
   
-        <p><label for="login">Login:</label><br />
+        <p><label for="login"><?php echo($temp5) ?></label><br />
         <input type="text" id="login" name="login"></p>
 
         </td>
@@ -315,14 +348,14 @@ if(isset($_REQUEST["action"]))
 
         <td>
 
-        <p><label for="email">E-mail:</label><br />
+        <p><label for="email"><?php echo($temp11) ?></label><br />
         <input type="text" id="email" name="email" size="30"></p>
 
         </td></tr>
 
         <tr><td>
 
-        <p><label for="password">Password:</label><br />
+        <p><label for="password"><?php echo($temp12) ?></label><br />
         <input type="password" id="password" name="password"></p>
 
         </td>
@@ -331,28 +364,28 @@ if(isset($_REQUEST["action"]))
 
         <td>
 
-        <p><label for="password_conf">Re-type password:</label><br />
+        <p><label for="password_conf"><?php echo($temp13) ?></label><br />
         <input type="password" id="password_conf" name="password_conf"></p>
 
         </td></tr>
 
         <tr><td colspan="3">
 
-        <p><label for="secret">Secret:</label><br />
+        <p><label for="secret"><?php echo($temp14) ?></label><br />
         <input type="text" id="secret" name="secret" size="40"></p>
 
         </td></tr>
 
         <tr><td>
 
-        <p><label for="mail_activation">E-mail activation:</label>
+        <p><label for="mail_activation"><?php echo($temp15) ?></label>
         <input type="checkbox" id="mail_activation" name="mail_activation" value="">
 
         </td></tr>
 
         </table>
 
-        <button type="submit" name="action" value="create">Create</button>
+        <button type="submit" name="action" value="create"><?php echo($temp16) ?></button>
 
     </form>
 
@@ -378,7 +411,7 @@ if(isset($_REQUEST["action"]))
 
 <div id="disclaimer">
 
-    <p>bWAPP is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; 2014 MME BVBA / Follow <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive <a href="http://www.mmebvba.com" target="_blank">training</a>?</p>
+    <p><?php echo($temp18) ?><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo($temp19) ?> <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> <?php echo($temp20) ?><a href="http://www.mmebvba.com" target="_blank"><?php echo($temp21) ?></a>?</p>
 
 </div>
 
