@@ -168,3 +168,37 @@ msgstr "Тони Старк"
 
 msgid "I am Iron Man"  
 msgstr "Я - железный человек"
+
+
+
+msgid "bWAPP - New User"  
+msgstr "Я - железный человек"
+
+
+msgid "an extremely buggy web app !"  
+msgstr "Я - железный человек"
+
+msgid "Info"  
+msgstr "Я - железный человек"
+
+msgid "Talks & Training"  
+msgstr "Я - железный человек"
+
+msgid "Create a new user."  
+msgstr "Я - железный человек"
+
+
+msgid "Re-type password:"  
+msgstr "Я - железный человек"
+
+
+msgid "Secret"  
+msgstr "Я - железный человек"
+
+
+msgid "E-mail activation:"  
+msgstr "Я - железный человек"
+
+
+msgid "Create"  
+msgstr "Я - железный человек"
