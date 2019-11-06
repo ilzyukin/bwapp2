@@ -163,7 +163,7 @@ msgstr "Забыл свои данные"
 msgid "Broken Auth. - Insecure Login Forms"  
 msgstr "Небезопасные формы входа"
 
-msgid "tonystark"  
+msgid "tonystafrk"  
 msgstr "Тони Старк"
 
 msgid "I am Iron Man"  
