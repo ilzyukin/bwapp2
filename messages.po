@@ -170,12 +170,8 @@ msgid "I am Iron Man"
 msgstr "Я - железный человек"
 
 
-
 msgid "bWAPP - New User"  
 msgstr "BWAPP - новый пользователь"
-
-
-
 
 msgid "Info"  
 msgstr "Информация"
@@ -201,3 +197,37 @@ msgstr "Активация емэйл"
 
 msgid "Create"  
 msgstr "Создание"
+
+
+msgid "A.I.M., or Authentication Is Missing, is a no-authentication mode that can be used for testing web scanners and crawlers."  
+msgstr "A.I.M., or Authentication Is Missing, безауттонтификационный способоб, используемый для тестирования веб-приложений и поисковиков."
+
+
+msgid "Steps to crawl all pages, and to detect all vulnerabilities without authentication:"  
+msgstr "Шаги для того, чтобы обнаружить все страницы и уязвиомсти без аутентификации"
+
+
+
+msgid "1. Change the IP address in the settings file (admin/settings.php) to your IP address:"  
+msgstr "1. Изменить ip адрес в настроечном файле (admin/settings.php) на свой"
+
+
+msgid "2. Point your web scanner, crawler or attack tool to this URL:"  
+msgstr "2. Перейдите по данному URL"
+
+
+msgid "3. Push the button: all hell breaks loose..."  
+msgstr "3. Нажмите кнопку....."
+
+msgid "Name:"  
+msgstr "Имя:"
+
+msgid "brucebanner"  
+msgstr "Я - халк"
+
+msgid "Passphrase"  
+msgstr "Секретная фраза"
+
+msgid "REnter the correct passphrase to unlock the secret."  
+msgstr "Повторите секретную фразу, чтобы разблокировать пароль"
+

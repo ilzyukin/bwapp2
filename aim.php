@@ -17,7 +17,24 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 */
 
 include("admin/settings.php");
+//set on locale from $locale = /bWapp/lang/ru_RU/ or standart /usr/share/locale/
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+echo($temp);
+$reuslt3 = textdomain("messages");
 
+//___________________
+$temp3 = _("bWAPP - A.I.M."); // Очень крутое веб-приложение!
+$temp4 = _("A.I.M., or Authentication Is Missing, is a no-authentication mode that can be used for testing web scanners and crawlers.");// echo($temp4) Логин
+$temp6 = _("Steps to crawl all pages, and to detect all vulnerabilities without authentication:");// echo($temp5) Новый пользователь
+$temp5 = _("1. Change the IP address in the settings file (admin/settings.php) to your IP address:");// echo($temp6) Информация
+$temp7 = _("2. Point your web scanner, crawler or attack tool to this URL:");//  echo($temp7) Тренировочные задания
+$temp8 = _("3. Push the button: all hell breaks loose...");///  echo($temp8) Блог
+
+
+
+
+//___________________
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,15 +53,15 @@ include("admin/settings.php");
 
 <h1>A.I.M.</h1>
 
-<p>A.I.M., or Authentication Is Missing, is a no-authentication mode that can be used for testing web scanners and crawlers.</p>
+<p><?php echo($temp4) ?></p>
 
-<p>Steps to crawl all pages, and to detect all vulnerabilities without authentication:</p>
+<p>S<?php echo($temp5) ?></p>
 
-<p>1. Change the IP address in the settings file (admin/settings.php) to your IP address: <?php echo $_SERVER["REMOTE_ADDR"];?></p>
+<p><?php echo($temp6) ?> <?php echo $_SERVER["REMOTE_ADDR"];?></p>
 
-<p>2. Point your web scanner, crawler or attack tool to this URL: <?php echo "http://" . $_SERVER["HTTP_HOST"] . htmlspecialchars($_SERVER["REQUEST_URI"], ENT_QUOTES, "UTF-8");?></p>
+<p><?php echo($temp7) ?> <?php echo "http://" . $_SERVER["HTTP_HOST"] . htmlspecialchars($_SERVER["REQUEST_URI"], ENT_QUOTES, "UTF-8");?></p>
 
-<p>3. Push the button: all hell breaks loose...</p>
+<p><?php echo($temp8) ?></p>
 
 <p><img src="./images/evil_bee.png"></p>
 

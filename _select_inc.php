@@ -35,7 +35,6 @@ div#bug a {font-weight: bold; cursor: pointer;}
 
             echo "
           <option title='$bug[1]' value='$key' $selected>$bug[0]</option>";
-
           }
 
         ?>
