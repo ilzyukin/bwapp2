@@ -23,7 +23,8 @@ switch($_COOKIE["security_level"])
 {
         
     case "0" : 
-            
+             
+             
         header("Location: ba_pwd_attacks_1.php");
         
         break;

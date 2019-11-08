@@ -231,3 +231,18 @@ msgstr "Секретная фраза"
 msgid "REnter the correct passphrase to unlock the secret."  
 msgstr "Повторите секретную фразу, чтобы разблокировать пароль"
 
+
+msgid "Broken Auth. - Logout Management"  
+msgstr "Прерванная аутентификация  - управление выходом"
+
+msgid "Click"  
+msgstr "Нажмите"
+
+
+msgid "here"  
+msgstr "на кнопку"
+
+msgid "to logout."  
+msgstr "чтобы выйти"
+
+

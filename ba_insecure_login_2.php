@@ -21,7 +21,6 @@ include("security_level_check.php");
 include("admin/settings.php");
 $temp = setlocale(LC_ALL, "ru_RU.utf8");
 $temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
-echo($temp);
 $reuslt3 = textdomain("messages");
 
 $bugs = file("bugs.txt");

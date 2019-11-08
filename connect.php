@@ -30,6 +30,7 @@ if(!$link)
 
     die("Could not connect to the server: " . mysqli_error($link));
 
+
 }
 
 // Connects to the database

@@ -15,9 +15,11 @@ Twitter: @MME_IT
 bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (http://creativecommons.org/licenses/by-nc-nd/4.0/). Copyright © 2014 MME BVBA. All rights reserved.
 
 */
-
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+$reuslt3 = textdomain("messages");
 header("Content-Type: text/plain");
 
-echo "Johnny's secret: I'm the Ghost Rider!";
+echo _("Johnny's secret: I'm the Ghost Rider!");
 
 ?>
