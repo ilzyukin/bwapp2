@@ -139,6 +139,9 @@ msgstr "Пароль:"
 msgid "Re-enter CAPTCHA:"  
 msgstr "Повторно введите капчу:"
 
+msgid "CAPTCHA:"  
+msgstr "Капча:"
+
 msgid "Login"  
 msgstr "Вход"
 
@@ -245,4 +248,8 @@ msgstr "на кнопку"
 msgid "to logout."  
 msgstr "чтобы выйти"
 
+msgid "Broken Auth. - Password Attacks"  
+msgstr "Прерванная аутентификация  - Атаки на пароль"
 
+msgid "Broken Auth. - Weak Passwords"  
+msgstr "Прерванная аутентификация  - Ненадежный пароль"
