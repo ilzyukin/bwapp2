@@ -16,6 +16,7 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 
 */
 
+
 // Connection settings
 include("config.inc.php");
 

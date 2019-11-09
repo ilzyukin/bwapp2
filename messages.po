@@ -104,7 +104,7 @@ msgid "New password:"
 msgstr "Новый пароль"
 
 msgid "Re-type new password:"  
-msgstr "Перенаберите пароль"
+msgstr "Введите новый пароль повторно"
 
 msgid "bWAPP is licensed under"  
 msgstr "Лицензия БИВАП от"
@@ -328,3 +328,92 @@ msgstr "Поиск DNS:"
 
 msgid "Lookup"
 msgstr "Поиск"
+
+msgid "OS Command Injection - Blind"
+msgstr "Слепая инъекция команд в операционную систему"
+
+msgid "Enter your IP address:"
+msgstr "Введите свой IP-адрес:"
+
+msgid "PING"
+msgstr "ПИНГ"
+
+msgid "bWAPP - Credits"
+msgstr "BWAPP - Контактные данные"
+
+
+msgid "O yeah... who am I? Well my name is Malik. I'm a security consultant working for my own company,"
+msgstr "О да... кто я такой? Ну меня зовут Малик. Я консультант по безопасности, работаю в своей компании,"
+
+msgid "We are specialized in Penetration Testing, Ethical Hacking, InfoSec Training, and Evil Bee Hunting."
+msgstr "Мы специализируемся на испытании на проникновение, этическом хакинге, обучении информационной безопасности и охоте на злых пчел."
+
+msgid "Download our"
+msgstr "Скачайте наш"
+
+msgid "What is bWAPP?"
+msgstr "Что такое BWAPP?"
+
+msgid "introduction tutorial, including free materials and exercises..."
+msgstr "Вводное руководство, в том числе бесплатные материалы и упражнения..."
+
+msgid "I'm also happy to give bWAPP talks and workshops at your security convention or seminar!"
+msgstr "Я также рад провести bWAPP лекции и семинары на вашей конференции или семинаре по безопасности!"
+
+msgid "Need a training? We offer the following exclusive courses and workshops (on demand, at your location):"
+msgstr "Нужна тренировка? Мы предлагаем следующие эксклюзивные курсы и семинары (по запросу, в вашем регионе):"
+
+msgid "Attacking & Defending Web Apps with bWAPP : 2-day Web Application Security course"
+msgstr "Атака и Защита веб-приложений с помощью bWAPP: 2-дневный курс безопасности веб-приложений"
+
+msgid "Plant the Flags with bWAPP : 4-hour offensive Web Application Hacking workshop"
+msgstr "Установите флаги с bWAPP : 4-часовой агрессивный семинар по взлому веб-приложений"
+
+msgid "Ethical Hacking Basics : 1-day Ethical Hacking course"
+msgstr "Основы этического взлома: 1-дневный курс этического взлома"
+
+msgid "Ethical Hacking Advanced : 1-day comprehensive Ethical Hacking course"
+msgstr "Продвинутый этичный хакинг : 1-дневных всесторонний курс этического взлома"
+
+msgid "Windows Server 2012 Security : 2-day Windows Security course"
+msgstr "Безопасность Windows Server 2012: 2-дневный курс безопасности Windows"
+
+msgid "Special thanks to the Netsparker team!"
+msgstr "Особая благодарность команде Netsparker!"
+
+msgid "bWAPP - Client-Side Validation"
+msgstr "BWAPP - Валидация на стороне клиента"
+
+msgid "Client-Side Validation (Password)"
+msgstr "Валидация на стороне клиента (Пароль)"
+
+msgid "Please change your password"
+msgstr "Пожалуйста, измените свой пароль"
+
+msgid "Change"
+msgstr "Изменить"
+
+msgid "bWAPP - CSRF"
+msgstr "bWAPP - CSRF (межсайтовая подделка запроса)"
+
+msgid "CSRF (Change Password)"
+msgstr "CSRF (Смена пароля)"
+
+msgid "Change your password."
+msgstr "Изменить пароль."
+
+msgid "CSRF (Transfer Amount)"
+msgstr "CSRF (Сумма перевода)"
+
+msgid "Amount on your account:"
+msgstr "Сумма на вашем счете:"
+
+msgid "EUR"
+msgstr "Евро"
+
+msgid "Account to transfer:"
+msgstr "Счет для перевода:"
+
+msgid "Amount to transfer:"
+msgstr "Сумма для перевода:"
+
