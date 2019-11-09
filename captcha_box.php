@@ -19,6 +19,14 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 include("security.php");
 include("security_level_check.php");
 
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+
+
+//___________________
+
+$temp3 = _("bWAPP - CAPTCHA box"); // echo($temp3) Поле ввода капчи
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,7 +35,7 @@ include("security_level_check.php");
         
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<title>bWAPP - CAPTCHA box</title>
+<title><?php echo($temp3) ?></title>
 
 </head>
 

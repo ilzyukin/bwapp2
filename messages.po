@@ -253,3 +253,78 @@ msgstr "Прерванная аутентификация  - Атаки на п�
 
 msgid "Broken Auth. - Weak Passwords"  
 msgstr "Прерванная аутентификация  - Ненадежный пароль"
+
+msgid "bWAPP - Buffer Overflow"
+msgstr "BWAPP - Переполнение буфера"
+
+msgid "Buffer Overflow (Local)"
+msgstr "Переполнение буфера (Локальное)"
+
+msgid "Search for a movie:"
+msgstr "Поиск фильма:"
+
+msgid "Search"
+msgstr "Искать"
+
+msgid "only"
+msgstr "только"
+
+msgid "Buffer Overflow (Remote)"
+msgstr "Переполнение буфера (Удаленное)"
+
+msgid "A specific bWAPP network service is vulnerable to a remote buffer overflow. Get r00t!"
+msgstr "Конкретная сетевая служба bWAPP уязвима к удаленному переполнению буфера. Получите права root!"
+
+msgid "HINT:"
+msgstr "ПОДСКАЗКА:"
+
+msgid "[payload]"
+msgstr "[полезная нагрузка]"
+
+msgid "Thanks to David Bloom (@philophobia78) for developing the C++ BOF application!"
+msgstr "Спасибо Дэвиду Блуму (@philophobia78) за разработку C++ BOF приложения!"
+
+msgid "bWAPP - CAPTCHA box"
+msgstr "BWAPP - Поле ввода капчи"
+
+msgid "bWAPP - ClickJacking"
+msgstr "BWAPP - Кликджекинг"
+
+msgid "ClickJacking (Movie Tickets)"
+msgstr "Кликджекинг (Билеты в кино)"
+
+msgid "How many movie tickets would you like to order?"
+msgstr "Сколько билетов в кино Вы хотели бы заказать?"
+
+msgid "EUR per ticket"
+msgstr "Евро за билет"
+
+msgid "I would like to order"
+msgstr "Мне хотелось бы заказать"
+
+msgid "tickets."
+msgstr "билетов."
+
+msgid "HINT: open the evil"
+msgstr "ПОДСКАЗКА: откройте зло"
+
+msgid "ClickJacking page"
+msgstr "Кликджекинг страница"
+
+msgid "in a new tab..."
+msgstr "в новой вкладке..."
+
+msgid "Confirm"
+msgstr "Подтвердить"
+
+msgid "bWAPP - OS Command Injection"
+msgstr "BWAPP - Инъекция команд в операционную систему"
+
+msgid "OS Command Injection"
+msgstr "Инъекция команд в операционную систему"
+
+msgid "DNS lookup:"
+msgstr "Поиск DNS:"
+
+msgid "Lookup"
+msgstr "Поиск"

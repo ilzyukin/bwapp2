@@ -16,6 +16,7 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 
 */
 
+
 include("security.php");
 include("security_level_check.php");
 include("functions_external.php");

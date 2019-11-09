@@ -21,6 +21,60 @@ include("security_level_check.php");
 include("functions_external.php");
 include("selections.php");
 
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+
+
+
+
+
+//___________________
+
+$temp3 = _("bWAPP - ClickJacking"); // echo($temp3) Кликджекинг
+$temp4 = _("an extremely buggy web app !");
+$temp5 = _("New user");// echo($temp5) Новый пользователь
+$temp6 = _("Information");// echo($temp6) Информация
+$temp7 = _("Training");//  echo($temp7) Тренировочные задания
+$temp8 = _("Blog");///  echo($temp8) Блог
+$temp9 =  _("Enter your credentials");//echo($temp9) Введите ваши данные
+$temp10 =  _("password");// echo($temp10)        Пароль
+$temp11 = _("Check security_level");//echo($temp11)        Установите уровень безопасности:
+$temp12 =  _("low");//echo($temp12)   низкий
+$temp13 =  _("middle");//echo($temp12)   средний
+$temp14 =  _("high");// echo($temp14)   высокий
+$temp15 =  _("Bugs");// echo($temp15)   баги
+$temp16 =  _("Change Password");// echo($temp16)   Изменить пароль
+$temp17 =  _("Create User");// echo($temp17)   Создать пользователя
+$temp18 =  _("Set Security Level");// echo($temp18)   Установить уровень безопасности
+$temp19 =  _("Reset");// echo($temp19)   Сбросить
+$temp20 =  _("Credits");// echo($temp20)   Контактные данные
+$temp21 =  _("Logout");// echo($temp21)   Выйти из аккаунта
+$temp22 =  _("Welcome");// echo($temp22)   Добро пожаловать
+$temp23 =  _("Broken Auth. - Password Attacks");// echo($temp23)   атаки на пароль
+$temp24 =  _("Login:");// echo($temp24)   Логин
+$temp25 =  _("Password:");// echo($temp25)   Пароль
+$temp26 =  _("Re-enter CAPTCHA:");// echo($temp26)   Повторно введите капчу
+$temp27 =  _("Login");// echo($temp27)   Логин
+$temp28 =  _("bWAPP is licensed under");// echo($temp28)   Лицензия БИВАП от
+$temp29 =  _("2014 MME BVBA / Follow");// echo($temp29)   2014 MME BVBA / Подписывайтесь
+$temp30 =  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp30)   
+$temp31 =  _("training");// echo($temp31)   Тренировка
+$temp32 =  _("Set your security level:");// echo($temp32)   Введите Ваш уровень безопасности
+$temp33 =  _("medium");// echo($temp33)   средний
+$temp34 =  _("Set");// echo($temp34)   Установить
+$temp35 =  _("Current:");// echo($temp35)   Текущий
+$temp36 =  _("Enter your credentials.");// echo($temp36)   Введите Ваши данные
+$temp37 =  _("ClickJacking (Movie Tickets)");// echo($temp37)   Кликджекинг (Билеты в кино)
+$temp38 =  _("How many movie tickets would you like to order?");// echo($temp38)   
+$temp39 =  _("HINT: open the evil");// echo($temp39)  Подсказка: откройте зло
+$temp40 =  _("only");// echo($temp40)   Только
+$temp41 =  _("I would like to order");// echo($temp41) Мне хотелось бы заказать
+$temp42 =  _("EUR per ticket");// echo($temp42) 
+$temp43 =  _("tickets.");// echo($temp43) билетов
+$temp44 =  _("ClickJacking page");// echo($temp44) Кликджекинг страница
+$temp45 =  _("in a new tab...");// echo($temp45) в новой вкладке...
+$temp46 =  _("Confirm");// echo($temp46) Подтвердить
+
 if($_COOKIE["security_level"] == "1" or $_COOKIE["security_level"] == "2")
 {
 
@@ -44,7 +98,7 @@ $ticket_price = 15;
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title>bWAPP - ClickJacking</title>
+<title><?php echo($temp3) ?></title>
 
 </head>
 
@@ -54,7 +108,7 @@ $ticket_price = 15;
 
 <h1>bWAPP</h1>
 
-<h2>an extremely buggy web app !</h2>
+<h2><?php echo($temp4) ?></h2>
 
 </header>
 
@@ -64,15 +118,15 @@ $ticket_price = 15;
 
         <tr>
 
-            <td><a href="portal.php">Bugs</a></td>
-            <td><a href="password_change.php">Change Password</a></td>
-            <td><a href="user_extra.php">Create User</a></td>
-            <td><a href="security_level_set.php">Set Security Level</a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');">Reset</a></td>
-            <td><a href="credits.php">Credits</a></td>
-            <td><a href="http://itsecgames.blogspot.com" target="_blank">Blog</a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a></td>
-            <td><font color="red">Welcome <?php if(isset($_SESSION["login"])){if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);};}?></font></td>
+            <td><a href="portal.php"><?php echo($temp15) ?></a></td>
+            <td><a href="password_change.php"><?php echo($temp16) ?></a></td>
+            <td><a href="user_extra.php"><?php echo($temp17) ?></a></td>
+            <td><a href="security_level_set.php"><?php echo($temp18) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp19) ?></a></td>
+            <td><a href="credits.php"><?php echo($temp20) ?></a></td>
+            <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp21) ?></a></td>
+            <td><font color="red"><?php echo($temp22) ?> <?php if(isset($_SESSION["login"])){if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);};}?></font></td>
 
         </tr>
 
@@ -82,19 +136,19 @@ $ticket_price = 15;
 
 <div id="main">
 
-    <h1>ClickJacking (Movie Tickets)</h1>
+    <h1><?php echo($temp37) ?></h1>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <p>How many movie tickets would you like to order? (<?php echo $ticket_price ?> EUR per ticket)</p>
+        <p><?php echo($temp38) ?>(<?php echo $ticket_price ?> <?php echo($temp42) ?>)</p>
 
-        <p>I would like to order <input type="text" name="ticket_quantity" value="10" size="2"> tickets.</p>
+        <p><?php echo($temp41) ?> <input type="text" name="ticket_quantity" value="10" size="2"> <?php echo($temp43) ?></p>
 
-        <p>HINT: open the evil <a href="../evil/clickjacking.htm" target="_blank">ClickJacking page</a> in a new tab...</p>
+        <p><?php echo($temp39) ?> <a href="../evil/clickjacking.htm" target="_blank"><?php echo($temp44) ?></a> <?php echo($temp45) ?></p>
 
         <br />
 
-        <button type="submit" name="action" value="order">Confirm</button>
+        <button type="submit" name="action" value="order"><?php echo($temp46) ?></button>
 
     </form>
 
@@ -130,7 +184,7 @@ if(isset($_REQUEST["ticket_quantity"]))
 
 <div id="disclaimer">
 
-    <p>bWAPP is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; 2014 MME BVBA / Follow <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive <a href="http://www.mmebvba.com" target="_blank">training</a>?</p>
+    <p><?php echo($temp28) ?> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo($temp29) ?> <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> <?php echo($temp30) ?> <a href="http://www.mmebvba.com" target="_blank"><?php echo($temp31) ?></a>?</p>
 
 </div>
 
@@ -144,18 +198,18 @@ if(isset($_REQUEST["ticket_quantity"]))
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <label>Set your security level:</label><br />
+        <label><?php echo($temp32) ?></label><br />
 
         <select name="security_level">
 
-            <option value="0">low</option>
-            <option value="1">medium</option>
-            <option value="2">high</option>
+            <option value="0"><?php echo($temp12) ?></option>
+            <option value="1"><?php echo($temp33) ?></option>
+            <option value="2"><?php echo($temp14) ?></option>
 
         </select>
 
-        <button type="submit" name="form_security_level" value="submit">Set</button>
-        <font size="4">Current: <b><?php echo $security_level?></b></font>
+        <button type="submit" name="form_security_level" value="submit"><?php echo($temp34) ?></button>
+        <font size="4"><?php echo($temp35) ?> <b><?php echo $security_level?></b></font>
 
     </form>
 
