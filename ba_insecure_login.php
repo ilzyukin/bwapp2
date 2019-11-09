@@ -25,7 +25,6 @@ $temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES")
 
 
 
-
 //___________________
 
 switch($_COOKIE["security_level"])

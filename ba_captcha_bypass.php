@@ -150,7 +150,7 @@ if(isset($_POST["form"]))
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title> <?php echo $temp3 ?> </title>
+<title> <?php echo($temp3) ?> </title>
 
 </head>
 
@@ -160,7 +160,7 @@ if(isset($_POST["form"]))
 
 <h1>bWAPP</h1>
 
-<h2> <?php echo $temp4 ?> </h2>
+<h2> <?php echo($temp4) ?> </h2>
 
 </header>
 
@@ -170,15 +170,15 @@ if(isset($_POST["form"]))
 
         <tr>
 
-            <td><a href="portal.php"><?php echo $temp15 ?></a></td>
-            <td><a href="password_change.php"><?php echo $temp16 ?></a></td>
-            <td><a href="user_extra.php"><?php echo $temp17 ?></a></td>
-            <td><a href="security_level_set.php"><?php echo $temp18 ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo $temp19 ?></a></td>
-            <td><a href="credits.php"><?php echo $temp20 ?></a></td>
-            <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo $temp8 ?></a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo $temp21 ?></a></td>
-            <td><font color="red"><?php echo $temp22 ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
+            <td><a href="portal.php"><?php echo($temp15) ?></a></td>
+            <td><a href="password_change.php"><?php echo($temp16) ?></a></td>
+            <td><a href="user_extra.php"><?php echo($temp17) ?></a></td>
+            <td><a href="security_level_set.php"><?php echo($temp18) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp19) ?></a></td>
+            <td><a href="credits.php"><?php echo($temp20) ?></a></td>
+            <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp21) ?></a></td>
+            <td><font color="red"><?php echo($temp22) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>
 
@@ -188,24 +188,24 @@ if(isset($_POST["form"]))
 
 <div id="main">
 
-    <h1><?php echo $temp23 ?></h1>
+    <h1><?php echo($temp23) ?></h1>
 
-    <p><?php echo $temp9 ?> <i>(bee/bug)</i>.</p>
+    <p><?php echo($temp9) ?> <i>(bee/bug)</i>.</p>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <p><label for="login"><?php echo $temp24 ?></label><br />
+        <p><label for="login"><?php echo($temp24) ?></label><br />
         <input type="text" id="login" name="login" size="20" autocomplete="off" /></p>
 
-        <p><label for="password"><?php echo $temp25 ?></label><br />
+        <p><label for="password"><?php echo($temp25) ?></label><br />
         <input type="password" id="password" name="password" size="20" autocomplete="off" /></p>
 
         <p><iframe src="captcha_box.php" scrolling="no" frameborder="0" height="70" width="350"></iframe></p>
 
-        <p><label for="captcha_user"><?php echo $temp26 ?></label><br />
+        <p><label for="captcha_user"><?php echo($temp26) ?></label><br />
         <input type="text" id="captcha_user" name="captcha_user" value="" autocomplete="off" /></p>
 
-        <button type="submit" name="form" value="submit"><?php echo $temp27 ?></button>
+        <button type="submit" name="form" value="submit"><?php echo($temp27) ?></button>
         
         &nbsp;&nbsp;&nbsp;<?php echo $message . "\n";?>
 
@@ -224,7 +224,7 @@ if(isset($_POST["form"]))
 
 <div id="disclaimer">
 
-    <p><?php echo $temp28 ?> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo $temp29 ?> <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> <?php echo $temp30 ?> <a href="http://www.mmebvba.com" target="_blank"><?php echo $temp31 ?></a>?</p>
+    <p><?php echo($temp28) ?> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo($temp29) ?> <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> <?php echo($temp30) ?> <a href="http://www.mmebvba.com" target="_blank"><?php echo($temp31) ?></a>?</p>
 
 </div>
 
@@ -238,18 +238,18 @@ if(isset($_POST["form"]))
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <label><?php echo $temp32 ?></label><br />
+        <label><?php echo($temp32) ?></label><br />
 
         <select name="security_level">
 
-            <option value="0"><?php echo $temp12 ?></option>
-            <option value="1"><?php echo $temp33 ?></option>
-            <option value="2"><?php echo $temp14 ?></option>
+            <option value="0"><?php echo($temp12) ?></option>
+            <option value="1"><?php echo($temp33) ?></option>
+            <option value="2"><?php echo($temp14) ?></option>
 
         </select>
 
-        <button type="submit" name="form_security_level" value="submit"><?php echo $temp34 ?></button>
-        <font size="4"><?php echo $temp35 ?> <b><?php echo $security_level?></b></font>
+        <button type="submit" name="form_security_level" value="submit"><?php echo($temp34) ?></button>
+        <font size="4"><?php echo($temp35) ?> <b><?php echo $security_level?></b></font>
 
     </form>
 
