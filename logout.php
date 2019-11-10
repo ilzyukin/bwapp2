@@ -32,5 +32,5 @@ setcookie("top_security_nossl", "", time()-3600, "/", "", false, false);
 setcookie("top_security_ssl", "", time()-3600, "/", "", false, false);
 
 header("Location: login.php");
-
+  
 ?>
