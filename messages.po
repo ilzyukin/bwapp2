@@ -421,3 +421,44 @@ msgstr "Сумма для перевода:"
 msgid "Thanks for your interest in bWAPP!"
 msgstr "Спасибо за Ваш интерес в Bwapp!"
 
+msgid "CSRF (Change Secret)" 
+msgstr "CSRF (Изменить секрет)" 
+
+msgid "Change your secret." 
+msgstr "Измените ваш секрет." 
+
+msgid "New secret:" 
+msgstr "Новый секрет:" 
+
+msgid "bWAPP - Missing Functional Level Access Control" 
+msgstr "BWAPP - Отсутствие контроля доступа к функциональному уровню" 
+
+msgid "Directory Traversal - Files" 
+msgstr "Обход каталогов - Файлы" 
+
+msgid "Directory Traversal - Directories" 
+msgstr "Обход каталогов - Каталоги" 
+
+msgid "bWAPP - Heartbleed Vulnerability" 
+msgstr "BWAPP - уязвимость Heartbleed (уязвимость в протоколе OpenSSL)" 
+
+msgid "Heartbleed Vulnerability" 
+msgstr "Уязвимость Heartbleed" 
+
+msgid "The Nginx web server is using a vulnerable OpenSSL version!" 
+msgstr "Веб-сервер Nginx использует уязвимую версию OpenSSL!" 
+
+msgid "HINT: login on port 8443 and launch the" 
+msgstr "ПОДСКАЗКА: зайдите на порт 8443 и запустите" 
+
+msgid "attack script" 
+msgstr "сценарий атаки" 
+
+msgid "bWAPP - Host Header Attacks" 
+msgstr "BWAPP - Атаки заголовка хоста" 
+
+msgid "Host Header Attack (Cache Poisoning)" 
+msgstr "Атака заголовка хоста (отравление кэша)" 
+
+msgid "to go back to the portal." 
+msgstr "чтобы вернуться к порталу."
