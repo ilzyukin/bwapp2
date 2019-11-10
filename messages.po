@@ -418,4 +418,6 @@ msgid "Amount to transfer:"
 msgstr "Сумма для перевода:"
 
 
+msgid "Thanks for your interest in bWAPP!"
+msgstr "Спасибо за Ваш интерес в Bwapp!"
 
