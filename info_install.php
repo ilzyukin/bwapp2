@@ -15,6 +15,39 @@ Twitter: @MME_IT
 bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (http://creativecommons.org/licenses/by-nc-nd/4.0/). Copyright © 2014 MME BVBA. All rights reserved.
 
 */
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+//___________________
+
+$temp3 = _("bWAPP - Info"); // echo($temp3) BWAPP - Информация
+$temp4 = _("an extremely buggy web app !");
+$temp5 = _("Install");// echo($temp5) Новый пользователь
+$temp6 = _("Info");// echo($temp6) Информация
+$temp7 = _("Talks & Training");//  echo($temp7) Разговоры & Обучение
+$temp8 = _("Blog");///  echo($temp8) Блог
+$temp9 = _("bWAPP, or a");//echo($temp9) 
+$temp10 =  _("buggy web application");// echo($temp10)        
+$temp11 =  _(", is a free and open source deliberately insecure web application.");//echo($temp11)        
+$temp12 =  _("It helps security enthusiasts, developers and students to discover and to prevent web vulnerabilities.");//echo($temp12)   
+$temp13 =  _("bWAPP prepares one to conduct successful penetration testing and ethical hacking projects.");//echo($temp12)   
+$temp14 =  _("What makes bWAPP so unique? Well, it has over 100 web vulnerabilities!");// echo($temp14)   
+$temp15 =  _("It covers all major known web bugs, including all risks from the ");// echo($temp15)   
+$temp16 =  _("OWASP");// echo($temp16)  
+$temp17 =  _("Top 10 project.");// echo($temp17)   
+$temp18 =  _("bWAPP is a PHP application that uses a MySQL database. It can be hosted on Linux, Windows and Mac with Apache/IIS and MySQL. It can also be installed with WAMP or XAMPP.");// echo($temp18)   
+$temp19 =  _("Another possibility is to download the");// echo($temp19)   
+$temp20 =  _(", a custom Linux VM pre-installed with bWAPP.");// echo($temp20) 
+$temp21 =  _("Download our");// echo($temp21)  
+$temp22 =  _("What is bWAPP?");// echo($temp22)  
+$temp23 =  _("introduction tutorial, including free exercises...");// echo($temp23)   
+$temp24 =  _("bWAPP is for educational purposes. Education, the most powerful weapon which we can use to change the world. Have fun with this free and open source project!");// echo($temp24)   
+$temp25 =  _("Cheers, Malik Mesellem");// echo($temp25)  
+$temp26 =  _("Re-enter CAPTCHA:");// echo($temp26)   Повторно введите капчу
+$temp27 =  _("Login");// echo($temp27)   Логин
+$temp28 =  _("bWAPP is licensed under");// echo($temp28)   Лицензия БИВАП от
+$temp29 =  _("2014 MME BVBA / Follow");// echo($temp29)   2014 MME BVBA / Подписывайтесь
+$temp30 =  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp30)   
+$temp31 =  _("training");// echo($temp31)   Тренировка
 
 ?>
 <!DOCTYPE html>
@@ -31,7 +64,7 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title>bWAPP - Info</title>
+<title>?php echo($temp3) ?></title>
 
 </head>
 
@@ -41,7 +74,7 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 
 <h1>bWAPP</h1>
 
-<h2>an extremely buggy web app !</h2>
+<h2><?php echo($temp4) ?></h2>
 
 </header>
 
@@ -51,10 +84,10 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 
         <tr>
 
-            <td><a href="install.php">Install</a></td>
-            <td><font color="#ffb717">Info</font></td>
-            <td><a href="training_install.php">Talks & Training</a></td>
-            <td><a href="http://itsecgames.blogspot.com" target="_blank">Blog</a></td>
+            <td><a href="install.php"><?php echo($temp5) ?></a></td>
+            <td><font color="#ffb717"><?php echo($temp6) ?></font></td>
+            <td><a href="training_install.php"><?php echo($temp7) ?></a></td>
+            <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
 
         </tr>
 
@@ -64,25 +97,23 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 
 <div id="main">
 
-    <h1>Info</h1>
+    <h1><?php echo($temp6) ?></h1>
 
-    <p>bWAPP, or a <i>buggy web application</i>, is a free and open source deliberately insecure web application.<br />
-    It helps security enthusiasts, developers and students to discover and to prevent web vulnerabilities.<br />
-    bWAPP prepares one to conduct successful penetration testing and ethical hacking projects.</p>
+    <p><?php echo($temp9) ?> <i><?php echo($temp10) ?></i><?php echo($temp11) ?><br />
+    <?php echo($temp12) ?><br />
+    <?php echo($temp13) ?></p>
 
-    <p>What makes bWAPP so unique? Well, it has over 100 web vulnerabilities!<br />
-    It covers all major known web bugs, including all risks from the <a href="http://www.owasp.org" target="blank">OWASP</a> Top 10 project.</p>
+    <p><?php echo($temp14) ?><br />
+    <?php echo($temp15) ?> <a href="http://www.owasp.org" target="blank"><?php echo($temp16) ?></a> <?php echo($temp17) ?></p>
 
-    <p>bWAPP is a PHP application that uses a MySQL database. It can be hosted on Linux, Windows and Mac with Apache/IIS and MySQL.
-    It can also be installed with WAMP or XAMPP.<br />
-    Another possibility is to download the <i>bee-box</i>, a custom Linux VM pre-installed with bWAPP.</p>
+    <p><?php echo($temp18) ?><br />
+    <?php echo($temp19) ?> <i>bee-box</i><?php echo($temp20) ?></p>
 
-    <p>Download our <a href="http://goo.gl/uVBGnq" target="_blank">What is bWAPP?</a> introduction tutorial, including free exercises...</p>
+    <p><?php echo($temp21) ?> <a href="http://goo.gl/uVBGnq" target="_blank"><?php echo($temp22) ?></a> <?php echo($temp23) ?></p>
 
-    <p>bWAPP is for educational purposes. Education, the most powerful weapon which we can use to change the world.
-    Have fun with this free and open source project!</p>
+    <p><?php echo($temp24) ?></p>
 
-    <p>Cheers, Malik Mesellem</p>
+    <p><?php echo($temp25) ?></p>
 
 </div>
 
@@ -97,7 +128,7 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 
 <div id="disclaimer">
 
-    <p>bWAPP is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; 2014 MME BVBA / Follow <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive <a href="http://www.mmebvba.com" target="_blank">training</a>?</p>
+    <p><?php echo($temp28) ?> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo($temp29) ?> <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> <?php echo($temp30) ?> <a href="http://www.mmebvba.com" target="_blank"><?php echo($temp31) ?></a>?</p>
 
 </div>
 
