@@ -172,7 +172,6 @@ msgstr "Тони Старк"
 msgid "I am Iron Man"  
 msgstr "Я - железный человек"
 
-
 msgid "bWAPP - New User"  
 msgstr "BWAPP - новый пользователь"
 
@@ -185,10 +184,8 @@ msgstr "Обсуждение и тренировка"
 msgid "Create a new user."  
 msgstr "Создать нового пользователя"
 
-
 msgid "Re-type password:"  
 msgstr "Повторите пароль"
-
 
 msgid "Secret"  
 msgstr "Секретное слово"
@@ -197,27 +194,20 @@ msgstr "Секретное слово"
 msgid "E-mail activation:"  
 msgstr "Активация емэйл"
 
-
 msgid "Create"  
 msgstr "Создание"
-
 
 msgid "A.I.M., or Authentication Is Missing, is a no-authentication mode that can be used for testing web scanners and crawlers."  
 msgstr "A.I.M., or Authentication Is Missing, безауттонтификационный способоб, используемый для тестирования веб-приложений и поисковиков."
 
-
 msgid "Steps to crawl all pages, and to detect all vulnerabilities without authentication:"  
 msgstr "Шаги для того, чтобы обнаружить все страницы и уязвиомсти без аутентификации"
-
-
 
 msgid "1. Change the IP address in the settings file (admin/settings.php) to your IP address:"  
 msgstr "1. Изменить ip адрес в настроечном файле (admin/settings.php) на свой"
 
-
 msgid "2. Point your web scanner, crawler or attack tool to this URL:"  
 msgstr "2. Перейдите по данному URL"
-
 
 msgid "3. Push the button: all hell breaks loose..."  
 msgstr "3. Нажмите кнопку....."
@@ -234,13 +224,11 @@ msgstr "Секретная фраза"
 msgid "REnter the correct passphrase to unlock the secret."  
 msgstr "Повторите секретную фразу, чтобы разблокировать пароль"
 
-
 msgid "Broken Auth. - Logout Management"  
 msgstr "Прерванная аутентификация  - управление выходом"
 
 msgid "Click"  
 msgstr "Нажмите"
-
 
 msgid "here"  
 msgstr "на кнопку"
@@ -341,7 +329,6 @@ msgstr "ПИНГ"
 msgid "bWAPP - Credits"
 msgstr "BWAPP - Контактные данные"
 
-
 msgid "O yeah... who am I? Well my name is Malik. I'm a security consultant working for my own company,"
 msgstr "О да... кто я такой? Ну меня зовут Малик. Я консультант по безопасности, работаю в своей компании,"
 
@@ -417,7 +404,6 @@ msgstr "Счет для перевода:"
 msgid "Amount to transfer:"
 msgstr "Сумма для перевода:"
 
-
 msgid "Thanks for your interest in bWAPP!"
 msgstr "Спасибо за Ваш интерес в Bwapp!"
 
@@ -462,3 +448,44 @@ msgstr "Атака заголовка хоста (отравление кэша)
 
 msgid "to go back to the portal." 
 msgstr "чтобы вернуться к порталу."
+
+msgid "Host Header Attack (Reset Poisoning)" 
+msgstr "Атака заголовка хоста (сброс отправления)"
+
+msgid "Enter your e-mail to reset and change your secret." 
+msgstr "Введите свой адрес электронной почты, чтобы сбросить и изменить секрет."
+
+msgid "bWAPP - HTTP Parameter Pollution" 
+msgstr "BWAPP - Загрязнение границ HTTP-параметров (НРР)"
+
+msgid "HTTP Parameter Pollution" 
+msgstr "Загрязнение границ HTTP-параметров (НРР)"
+
+msgid "In order to vote for your favorite movie, your name must be entered:" 
+msgstr "Для того, чтобы проголосовать за ваш любимый фильм, необходимо ввести ваше имя:"
+
+msgid "Title" 
+msgstr "Название"
+
+msgid "Release" 
+msgstr "Выпуск"
+
+msgid "Continue" 
+msgstr "Продолжить"
+
+msgid "Character" 
+msgstr "Персонаж"
+
+msgid "Genre" 
+msgstr "Жанр"
+
+msgid "Vote" 
+msgstr "Голосование"
+
+msgid "bWAPP - HTML Injection" 
+msgstr "BWAPP - HTML инъекция"
+
+msgid "HTML Injection - Reflected (URL)" 
+msgstr "HTML инъекция - Отраженный (URL)"
+
+
