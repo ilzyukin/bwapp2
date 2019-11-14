@@ -101,10 +101,10 @@ msgid "Current password:"
 msgstr "Текущий пароль"
 
 msgid "New password:"  
-msgstr "Новый пароль"
+msgstr "Новый пароль:"
 
 msgid "Re-type new password:"  
-msgstr "Введите новый пароль повторно"
+msgstr "Введите новый пароль повторно:"
 
 msgid "bWAPP is licensed under"  
 msgstr "Лицензия БИВАП от"
@@ -185,7 +185,7 @@ msgid "Create a new user."
 msgstr "Создать нового пользователя"
 
 msgid "Re-type password:"  
-msgstr "Повторите пароль"
+msgstr "Повторите пароль:"
 
 msgid "Secret"  
 msgstr "Секретное слово"
@@ -488,4 +488,71 @@ msgstr "BWAPP - HTML инъекция"
 msgid "HTML Injection - Reflected (URL)" 
 msgstr "HTML инъекция - Отраженный (URL)"
 
+msgid "HTML Injection - Reflected (GET)" 
+msgstr "HTML инъекция - Отраженный (GET)"
 
+msgid "Enter your first and last name:" 
+msgstr "Введите свои имя и фамилию:"
+
+msgid "First name:" 
+msgstr "Имя:"
+
+msgid "Last name:" 
+msgstr "Фамилия:"
+
+msgid "Go" 
+msgstr "Войти"
+
+msgid "HTML Injection - Reflected (POST)" 
+msgstr "HTML инъекция - Отраженный (POST)"
+
+msgid "HTML Injection - Stored (Blog)" 
+msgstr "HTML инъекция - Сохраненный (Блог)"
+
+msgid "Submit" 
+msgstr "Подтвердить"
+
+msgid "Add:" 
+msgstr "Добавить:"
+
+msgid "Show all:" 
+msgstr "Показать все:"
+
+msgid "Delete:" 
+msgstr "Удалить:"
+
+msgid "Owner" 
+msgstr "Владелец"
+
+msgid "Date" 
+msgstr "Дата"
+
+msgid "Entry" 
+msgstr "Вход"
+
+msgid "bWAPP - HTTP Response Splitting" 
+msgstr "BWAPP - Расщепление HTTP-запроса"
+
+msgid "HTTP Response Splitting" 
+msgstr "Расщепление HTTP-запроса"
+
+msgid "Try to get the" 
+msgstr "Попробуйте получить"
+
+msgid "new line detected" 
+msgstr "новую строку обнаруженного"
+
+msgid "warning..." 
+msgstr "предупреждения..."
+
+msgid "Visit our" 
+msgstr "Посетите наш"
+
+msgid "blog" 
+msgstr "блог"
+
+msgid "bWAPP - HTTP Verb Tampering" 
+msgstr "BWAPP - HTTP Verb Фальсификация"
+
+msgid "HTTP Verb Tampering" 
+msgstr "HTTP Verb Фальсификация"
