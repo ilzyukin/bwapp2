@@ -36,5 +36,5 @@ array("tickets_stock" => "xsd:integer"),
 $HTTP_RAW_POST_DATA = isset($HTTP_RAW_POST_DATA) ? $HTTP_RAW_POST_DATA : "";
 // Calls the service. The web request is passed to the service from the $HTTP_RAW_POST_DATA variable.
 $server->service($HTTP_RAW_POST_DATA);
-
+  
 ?>

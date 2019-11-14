@@ -630,3 +630,26 @@ msgid "Information Disclosure - Headers"
 msgstr "Раскрытие информации-Заголовки"
 
 
+
+
+
+
+
+
+msgid "bWAPP - Security Misconfiguration" 
+msgstr "bWAPP - неправильная настройка безопасности"
+
+msgid "Cross-Site Tracing (XST)" 
+msgstr "Трассировка между сайтами (XST)"
+
+msgid "bee-box only" 
+msgstr "только bee-box"
+
+msgid "Cookie stealing is possible using XST, even if the HTTPOnly flag is set." 
+msgstr "Кража cookie возможна с использованием XST, даже если установлен флаг HTTPOnly."
+msgid "HINT: try to" 
+msgstr "ЦЕЛЬ: попытаться "
+msgid "steal the session cookie using XSS. Modern browsers aret not vulnerable..." 
+msgstr "украсть файл cookie сеанса с помощью XSS. Современные браузеры не уязвимы...."
+
+

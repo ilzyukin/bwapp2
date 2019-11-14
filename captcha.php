@@ -55,6 +55,8 @@ imagettftext($image, 20, 0, 75, 38, $orange, $font, $captcha);
 header ("Content-type: image/png");
 imagepng($image);
 
+
+
 // Cleans up after yourself
 imagedestroy($image)
 

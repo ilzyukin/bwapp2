@@ -197,6 +197,49 @@ if(isset($_REQUEST["install"]) && $_REQUEST["install"] == "yes")
     $db = 1;
 
     $link->close();
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+
+
+$temp3 = _("bWAPP - Installation"); // echo($temp3) BWAPP - Атаки заголовка хоста 
+
+$temp4 = _("an extremely buggy web app !");
+$temp5 = _("New user");// echo($temp5) Новый пользователь
+$temp6 = _("Information");// echo($temp6) Информация
+$temp7 = _("Training");//  echo($temp7) Тренировочные задания
+$temp8 = _("Blog");///  echo($temp8) Блог
+$temp9 =  _("Talks & Training");//echo($temp9) Введите ваши данные
+$temp10 =  _("password");// echo($temp10)        Пароль
+$temp11 = _("Check security_level");//echo($temp11)        Установите уровень безопасности:
+$temp12 =  _("low");//echo($temp12)   низкий
+$temp13 =  _("middle");//echo($temp12)   средний
+$temp14 =  _("high");// echo($temp14)   высокий
+$temp15 =  _("Bugs");// echo($temp15)   баги
+$temp16 =  _("Change Password");// echo($temp16)   Изменить пароль
+$temp17 =  _("Create User");// echo($temp17)   Создать пользователя
+$temp18 =  _("Set Security Level");// echo($temp18)   Установить уровень безопасности
+$temp19 =  _("Reset");// echo($temp19)   Сбросить
+$temp20 =  _("Credits");// echo($temp20)   Контактные данные
+$temp21 =  _("Logout");// echo($temp21)   Выйти из аккаунта
+$temp22 =  _("Welcome");// echo($temp22)   Добро пожаловать
+$temp23 =  _("Broken Auth. - Password Attacks");// echo($temp23)   атаки на пароль
+$temp24 =  _("Login:");// echo($temp24)   Логин
+$temp25 =  _("Password:");// echo($temp25)   Пароль
+$temp26 =  _("Re-enter CAPTCHA:");// echo($temp26)   Повторно введите капчу
+$temp27 =  _("Login");// echo($temp27)   Логин
+$temp28 =  _("bWAPP is licensed under");// echo($temp28)   Лицензия БИВАП от
+$temp29 =  _("2014 MME BVBA / Follow");// echo($temp29)   2014 MME BVBA / Подписывайтесь
+$temp30 =  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp30)   
+$temp31 =  _("training");// echo($temp31)   Тренировка
+$temp32 =  _("Set your security level:");// echo($temp32)   Введите Ваш уровень безопасности
+$temp33 =  _("medium");// echo($temp33)   средний
+$temp34 =  _("Set");// echo($temp34)   Установить
+$temp35 =  _("Current:");// echo($temp35)   Текущий
+$temp36 =  _("Enter your credentials.");// echo($temp36)   Введите Ваши данные
+$temp37 =  _("Host Header Attack (Cache Poisoning)");// echo($temp37)  Атака заголовка хоста (отравление кэша)
+$temp38 =  _("Click");// echo($temp38)  Нажмите
+$temp39 =  _("here");// echo($temp39)   на нопку / сюда
+$temp40 =  _("Installation");// echo($temp40)   чтобы вернуться к порталу.
 
 }
 
@@ -215,7 +258,7 @@ if(isset($_REQUEST["install"]) && $_REQUEST["install"] == "yes")
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title>bWAPP - Installation</title>
+<title><?php echo($temp3) ?></title>
 
 </head>
 
@@ -225,7 +268,7 @@ if(isset($_REQUEST["install"]) && $_REQUEST["install"] == "yes")
 
 <h1>bWAPP</h1>
 
-<h2>an extremely buggy web app !</h2>
+<h2><?php echo($temp4) ?></h2>
 
 </header>
 
@@ -241,11 +284,11 @@ if(isset($_REQUEST["install"]) && $_REQUEST["install"] == "yes")
         {
 
         ?>
-            <td><a href="login.php">Login</a></td>
-            <td><a href="user_new.php">New User</a></td>
-            <td><a href="info.php">Info</a></td>
-			<td><a href="training.php">Talks & Training</a></td>
-            <td><a href="http://itsecgames.blogspot.com" target="_blank">Blog</a></td>
+            <td><a href="login.php"><?php echo($temp24) ?></a></td>
+            <td><a href="user_new.php"><?php echo($temp5) ?></a></td>
+            <td><a href="info.php"><?php echo($temp6) ?></a></td>
+			<td><a href="training.php"><?php echo($temp9) ?></a></td>
+            <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
         <?php
 
         }
@@ -254,10 +297,10 @@ if(isset($_REQUEST["install"]) && $_REQUEST["install"] == "yes")
 
         ?>
  
-            <td><font color="#ffb717">Install</font></td>
-            <td><a href="info_install.php">Info</a></td>
-			<td><a href="training_install.php">Talks & Training</a></td>
-            <td><a href="http://itsecgames.blogspot.com" target="_blank">Blog</a></td>
+            <td><font color="#ffb717"><?php echo($temp40) ?></font></td>
+            <td><a href="info_install.php"><?php echo($temp6) ?></a></td>
+			<td><a href="training_install.php"><?php echo($temp9) ?></a></td>
+            <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
         <?php
 
         }
@@ -271,7 +314,7 @@ if(isset($_REQUEST["install"]) && $_REQUEST["install"] == "yes")
 
 <div id="main">
 
-    <h1>Installation</h1>
+    <h1><?php echo($temp40) ?></h1>
 
     <p><?php echo $message?></p>
 
@@ -288,7 +331,7 @@ if(isset($_REQUEST["install"]) && $_REQUEST["install"] == "yes")
 
 <div id="disclaimer">
 
-    <p>bWAPP is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; 2014 MME BVBA / Follow <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive <a href="http://www.mmebvba.com" target="_blank">training</a>?</p>
+    <p><?php echo($temp28) ?> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo($temp29) ?> <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> <?php echo($temp30) ?> <a href="http://www.mmebvba.com" target="_blank"><?php echo($temp31) ?></a>?</p>
 
 </div>
     
