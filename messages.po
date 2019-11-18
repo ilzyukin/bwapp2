@@ -629,6 +629,9 @@ msgstr "Раскрытие информации-Версия PHP"
 msgid "Information Disclosure - Headers" 
 msgstr "Раскрытие информации-Заголовки"
 
+msgid "Information Disclosure - Robots File" 
+msgstr "Раскрытие информации- Индексный файл"
+
 
 
 
