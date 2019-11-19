@@ -649,7 +649,11 @@ msgid "Cookie stealing is possible using XST, even if the HTTPOnly flag is set."
 msgstr "Кража cookie возможна с использованием XST, даже если установлен флаг HTTPOnly."
 msgid "HINT: try to" 
 msgstr "ЦЕЛЬ: попытаться "
+
 msgid "steal the session cookie using XSS. Modern browsers aret not vulnerable..." 
 msgstr "украсть файл cookie сеанса с помощью XSS. Современные браузеры не уязвимы...."
 
+
+msgid "bWAPP has been installed successfully!" 
+msgstr "bWAPP успешно установлен"
 
