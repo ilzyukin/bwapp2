@@ -15,7 +15,8 @@ Twitter: @MME_IT
 bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (http://creativecommons.org/licenses/by-nc-nd/4.0/). Copyright © 2014 MME BVBA. All rights reserved.
 
 */
-
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
 $message = "Click <a href=\"install.php?install=yes\">here</a> to install bWAPP.";
 $db = 0;
 
@@ -190,15 +191,14 @@ if(isset($_REQUEST["install"]) && $_REQUEST["install"] == "yes")
         }
 
 
-        $message = "bWAPP has been installed successfully!";
+        $message = _("bWAPP has been installed successfully!)";
 
     }
 
     $db = 1;
 
     $link->close();
-$temp = setlocale(LC_ALL, "ru_RU.utf8");
-$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+
 
 
 $temp3 = _("bWAPP - Installation"); // echo($temp3) BWAPP - Атаки заголовка хоста 
