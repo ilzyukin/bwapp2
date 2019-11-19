@@ -184,11 +184,9 @@ msgstr "Я - железный человек"
 msgid "bWAPP - New User"  
 msgstr "BWAPP - новый пользователь"
 
-msgid "Info"  
-msgstr "Информация"
 
-msgid "Talks & Training"  
-msgstr "Обсуждение и тренировка"
+
+
 
 msgid "Create a new user."  
 msgstr "Создать нового пользователя"
@@ -383,8 +381,7 @@ msgstr "BWAPP - Валидация на стороне клиента"
 msgid "Client-Side Validation (Password)"
 msgstr "Валидация на стороне клиента (Пароль)"
 
-msgid "Please change your password"
-msgstr "Пожалуйста, измените свой пароль"
+
 
 msgid "Change"
 msgstr "Изменить"
