@@ -179,7 +179,7 @@ if(isset($_POST["form"]))
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title><?php echo  $temp2 ?></title>
+<title><?php echo  ($temp2)W ?></title>
 
 </head>
 
@@ -219,10 +219,10 @@ if(isset($_POST["form"]))
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <p><label for="login"><?php echo($temp4): ?></label><br />
+        <p><label for="login"><?php echo($temp4) ?></label><br />
         <input type="text" id="login" name="login" size="20" autocomplete="off"></p> 
 
-        <p><label for="password"><?php echo($temp6): ?></label><br />
+        <p><label for="password"><?php echo($temp6) ?></label><br />
         <input type="password" id="password" name="password" size="20" autocomplete="off"></p>
 
         <p><label for="security_level"><?php echo($temp11) ?></label><br />

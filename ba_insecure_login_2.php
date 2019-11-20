@@ -274,7 +274,7 @@ function unlock_secret()
             <td><a href="password_change.php"><?php echo($temp6) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp7) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp8) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php _echo("Reset") ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo("Reset") ?></a></td>
             <td><a href="credits.php"><?php echo($temp9) ?></a></td>
             <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp10) ?></a></td>
             <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp11) ?></a></td>
@@ -294,7 +294,7 @@ function unlock_secret()
 
     <form>
 
-        <p><label for="name"><?php echo($temp15) ?></label><font color="white"><?php echo($temp16) ?></font><br />
+        <p><label for="name"></label><font color="white"><?php echo($temp16) ?></font><br />
         <input type="text" id="name" name="name" size="20" value="brucebanner" /></p>
 
         <p><label for="passphrase"><?php echo($temp17) ?>:</label><br />
