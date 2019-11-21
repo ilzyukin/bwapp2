@@ -30,7 +30,7 @@ $temp10 =  _("Blog");// echo($temp10)        Пароль
 $temp11 = _("Logout");//echo($temp11)        Установите уровень безопасности:
 $temp12 =  _("Broken Auth. - Insecure Login Forms");//echo($temp12)   низкий
 $temp13 =  _("REnter the correct passphrase to unlock the secret.");//echo($temp12)   средний
-$temp14 =  _("Name:");// echo($temp14)   высокий
+$temp14 =  _("Reset");// echo($temp14)   высокий
 $temp15 =  _("brucebanner");//echo($temp12)   низкий
 $temp16 =  _("Passphrase");//echo($temp12)   средний
 $temp17 =  _("bWAPP is licensed under");// echo($temp14)   высокий
@@ -117,7 +117,7 @@ include("selections.php");
             <td><a href="password_change.php"><?php echo($temp6) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp7) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp8) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo("Reset") ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp14) ?></a></td>
             <td><a href="credits.php"><?php echo($temp9) ?></a></td>
             <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp10) ?></a></td>
             <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp11) ?></a></td>
