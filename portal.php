@@ -1,5 +1,7 @@
 <?php
-
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+$reuslt3 = textdomain("messages");
 /*
 
 bWAPP, or a buggy web application, is a free and open source deliberately insecure web application.
@@ -15,7 +17,48 @@ Twitter: @MME_IT
 bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (http://creativecommons.org/licenses/by-nc-nd/4.0/). Copyright © 2014 MME BVBA. All rights reserved.
 
 */
+//___________________
+$temp3 = _("bWAPP - Broken Authentication");
 
+$temp4 = _("an extremely buggy web app !");// echo($temp4) Логин
+$temp6 = _("Bugs");// echo($temp5) Новый пользователь
+$temp5 = _("Change Password");// echo($temp6) Информация
+$temp7 = _("Create User");//  echo($temp7) Тренировочные задания
+$temp8 = _("Set Security Level");///  echo($temp8) Блог
+$temp9 =  _("Credits");//echo($temp9) Введите ваши данные
+$temp10 =  _("Blog");// echo($temp10)        Пароль
+$temp11 = _("Logout");//echo($temp11)        Установите уровень безопасности:
+$temp12 =  _("Broken Auth. - Insecure Login Forms");//echo($temp12)   низкий
+$temp13 =  _("REnter the correct passphrase to unlock the secret.");//echo($temp12)   средний
+$temp14 =  _("Name:");// echo($temp14)   высокий
+$temp15 =  _("brucebanner");//echo($temp12)   низкий
+$temp16 =  _("Passphrase");//echo($temp12)   средний
+$temp17 =  _("bWAPP is licensed under");// echo($temp14)   высокий
+$temp18 =  _("2014 MME BVBA / Follow");//echo($temp12)   средний
+$temp19 =  _("@MME_IT");//echo($temp12)   средний
+$temp20=  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp14)   высокий
+$temp21 =  _("training");//echo($temp12)   средний
+$temp22 =  _("Set your security level:");//echo($temp12)   средний
+$temp23 =  _("low");//echo($temp12)   средний
+$temp24 =  _("medium");//echo($temp12)   средний
+$temp25 =  _("high");//echo($temp12)   средний
+$temp26 =  _("Set");//echo($temp12)   средний
+$temp27 =  _("Current:");//echo($temp12)   средний
+
+
+$temp28 =  _("bWAPP - Portal");//echo($temp12)   средний
+$temp29 =  _("bWAPP");//echo($temp12)   средний
+$temp30 =  _("bWAPP, or a buggy web application, is a free and open source deliberately insecure web application.");//echo($temp12)   средний
+$temp31 =  _("It helps security enthusiasts, developers and students to discover and to prevent web vulnerabilities.");//echo($temp12)   средний
+$temp32 =  _("bWAPP covers all major known web vulnerabilities, including all risks from the OWASP Top 10 project!");//echo($temp12)   средний
+$temp33 =  _("It is for security-testing and educational purposes only");//echo($temp12)   средний
+$temp34 =  _("Which bug do you want to hack today? :)");//echo($temp12)   средний
+$temp35 =  _("bWAPP");//echo($temp12)   средний
+$temp36 =  _("Hack");//echo($temp12)   средний
+
+
+
+//___________________
 include("security.php");
 include("security_level_check.php");
 include("selections.php");
@@ -50,7 +93,7 @@ include("selections.php");
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title>bWAPP - Portal</title>
+<title><?php echo($temp28) ?></title>
 
 </head>
 
@@ -58,9 +101,9 @@ include("selections.php");
 
 <header>
 
-<h1>bWAPP</h1>
+<h1><?php echo($temp29) ?></h1>
 
-<h2>an extremely buggy web app !</h2>
+<h2><?php echo($temp4) ?></h2>
 
 </header>
 
@@ -70,15 +113,15 @@ include("selections.php");
 
         <tr>
 
-            <td><font color="#ffb717">Bugs</font></td>
-            <td><a href="password_change.php">Change Password</a></td>
-            <td><a href="user_extra.php">Create User</a></td>
-            <td><a href="security_level_set.php">Set Security Level</a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');">Reset</a></td>
-            <td><a href="credits.php">Credits</a></td>
-            <td><a href="http://itsecgames.blogspot.com" target="_blank">Blog</a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a></td>
-            <td><font color="red">Welcome <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
+            <td><a href="portal.php"><?php echo($temp5) ?></a></td>
+            <td><a href="password_change.php"><?php echo($temp6) ?></a></td>
+            <td><a href="user_extra.php"><?php echo($temp7) ?></a></td>
+            <td><a href="security_level_set.php"><?php echo($temp8) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo("Reset") ?></a></td>
+            <td><a href="credits.php"><?php echo($temp9) ?></a></td>
+            <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp10) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp11) ?></a></td>
+            <td><font color="red"><?php echo($temp12) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>
 
@@ -88,14 +131,14 @@ include("selections.php");
 
 <div id="main">
 
-    <h1>Portal</h1>
+    <h1><?php echo($temp28) ?></h1>
 
-    <p>bWAPP, or a buggy web application, is a free and open source deliberately insecure web application.<br />
-    It helps security enthusiasts, developers and students to discover and to prevent web vulnerabilities.<br />
-    bWAPP covers all major known web vulnerabilities, including all risks from the OWASP Top 10 project!<br />
-    It is for security-testing and educational purposes only.</p>
+    <p><?php echo($temp30) ?><br />
+    <?php echo($temp31) ?><br />
+    <?php echo($temp32) ?><br />
+    <?php echo($temp33) ?></p>
 
-    <p><i>Which bug do you want to hack today? :)</i></p>
+    <p><i><?php echo($temp34) ?></i></p>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
@@ -161,7 +204,7 @@ include("selections.php");
 
 <div id="disclaimer">
 
-    <p>bWAPP is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; 2014 MME BVBA / Follow <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive <a href="http://www.mmebvba.com" target="_blank">training</a>?</p>
+    <p><?php echo($temp18) ?> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo($temp19) ?> <a href="http://twitter.com/MME_IT" target="_blank"><?php echo($temp20) ?></a> <?php echo($temp20) ?><a href="http://www.mmebvba.com" target="_blank"><?php echo($temp21) ?></a>?</p>
 
 </div>
 
@@ -173,20 +216,20 @@ include("selections.php");
 
 <div id="security_level">
 
-    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
+   <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <label>Set your security level:</label><br />
+        <label><?php echo($temp22) ?></label><br />
 
         <select name="security_level">
 
-            <option value="0">low</option>
-            <option value="1">medium</option>
-            <option value="2">high</option>
+            <option value="0"><?php echo($temp23) ?></option>
+            <option value="1"><?php echo($temp24) ?></option>
+            <option value="2"><?php echo($temp25) ?></option>
 
         </select>
 
-        <button type="submit" name="form_security_level" value="submit">Set</button>
-        <font size="4">Current: <b><?php echo $security_level?></b></font>
+        <button type="submit" name="form_security_level" value="submit"><?php echo($temp261) ?></button>
+        <font size="4"><?php echo($temp27) ?>: <b><?php echo $security_level?></b></font>
 
     </form>
 

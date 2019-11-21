@@ -629,13 +629,6 @@ msgstr "Раскрытие информации-Заголовки"
 msgid "Information Disclosure - Robots File" 
 msgstr "Раскрытие информации- Индексный файл"
 
-
-
-
-
-
-
-
 msgid "bWAPP - Security Misconfiguration" 
 msgstr "bWAPP - неправильная настройка безопасности"
 
@@ -654,6 +647,30 @@ msgid "steal the session cookie using XSS. Modern browsers aret not vulnerable..
 msgstr "украсть файл cookie сеанса с помощью XSS. Современные браузеры не уязвимы...."
 
 
-msgid "bWAPP has been installed successfully!" 
-msgstr "bWAPP успешно установлен"
+msgid "bWAPP - Portal" 
+msgstr "bWAPP портал"
+
+msgid "bWAPP, or a buggy web application, is a free and open source deliberately insecure web application." 
+msgstr "bWAPP, или веб-приложение с ошибками, является намеренно незащищенным веб-приложением с открытым исходным кодом."
+
+msgid "It helps security enthusiasts, developers and students to discover and to prevent web vulnerabilities." 
+msgstr "Он помогает энтузиастам безопасности, разработчикам и студентам обнаруживать и предотвращать веб-уязвимости."
+
+msgid "bWAPP covers all major known web vulnerabilities, including all risks from the OWASP Top 10 project!" 
+msgstr "bWAPP покрывает все основные известные веб-уязвимости, включая все риски, связанные с проектом OWASP Top 10!"
+
+msgid "It is for security-testing and educational purposes only" 
+msgstr "Он создан только для тестирования безопасности и образовательных целей"
+
+msgid "Which bug do you want to hack today? :)" 
+msgstr "Что будем взламывать сегодня ? :) "
+
+msgid "Hack" 
+msgstr "Взломать"
+
+msgid "Which bug do you want to hack today? :)" 
+msgstr "Что будем взламывать сегодня ? :) "
+
+msgid "Which bug do you want to hack today? :)" 
+msgstr "Что будем взламывать сегодня ? :) "
 
