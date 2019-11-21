@@ -136,7 +136,7 @@ include("selections.php");
     <p><?php echo($temp30) ?><br />
     <?php echo($temp31) ?><br />
     <?php echo($temp32) ?><br />
-    <?php echo($temp33) ?></p>
+    </p>
 
     <p><i><?php echo($temp34) ?></i></p>
 
