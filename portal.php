@@ -170,7 +170,7 @@ include("selections.php");
 
         <br />
 
-        <button type="submit" name="form" value="submit">Hack</button>
+        <button type="submit" name="form" value="submit"><?php echo($temp36); ?></button>
 
     </form>
 
