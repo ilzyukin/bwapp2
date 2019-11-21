@@ -1,4 +1,4 @@
-SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright  C  YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
@@ -668,9 +668,5 @@ msgstr "Что будем взламывать сегодня ? :) "
 msgid "Hack" 
 msgstr "Взломать"
 
-msgid "Which bug do you want to hack today? :)" 
-msgstr "Что будем взламывать сегодня ? :) "
 
-msgid "Which bug do you want to hack today? :)" 
-msgstr "Что будем взламывать сегодня ? :) "
 
