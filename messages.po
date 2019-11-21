@@ -653,8 +653,7 @@ msgstr "bWAPP портал"
 msgid "bWAPP, or a buggy web application, is a free and open source deliberately insecure web application." 
 msgstr "bWAPP, или веб-приложение с ошибками, является намеренно незащищенным веб-приложением с открытым исходным кодом."
 
-msgid "It helps security enthusiasts, developers and students to discover and to prevent web vulnerabilities." 
-msgstr "Он помогает энтузиастам безопасности, разработчикам и студентам обнаруживать и предотвращать веб-уязвимости."
+
 
 msgid "bWAPP covers all major known web vulnerabilities, including all risks from the OWASP Top 10 project!" 
 msgstr "bWAPP покрывает все основные известные веб-уязвимости, включая все риски, связанные с проектом OWASP Top 10!"
