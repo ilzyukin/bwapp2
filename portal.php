@@ -114,7 +114,7 @@ include("selections.php");
         <tr>
 
             <td><a href="portal.php"><?php echo("Portal"); ?></a></td>
-            <td><a href="password_change.php"><?php ec5ho($temp5) ?></a></td>
+            <td><a href="password_change.php"><?php echo($temp5) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp7) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp8) ?></a></td>
             <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp14) ?></a></td>
