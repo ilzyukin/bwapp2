@@ -179,7 +179,7 @@ if(isset($_POST["form"]))
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title><?php echo  ($temp2)W ?></title>
+<title><?php echo  ($temp2) ?></title>
 
 </head>
 
