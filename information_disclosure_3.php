@@ -244,18 +244,18 @@ if(is_file($file))
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <label>Set your security level:</label><br />
+        <label><?php echo($temp18) ?></label><br />
 
         <select name="security_level">
 
-            <option value="0">low</option>
-            <option value="1">medium</option>
-            <option value="2">high</option>
+            <option value="0"><?php echo($temp12) ?></option>
+            <option value="1"><?php echo($temp13) ?></option>
+            <option value="2"><?php echo($temp14) ?></option>
 
         </select>
 
-        <button type="submit" name="form_security_level" value="submit">Set</button>
-        <font size="4">Current: <b><?php echo $security_level?></b></font>
+        <button type="submit" name="form_security_level" value="submit"><?php echo($temp34) ?></button>
+        <font size="4"><?php echo($temp35) ?><b><?php echo $security_level?></b></font>
 
     </form>
 

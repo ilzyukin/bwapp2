@@ -667,5 +667,7 @@ msgstr "Что будем взламывать сегодня ? :) "
 msgid "Hack" 
 msgstr "Взломать"
 
+msgid "Information Disclosure - Favicon" 
+msgstr "Раскрытие информации- Фавикон"
 
 
