@@ -667,5 +667,15 @@ msgstr "Что будем взламывать сегодня ? :) "
 msgid "Hack" 
 msgstr "Взломать"
 
+msgid "Information Disclosure - Favicon" 
+msgstr "Раскрытие информации- Фавикон"
 
+msgid "HTML5 Web Storage (Secret)" 
+msgstr "Веб-хранилище HTML5 (Секретное)"
+
+msgid "Your login name and secret have been stored as HTML5 web storage!" 
+msgstr "Ваш логин и секрет были сохранены как веб-хранилище HTML5!"
+
+msgid "HINT: try to grab it using XSS..." 
+msgstr "СОВЕТ: попробуйте захватить его с помощью XSS ..."
 
