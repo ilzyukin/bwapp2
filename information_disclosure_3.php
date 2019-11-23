@@ -137,7 +137,7 @@ switch($_COOKIE["security_level"])
 
             <td><a href="portal.php"><?php echo($temp15) ?></a></td>
             <td><a href="password_change.php"><?php echo($temp16) ?></a></td>
-            <td><a href="user_extra.php">Create User</a></td>
+            <td><a href="user_extra.php"><?php echo($temp17) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp18) ?></a></td>
             <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp19) ?></a></td>
             <td><a href="credits.php"><?php echo($temp20) ?></a></td>
