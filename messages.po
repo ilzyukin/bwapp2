@@ -771,3 +771,30 @@ msgstr "Больше информации:"
 
 msgid "Exploiting The SSL 3.0 Fallback" 
 msgstr "Использование резервной версии SSL 3.0"
+
+msgid "bWAPP - Sensitive Data Exposure" 
+msgstr "BWAPP - Незащищенность критичных данных"
+
+msgid "Insuff. Transport Layer Protection" 
+msgstr "Недостаточная защита транспортного уровня"
+
+msgid "bWAPP is for educational purposes only / Follow" 
+msgstr "bWAPP предназначен только для образовательных целей / Подписывайтесь"
+
+msgid "bWAPP - LDAP Connection Settings" 
+msgstr "BWAPP - Настройки подключения LDAP"
+
+msgid "LDAP Connection Settings" 
+msgstr "Настройки подключения LDAP"
+
+msgid "Configure your LDAP connection settings (requires the PHP LDAP extension)." 
+msgstr "Настройте параметры подключения LDAP (требуется расширение PHP LDAP)."
+
+msgid "The credentials will be sent in clear text!" 
+msgstr "Учетные данные будут отправлены в виде открытого текста!"
+
+msgid "Server:" 
+msgstr "Сервер:"
+
+msgid "Base DN:" 
+msgstr "База поиска:"
