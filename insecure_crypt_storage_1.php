@@ -25,7 +25,7 @@ include("connect_i.php");
 $temp = setlocale(LC_ALL, "ru_RU.utf8");
 $temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
 
-$temp3 = _("bWAPP - Information Disclosure"); // echo($temp3) BWAPP - Раскрытие информации
+$temp3 = _("bWAPP - Sensitive Data Exposure");
 $temp4 = _("an extremely buggy web app !");
 $temp5 = _("New user");// echo($temp5) Новый пользователь
 $temp6 = _("Information");// echo($temp6) Информация

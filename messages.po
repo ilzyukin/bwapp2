@@ -798,3 +798,57 @@ msgstr "Сервер:"
 
 msgid "Base DN:" 
 msgstr "База поиска:"
+
+msgid "bWAPP - LDAP Injection"
+msgstr "BWAPP - LDAP инъекция"
+
+msgid "LDAP Injection (Search)"
+msgstr "LDAP инъекция (Поиск)"
+
+msgid "Search for a user account:"
+msgstr "Поиск учетной записи пользователя:"
+
+msgid "LDAP Connection Setting"
+msgstr "Настройка соединения LDAP"
+
+msgid "bWAPP - SQLiteManager Local File Inclusion"
+msgstr "bWAPP - Локальное включение файлов SQLiteManager"
+
+msgid "SQLiteManager Local File Inclusion"
+msgstr "Локальное включение файлов SQLiteManager"
+
+msgid "version"
+msgstr "Версия"
+
+msgid "is vulnerable to Local File Inclusion! "
+msgstr "уязвима для локального включения файлов!"
+
+msgid "HINT: I love "
+msgstr "ПОДСКАЗКА: Я люблю"
+
+msgid "bWAPP - Mail Header Injection"
+msgstr "bWAPP - Инъекция заголовка почты"
+
+msgid "Mail Header Injection (SMTP)"
+msgstr "Инъекция заголовка почты (SMTP)"
+
+msgid "E-mail us your questions at "
+msgstr "Напишите нам свои вопросы на"
+
+msgid "Remarks:"
+msgstr "Примечания:"
+
+msgid "bWAPP - Manual Intervention Required!"
+msgstr "bWAPP - требуется ручное вмешательство!"
+
+msgid "Manual Intervention Required!"
+msgstr "требуется ручное вмешательство!"
+
+msgid "Pass the CAPTCHA before proceeding to"
+msgstr "Передайте CAPTCHA, прежде чем перейти"
+
+msgid "Re-enter CAPTCHA:"
+msgstr "Повторно введите CAPTCHA:"
+
+msgid "Proceed"
+msgstr "Продолжить"
