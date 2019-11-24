@@ -120,7 +120,7 @@ else
 
 </script>
 
-<title><?php echo($temp4) ?></title>
+<title><?php echo($temp3) ?></title>
 
 </head>
 
@@ -130,7 +130,7 @@ else
 
 <h1>bWAPP</h1>
 
-<h2><?php echo($temp3) ?></h2>
+<h2><?php echo($temp4) ?></h2>
 
 </header>
 

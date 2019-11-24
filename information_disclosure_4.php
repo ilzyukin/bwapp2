@@ -107,7 +107,7 @@ switch($_COOKIE["security_level"])
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title><?php echo($temp4) ?></title>
+<title><?php echo($temp3) ?></title>
 
 </head>
 
@@ -117,7 +117,7 @@ switch($_COOKIE["security_level"])
 
 <h1>bWAPP</h1>
 
-<h2><?php echo($temp3) ?></h2>
+<h2><?php echo($temp4) ?></h2>
 
 </header>
 

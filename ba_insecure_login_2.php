@@ -294,10 +294,10 @@ function unlock_secret()
 
     <form>
 
-        <p><label for="name"></label><font color="white"><?php echo($temp16) ?></font><br />
+        <p><label for="name"></label><font color="white"><?php echo($temp15) ?></font><br />
         <input type="text" id="name" name="name" size="20" value="brucebanner" /></p>
 
-        <p><label for="passphrase"><?php echo($temp17) ?>:</label><br />
+        <p><label for="passphrase"><?php echo($temp16) ?>:</label><br />
         <input type="password" id="passphrase" name="passphrase" size="20" /></p>
 
         <input type="button" name="button" value="Unlock" onclick="unlock_secret()" /><br />
@@ -319,7 +319,7 @@ function unlock_secret()
 
 <div id="disclaimer">
 
-    <p><?php echo($temp18) ?> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo($temp19) ?> <a href="http://twitter.com/MME_IT" target="_blank"><?php echo($temp20) ?></a> <?php echo($temp20) ?><a href="http://www.mmebvba.com" target="_blank"><?php echo($temp21) ?></a>?</p>
+    <p><?php echo($temp17) ?> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo($temp18) ?> <a href="http://twitter.com/MME_IT" target="_blank"><?php echo($temp19) ?></a> <?php echo($temp20) ?><a href="http://www.mmebvba.com" target="_blank"><?php echo($temp21) ?></a>?</p>
 
 </div>
 
@@ -343,7 +343,7 @@ function unlock_secret()
 
         </select>
 
-        <button type="submit" name="form_security_level" value="submit"><?php echo($temp261) ?></button>
+        <button type="submit" name="form_security_level" value="submit"><?php echo($temp26) ?></button>
         <font size="4"><?php echo($temp27) ?>: <b><?php echo $security_level?></b></font>
 
     </form>

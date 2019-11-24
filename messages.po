@@ -184,10 +184,6 @@ msgstr "Я - железный человек"
 msgid "bWAPP - New User"  
 msgstr "BWAPP - новый пользователь"
 
-
-
-
-
 msgid "Create a new user."  
 msgstr "Создать нового пользователя"
 
@@ -196,7 +192,6 @@ msgstr "Повторите пароль:"
 
 msgid "Secret"  
 msgstr "Секретное слово"
-
 
 msgid "E-mail activation:"  
 msgstr "Активация емэйл"
@@ -380,8 +375,6 @@ msgstr "BWAPP - Валидация на стороне клиента"
 
 msgid "Client-Side Validation (Password)"
 msgstr "Валидация на стороне клиента (Пароль)"
-
-
 
 msgid "Change"
 msgstr "Изменить"
@@ -646,13 +639,11 @@ msgstr "ЦЕЛЬ: попытаться "
 msgid "steal the session cookie using XSS. Modern browsers aret not vulnerable..." 
 msgstr "украсть файл cookie сеанса с помощью XSS. Современные браузеры не уязвимы...."
 
-
 msgid "bWAPP - Portal" 
 msgstr "bWAPP портал"
 
 msgid "bWAPP, or a buggy web application, is a free and open source deliberately insecure web application." 
 msgstr "bWAPP, или веб-приложение с ошибками, является намеренно незащищенным веб-приложением с открытым исходным кодом."
-
 
 
 msgid "bWAPP covers all major known web vulnerabilities, including all risks from the OWASP Top 10 project!" 
@@ -678,4 +669,52 @@ msgstr "Ваш логин и секрет были сохранены как в�
 
 msgid "HINT: try to grab it using XSS..." 
 msgstr "СОВЕТ: попробуйте захватить его с помощью XSS ..."
+
+msgid "bWAPP - Sensitive Data Exposure" 
+msgstr "BWAPP - Незащищенность критичных данных"
+
+msgid "Text Files (Accounts)" 
+msgstr "Текстовые файлы (Учетные записи)"
+
+msgid "Insert a new account into a text file:" 
+msgstr "Вставьте новую учетную запись в текстовый файл:"
+
+msgid "Username:" 
+msgstr "Имя пользователя:"
+
+msgid "Please enter both fields..." 
+msgstr "Пожалуйста заполните оба поля..."
+
+msgid "Download" 
+msgstr "Скачать"
+
+msgid "the file." 
+msgstr "файл."
+
+msgid "Delete" 
+msgstr "Удалить"
+
+msgid "Base64 Encoding (Secret)" 
+msgstr "Кодировка Base64 (Секретная)"
+
+msgid "Your secret has been stored as an encrypted cookie!" 
+msgstr "Ваш секрет был сохранен в виде зашифрованного файла cookie!"
+
+msgid "HINT: try to decrypt it..." 
+msgstr "ПОДСКАЗКА: попробуйте расшифровать его..."
+
+msgid "bWAPP - Insecure DOR" 
+msgstr "BWAPP - Небезопасные прямые ссылки на объекты"
+
+msgid "Insecure DOR (Change Secret)" 
+msgstr "Небезопасные прямые ссылки на объекты (Изменить секрет)"
+
+msgid "Insecure DOR (Order Tickets)" 
+msgstr "Небезопасные прямые ссылки на объекты (Заказ билетов)"
+
+msgid "Insecure DOR (Reset Secret)" 
+msgstr "Небезопасные прямые ссылки на объекты (Сбросить секрет)"
+
+msgid "Reset your secret to" 
+msgstr "Сбросьте свой секрет на"
 
