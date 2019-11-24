@@ -718,3 +718,56 @@ msgstr "Небезопасные прямые ссылки на объекты (
 msgid "Reset your secret to" 
 msgstr "Сбросьте свой секрет на"
 
+msgid "bWAPP - Insecure iFrame" 
+msgstr "BWAPP - Небезопасный плавающий фрейм (iFrame)"
+
+msgid "Insecure iFrame (Login Form)" 
+msgstr "Небезопасный плавающий фрейм (Форма входа)"
+
+msgid "bWAPP - Insufficient Transport Layer Protection" 
+msgstr "BWAPP - Недостаточная защита транспортного уровня"
+
+msgid "Clear Text HTTP (Credentials)" 
+msgstr "Открытый текст HTTP (Учетные данные)"
+
+msgid "SSL 2.0 Deprecated Protocol" 
+msgstr "SSL 2.0 устаревший протокол"
+
+msgid "The web server encrypts traffic using an old deprecated protocol with known weaknesses." 
+msgstr "Веб-сервер шифрует трафик, используя устаревший протокол с известными недостатками."
+
+msgid "Disable SSL 2.0, use SSL 3.0 or TLS 1.x instead!" 
+msgstr "Отключите SSL 2.0, используйте SSL 3.0 или TLS 1.x вместо этого!"
+
+msgid "HINT: test the SSL connection with the" 
+msgstr "ПОДСКАЗКА: проверьте SSL соединение с помощью"
+
+msgid "tool..." 
+msgstr "инструмента..."
+
+msgid "BEAST/CRIME/BREACH Attacks" 
+msgstr "Атаки на SSL/TLS - BEAST/CRIME/BREACH"
+
+msgid "The Lighttpd web server is vulnerable to the BEAST, CRIME and BREACH attacks." 
+msgstr "Веб-сервер Lighttpd уязвим для атак BEAST/CRIME/BREACH"
+
+msgid "Configure TLS 1.1 or above, disable SSL and HTTP compression!" 
+msgstr "Настройте протокол TLS 1.1 или выше, отключите сжатие SSL и HTTP!"
+
+msgid "HINT: test the SSL connection on port 9443 with the" 
+msgstr "ПОДСКАЗКА: проверьте SSL соединение на порту 9443 с помощью"
+
+msgid "POODLE Vulnerability" 
+msgstr "Уязвимость POODLE"
+
+msgid "The web server is vulnerable to the POODLE attack." 
+msgstr "Веб-сервер уязвим для атаки POODLE."
+
+msgid "If disabling SSLv3 is not an option, then consider implementing TLS_FALLBACK_SCSV." 
+msgstr "Если отключение SSLv3 не предоставляется возможным, то рассмотрите возможность реализации TLS_FALLBACK_SCSV."
+
+msgid "More info:" 
+msgstr "Больше информации:"
+
+msgid "Exploiting The SSL 3.0 Fallback" 
+msgstr "Использование резервной версии SSL 3.0"
