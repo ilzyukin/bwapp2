@@ -872,3 +872,6 @@ msgstr "Дальше"
 
 msgid "The current date on your computer is:"
 msgstr "Текущая дата на компьютере:"
+
+msgid "Search for a movie:"
+msgstr "Поиск фильма:"
