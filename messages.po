@@ -868,3 +868,7 @@ msgstr "Фамилия"
 
 msgid "Go"
 msgstr "Дальше"
+
+
+msgid "The current date on your computer is:"
+msgstr "Текущая дата на компьютере:"
