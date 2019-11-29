@@ -875,3 +875,18 @@ msgstr "Текущая дата на компьютере:"
 
 msgid "Search for a movie:"
 msgstr "Поиск фильма:"
+
+
+msgid "XSS - Reflected (Custom Header)"
+msgstr "Поиск фильма:"
+
+
+msgid "Some web clients use custom HTTP request headers..."
+msgstr "Некоторые веб-клиенты используют разнообразные HTTP заголовки:"
+
+
+msgid "Content of our"
+msgstr "Содержимое"
+
+msgid "headers"
+msgstr "заголовки"
