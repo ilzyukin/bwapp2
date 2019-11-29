@@ -225,7 +225,7 @@ function xss($data)
 
         </select>
 
-        <button type="submit" name="form_security_level" value="submit"><?php echo($temp261) ?></button>
+        <button type="submit" name="form_security_level" value="submit"><?php echo($temp26) ?></button>
         <font size="4"><?php echo($temp27) ?>: <b><?php echo $security_level?></b></font>
 
     </form>

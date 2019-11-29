@@ -2,7 +2,7 @@
 $temp = setlocale(LC_ALL, "ru_RU.utf8");
 $temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
 $reuslt3 = textdomain("messages");
-*/
+
 //___________________
 $temp3 = _("bWAPP - XSS");
 
@@ -225,7 +225,7 @@ function xss($data)
 
         </select>
 
-        <button type="submit" name="form_security_level" value="submit"><?php echo($temp261) ?></button>
+        <button type="submit" name="form_security_level" value="submit"><?php echo($temp26) ?></button>
         <font size="4"><?php echo($temp27) ?>: <b><?php echo $security_level?></b></font>
 
     </form>
