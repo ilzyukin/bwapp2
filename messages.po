@@ -852,3 +852,19 @@ msgstr "Повторно введите CAPTCHA:"
 
 msgid "Proceed"
 msgstr "Продолжить"
+
+msgid "XSS - Reflected (GET)"
+msgstr "XSS - Reflected (GET)"
+
+msgid "Enter your first and last name:"
+msgstr "Введите имя и фамилию"
+
+msgid "First name:"
+msgstr "Имя"
+
+msgid "Last name:"
+msgstr "Фамилия"
+
+
+msgid "Go"
+msgstr "Дальше"
