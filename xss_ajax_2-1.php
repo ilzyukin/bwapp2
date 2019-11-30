@@ -163,7 +163,7 @@ include("selections.php");
             }
             // Returns the created object or displays an error message
             if(!xmlHttp)
-                alert("Error creating the XMLHttpRequest object.");
+                alert("Ошибка создания XMLHttpRequest .");
             else
                 return xmlHttp;
         }
@@ -235,7 +235,7 @@ include("selections.php");
                 // A HTTP status different than 200 signals an error
                 else
                 {
-                    alert("There was a problem accessing the server: " + xmlHttp.statusText);
+                    alert("Ошибка доступа на сервер " + xmlHttp.statusText);
                 }
             }
         }
