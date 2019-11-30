@@ -178,22 +178,7 @@ include("selections.php");
 
 
 
-<div id="sponsor">
 
-    <table>
-
-        <tr>
-
-            <td width="103" align="center"><a href="https://www.owasp.org" target="_blank"><img src="./images/owasp.png"></a></td>
-            <td width="102" align="center"><a href="https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project" target="_blank"><img src="./images/zap.png"></a></td>
-            <td width="110" align="center"><a href="https://www.netsparker.com/?utm_source=bwappapp&utm_medium=banner&utm_campaign=bwapp" target="_blank"><img src="./images/netsparker.png"></a></td>
-            <td width="152" align="center"><a href="http://www.missingkids.com" target="_blank"><img src="./images/mk.png"></a></td>
-
-        </tr>
-
-    </table>
-
-</div>
 
 <div id="disclaimer">
 
@@ -207,7 +192,7 @@ include("selections.php");
 
 </div>
 
-<div id="security_level">
+<div id="security_level2">
 
    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
@@ -228,7 +213,7 @@ include("selections.php");
 
 </div>
 
-<?php require_once('_select_inc.php'); ?>
+<?php require_once('_2select_inc.php'); ?>
 
 </body>
 
