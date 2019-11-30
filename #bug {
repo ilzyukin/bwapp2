@@ -1,0 +1,21 @@
+#bug {
+        font-family: "Architects Daughter";
+        font-size: 20px;
+        font-weight: normal;
+        color: #000000;
+        position: absolute;
+        top: 430px;
+        right: 630px;
+        min-width: 430px;
+}
+
+#security_level {
+        font-family: "Architects Daughter";
+        font-size: 20px;
+        font-weight: normal;
+        color: #000000;
+        position: absolute;
+        top: 360px;
+        right: 630px;
+        min-width: 430px;
+}

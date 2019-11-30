@@ -2,19 +2,19 @@
 $bugs = file("bugs.txt");
 ?>
 <style>
-div#bug a {font-weight: bold; cursor: pointer;}
-#bug {bottom: 0; }
-#bug form {position: absolute; top: 0; bottom: 0; }
-#bug select.stretch {height: 80%; }
-#bug div {display: flex; height: 100%; align-items: flex-start;}
-#bug button {display: none;}
-#bug small {font-size: 70%}
+div#bug2 a {font-weight: bold; cursor: pointer;}
+#bug2 {bottom: 0; }
+#bug2 form {position: absolute; top: 0; bottom: 0; }
+#bug2 select.stretch {height: 80%; }
+#bug2 div {display: flex; height: 100%; align-items: flex-start;}
+#bug2 button {display: none;}
+#bug2 small {font-size: 70%}
 </style>
-<div id="bug" class="bugs">
+<div id="bug2" class="bugs">
 
   <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST" name="got_to_bug" target="_blank">
 
-    <label>Choose your bug: <small><input type="checkbox" id="new_tab" checked="checked"> open in new tab</small></label><br />
+    <label>Выберете баг: <small><input type="checkbox" id="new_tab" checked="checked"> открыть в новом окне</small></label><br />
     <div>
       <a id="prev_bug" title="Go to prev bug">«««</a>
       <select id="bug-select" name="bug" size="3">
@@ -41,7 +41,7 @@ div#bug a {font-weight: bold; cursor: pointer;}
 
 
       </select>
-      <a id="next_bug" title="Go to next bug">»»»</a>
+      <a id="next_bug" title="Перейти к следующему багу">»»»</a>
     </div>
     <button name="form_bug"></button>
 
