@@ -772,8 +772,7 @@ msgstr "Больше информации:"
 msgid "Exploiting The SSL 3.0 Fallback" 
 msgstr "Использование резервной версии SSL 3.0"
 
-msgid "bWAPP - Sensitive Data Exposure" 
-msgstr "BWAPP - Незащищенность критичных данных"
+
 
 msgid "Insuff. Transport Layer Protection" 
 msgstr "Недостаточная защита транспортного уровня"
@@ -847,8 +846,7 @@ msgstr "требуется ручное вмешательство!"
 msgid "Pass the CAPTCHA before proceeding to"
 msgstr "Передайте CAPTCHA, прежде чем перейти"
 
-msgid "Re-enter CAPTCHA:"
-msgstr "Повторно введите CAPTCHA:"
+
 
 msgid "Proceed"
 msgstr "Продолжить"
@@ -856,26 +854,17 @@ msgstr "Продолжить"
 msgid "XSS - Reflected (GET)"
 msgstr "XSS - Reflected (GET)"
 
-msgid "Enter your first and last name:"
-msgstr "Введите имя и фамилию"
-
-msgid "First name:"
-msgstr "Имя"
-
-msgid "Last name:"
-msgstr "Фамилия"
 
 
-msgid "Go"
-msgstr "Дальше"
+
+
+
+
+
 
 
 msgid "The current date on your computer is:"
 msgstr "Текущая дата на компьютере:"
-
-msgid "Search for a movie:"
-msgstr "Поиск фильма:"
-
 
 msgid "XSS - Reflected (Custom Header)"
 msgstr "Поиск фильма:"
