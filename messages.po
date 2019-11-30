@@ -124,6 +124,9 @@ msgstr "2014 MME BVBA / Подписывайтесь"
 msgid"on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive "
 msgstr "на мой Twitter и попросите нашу шпаргалку, содержащую все решения! / Нужна эксклюзивная"
 
+msgid"on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive"
+msgstr "на мой Twitter и попросите нашу шпаргалку, содержащую все решения! / Нужна эксклюзивная"
+
 msgid "training"  
 msgstr "тренировка"
 
@@ -854,21 +857,11 @@ msgstr "Продолжить"
 msgid "XSS - Reflected (GET)"
 msgstr "XSS - Reflected (GET)"
 
-
-
-
-
-
-
-
-
-
 msgid "The current date on your computer is:"
 msgstr "Текущая дата на компьютере:"
 
 msgid "XSS - Reflected (Custom Header)"
 msgstr "Поиск фильма:"
-
 
 msgid "Some web clients use custom HTTP request headers..."
 msgstr "Некоторые веб-клиенты используют разнообразные HTTP заголовки:"
