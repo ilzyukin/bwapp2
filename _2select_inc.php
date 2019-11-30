@@ -2,13 +2,13 @@
 $bugs = file("bugs.txt");
 ?>
 <style>
-div#bug a {font-weight: bold; cursor: pointer;}
-#bug {bottom: 0; }
-#bug form {position: absolute; top: 0; bottom: 0; }
-#bug select.stretch {height: 80%; }
-#bug div {display: flex; height: 100%; align-items: flex-start;}
-#bug button {display: none;}
-#bug small {font-size: 70%}
+div#bug2 a {font-weight: bold; cursor: pointer;}
+#bug2 {bottom: 0; }
+#bug2 form {position: absolute; top: 0; bottom: 0; }
+#bug2 select.stretch {height: 80%; }
+#bug2 div {display: flex; height: 100%; align-items: flex-start;}
+#bug2 button {display: none;}
+#bug2 small {font-size: 70%}
 </style>
 <div id="bug2" class="bugs">
 

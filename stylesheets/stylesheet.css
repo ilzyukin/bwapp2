@@ -293,7 +293,7 @@ header h2 {
         color: #000000;
         position: absolute;
         top: 430px;
-        right: 630px;
+       left: 15px;
         min-width: 430px;
 }
 
@@ -304,7 +304,7 @@ header h2 {
         color: #000000;
         position: absolute;
         top: 360px;
-        right: 630px;
+          left: 15px;
         min-width: 430px;
 }
 
