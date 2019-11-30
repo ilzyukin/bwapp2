@@ -90,16 +90,16 @@ if(isset($_GET["title"]) and $_GET["title"])
 
     // Generates the output depending on the movie title received from the client
     if(in_array(strtoupper($title), $movies))
-        $string = '{"movies":[{"response":"Yes! We have that movie..."}]}';
+        $string = '{"movies":[{"response":"ДА! Этот фильм есть!"}]}';
     else
-        $string = '{"movies":[{"response":"' . $title . '??? Sorry, we don&#039;t have that movie :("}]}';
+        $string = '{"movies":[{"response":"' . $title . '??? У нас нет этого фильма("}]}';
 
 }
 
 else
 {
 
-	$string = '{"movies":[{"response":"HINT: our master really loves Marvel movies :)"}]}';
+	$string = '{"movies":[{"response":"Цель: мы действительно любим фильмы Marvel"}]}';
 }
 
 ?>
