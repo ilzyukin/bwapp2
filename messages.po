@@ -872,3 +872,17 @@ msgstr "Содержимое"
 
 msgid "headers"
 msgstr "заголовки"
+
+
+msgid "XSS - Reflected (Back Button)"
+msgstr "Отраженный XSS (кнопка назад)"
+
+msgid "Click the button to go to back to the previous page:"
+msgstr "Нажмите на кнопку назад, чтобы перейти на предыдущую страницу"
+
+
+msgid "Enter your 'superhero' credentials."
+msgstr "Введите свои данные "
+
+msgid "The phpMyAdmin version fails to validate BBcode tags in the error.php script!"
+msgstr "Версии phpMyAdmin не удалось проверить тэги BBcodе в скрипте error.php"

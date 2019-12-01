@@ -255,7 +255,7 @@ function xss($data)
 
 <div id="main">
 
-    <h1>XSS - Reflected (Eval)</h1>
+    <h1>Отраженный XSS</h1>
 
     <p><?php echo($temp31 ); ?></p>
     <?php
@@ -269,7 +269,7 @@ function xss($data)
             if($_GET["date"] != "Date()")
             {
 
-                echo "<p><font color=\"red\">Invalid input detected!</font></p>";
+                echo "<p><font color=\"red\">Некорректный ввод!</font></p>";
 
             }
 
@@ -317,7 +317,7 @@ function xss($data)
     else
     {
 
-        echo "<p><font color=\"red\">Invalid input detected!</font></p>";
+        echo "<p><font color=\"red\">Некорректный ввод!</font></p>";
 
     }
 
