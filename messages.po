@@ -886,3 +886,25 @@ msgstr "Введите свои данные "
 
 msgid "The phpMyAdmin version fails to validate BBcode tags in the error.php script!"
 msgstr "Версии phpMyAdmin не удалось проверить тэги BBcodе в скрипте error.php"
+
+
+msgid "XSS - Stored (User-Agent)"
+msgstr "XSS - сохранненный (Юзер - агент 007)"
+
+msgid "Your IP address and User-Agent string have been logged into the database!"
+msgstr "Ваш IP адрес и юзер-агент были сохранены в базе данных!"
+
+
+msgid "log file)"
+msgstr "файл логов)"
+
+msgid "IP Address"
+msgstr "IP адрес"
+
+msgid "User-Agent"
+msgstr "Юзер агент"
+
+
+
+msgid "An overview of our latest visitors:"
+msgstr "Обзор последних посетителей:"

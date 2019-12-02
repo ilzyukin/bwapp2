@@ -34,13 +34,14 @@ $temp27 =  _("Current:");//echo($temp12)   средний
 
 $temp28 =  _("bWAPP - Portal");//echo($temp12)   средний
 $temp29 =  _("bWAPP");//echo($temp12)   средний
-$temp30 =  _("XSS - Reflected (Back Button)");//echo($temp12)   средний
-$temp31 =  _("Click the button to go to back to the previous page:");//echo($temp12)   средний
-$temp32 =  _("First name:");//echo($temp12)   средний
-$temp33 =  _("Last name:");//echo($temp12)   средний
-$temp34 =  _("Go");//echo($temp12)   средний
-$temp35 =  _("bWAPP");//echo($temp12)   средний
-$temp36 =  _("Hack");//echo($temp12)   средний
+$temp30 =  _("XSS - Stored (User-Agent)");//echo($temp12)   средний
+$temp31 =  _("Your IP address and User-Agent string have been logged into the database!");//echo($temp12)   средний
+$temp32 =  _("download");//echo($temp12)   средний
+$temp33 =  _("log file)");//echo($temp12)   средний
+$temp34 =  _("An overview of our latest visitors:");//echo($temp12)   средний
+$temp35 =  _("Date");//echo($temp12)   средний
+$temp36 =  _("IP Address");//echo($temp12)   средний
+$temp37 =  _("User-Agent");//echo($temp12)   средний
 /*
 
 bWAPP, or a buggy web application, is a free and open source deliberately insecure web application.
@@ -125,7 +126,7 @@ $recordset = $link->query($sql);
 if(!$recordset)
 {
 
-    die("Error: " . $link->error);
+    die("Ошибка: " . $link->error);
 
 }
 
@@ -183,19 +184,19 @@ if(!$recordset)
 
 <div id="main">
 
-    <h1>XSS - Stored (User-Agent)</h1>
+    <h1><?php echo($temp30) ?></h1>
 
-    <p>Your IP address and User-Agent string have been logged into the database! <font size="2">(<a href="logs/visitors.txt" target="_blank">download</a> log file)</font></p>
+    <p><?php echo($temp31) ?><font size="2">(<a href="logs/visitors.txt" target="_blank"><?php echo($temp32) ?></a> <?php echo($temp33) ?></font></p>
 
-    <p>An overview of our latest visitors:</p>
+    <p><?php echo($temp34) ?></p>
 
     <table id="table_yellow">
 
         <tr height="30" bgcolor="#ffb717" align="center">
 
-            <td width="100"><b>Date</b></td>
-            <td width="100"><b>IP Address</b></td>
-            <td width="465"><b>User-Agent</b></td>
+            <td width="100"><b><?php echo($temp35) ?></b></td>
+            <td width="100"><b><?php echo($temp36) ?></b></td>
+            <td width="465"><b><?php echo($temp37) ?></b></td>
 
         </tr>
 
@@ -235,7 +236,7 @@ $link->close();
 
 </div>
 
-div id="disclaimer">
+<div id="disclaimer">
 
     <p><?php echo($temp18) ?> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo($temp19) ?> <a href="http://twitter.com/MME_IT" target="_blank"><?php echo($temp20) ?></a> <?php echo($temp20) ?><a href="http://www.mmebvba.com" target="_blank"><?php echo($temp21) ?></a>?</p>
 
