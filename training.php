@@ -15,6 +15,52 @@ Twitter: @MME_IT
 bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (http://creativecommons.org/licenses/by-nc-nd/4.0/). Copyright © 2014 MME BVBA. All rights reserved.
 
 */
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+echo($temp);
+$reuslt3 = textdomain("messages");
+
+//___________________
+
+$temp3 = _("bWAPP - Talks & Training"); // Очень крутое веб-приложение!
+$temp4 = _("an extremely buggy web app !");// echo($temp4) Логин
+$temp6 = _("New user");// echo($temp5) Новый пользователь
+$temp5 = _("Login");// echo($temp6) Информация
+$temp7 = _("Info");//  echo($temp7) Тренировочные задания
+$temp8 = _("Talks & Training");///  echo($temp8) Блог
+$temp9 =  _("Blog");//echo($temp9) Введите ваши данные
+$temp10 =  _("Create a new user.");// echo($temp10)        Пароль
+$temp11= _("E-mail:");//echo($temp11)      
+$temp12=  _("password");//echo($temp12)   низкий
+$temp13 =  _("Re-type password:");//echo($temp12)   средний
+$temp14 =  _("Secret");// echo($temp14)   высокий
+$temp15=  _("E-mail activation:");//echo($temp12)   низкий
+$temp16 =  _("Create");//echo($temp12)   средний
+$temp17 =  _("Secret");// echo($temp14)   высокий
+$temp18=  _("bWAPP is licensed under");//echo($temp12)   низкий
+$temp19 =  _("2014 MME BVBA / Follow");//echo($temp12)   средний
+$temp20 =  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive ");// echo($temp14)   высокий
+$temp21 =  _("training");//echo($temp12)   средний
+$temp22= _("Registration");//echo($temp22) 
+
+$temp23=  _("We are happy to give bWAPP talks and workshops at your security convention or seminar!");
+$temp24 =  _("This year we were at");
+$temp25 =  _("B-Sides Orlando");
+$temp26 =  _("Infosecurity Belgium");
+$temp27= _("and the");
+
+$temp28 =  _("TDI Symposium");
+$temp29 =  _("Interested in hands-on skills training? We offer the following exclusive courses and workshops:");
+$temp30 =  _("Attacking & Defending Web Apps with bWAPP : 2-day Web Application Security course");
+$temp31= _("Plant the Flags with bWAPP : 4-hour offensive Web Application Hacking workshop");
+
+$temp32 =  _("Ethical Hacking Basics : 1-day Ethical Hacking course");
+$temp33 =  _("Ethical Hacking Advanced : 1-day comprehensive Ethical Hacking course");
+$temp34 =  _("Windows Server 2012 Security : 2-day Windows Security course");
+$temp35= _("All our courses and workshops can be scheduled on demand, at your location."); 
+
+$temp36 =  _("Don't hesitate to contact us for price information.");
+$temp37= _("Hope to see you soon!");
 
 ?>
 <!DOCTYPE html>
@@ -31,7 +77,7 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title>bWAPP - Talks & Training</title>
+<title><?php echo($temp3) ?></title>
 
 </head>
 
@@ -41,7 +87,7 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 
 <h1>bWAPP</h1>
 
-<h2>an extremely buggy web app !</h2>
+<h2><?php echo($temp4) ?></h2>
 
 </header>
 
@@ -51,11 +97,11 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 
         <tr>
 
-            <td><a href="login.php">Login</a></td>
-            <td><a href="user_new.php">New User</a></td>
-            <td><a href="info.php">Info</a></td>
-            <td><font color="#ffb717">Talks & Training</font></td>
-            <td><a href="http://itsecgames.blogspot.com" target="_blank">Blog</a></td>
+            <td><a href="login.php"><?php echo($temp5) ?></a></td>
+            <td><a href="user_new.php"><?php echo($temp6) ?></a></td>
+            <td><a href="info.php"><?php echo($temp7) ?></a></td>
+            <td><font color="#ffb717"><?php echo($temp8) ?></font></td>
+            <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp9) ?></a></td>
 
         </tr>
 
@@ -65,33 +111,33 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 
 <div id="main">
 
-    <h1>Talks & Training</h1>
+    <h1><?php echo($temp8) ?></h1>
 
-    <p>We are happy to give bWAPP talks and workshops at your security convention or seminar!<br />
-    This year we were at 
-    <a href="http://bsidesorlando.org/2014/malik-mesellem-what-is-bwapp-web-application-penetration-testing-with-bwapp" target="_blank">B-Sides Orlando</a>, 
-    <a href="http://www.infosecurity.be" target="_blank">Infosecurity Belgium</a>, 
-    <a href="http://www.sans.org/event/sans-2014/bonus-sessions/4407" target="_blank">SANS 2014</a>, and the 
-    <a href="http://trusteddigitalidentity.com/" target="_blank">TDI Symposium</a>.</p>
+    <p><?php echo($temp23) ?><br />
+    <?php echo($temp24) ?> 
+    <a href="http://bsidesorlando.org/2014/malik-mesellem-what-is-bwapp-web-application-penetration-testing-with-bwapp" target="_blank"><?php echo($temp25) ?></a>, 
+    <a href="http://www.infosecurity.be" target="_blank"><?php echo($temp26) ?></a>, 
+    <a href="http://www.sans.org/event/sans-2014/bonus-sessions/4407" target="_blank">SANS 2014</a>, <?php echo($temp27) ?> 
+    <a href="http://trusteddigitalidentity.com/" target="_blank"><?php echo($temp28) ?></a>.</p>
 
-    <p>Interested in hands-on skills training? We offer the following exclusive courses and workshops:
+    <p><?php echo($temp29) ?>
 
     <ul>
 
-        <li>Attacking & Defending Web Apps with bWAPP : 2-day Web Application Security course (<a href="http://goo.gl/ASuPa1" target="_blank">pdf</a>)</li>
-        <li>Plant the Flags with bWAPP : 4-hour offensive Web Application Hacking workshop (<a href="http://goo.gl/fAwCex" target="_blank">pdf</a>)</li>
-        <li>Ethical Hacking Basics : 1-day Ethical Hacking course (<a href="http://goo.gl/09ccSf" target="_blank">pdf</a>)</li>
-        <li>Ethical Hacking Advanced : 1-day comprehensive Ethical Hacking course (<a href="http://goo.gl/PHLnQF" target="_blank">pdf</a>)</li>
-        <li>Windows Server 2012 Security : 2-day Windows Security course (<a href="http://goo.gl/4C0JfW" target="_blank">pdf</a>)</li>
+        <li><?php echo($temp30) ?> (<a href="http://goo.gl/ASuPa1" target="_blank">pdf</a>)</li>
+        <li><?php echo($temp31) ?> (<a href="http://goo.gl/fAwCex" target="_blank">pdf</a>)</li>
+        <li><?php echo($temp32) ?> (<a href="http://goo.gl/09ccSf" target="_blank">pdf</a>)</li>
+        <li><?php echo($temp33) ?> (<a href="http://goo.gl/PHLnQF" target="_blank">pdf</a>)</li>
+        <li><?php echo($temp34) ?> (<a href="http://goo.gl/4C0JfW" target="_blank">pdf</a>)</li>
 
     </ul>
 
     </p>
 
-    <p>All our courses and workshops can be scheduled on demand, at your location.<br />
-    Don't hesitate to contact us for price information.</p>
+    <p><?php echo($temp35) ?><br />
+    <?php echo($temp36) ?></p>
 
-    <p>Hope to see you soon!</p>
+    <p><?php echo($temp37) ?></p>
 
 </div>
 
@@ -106,7 +152,7 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 
 <div id="disclaimer">
 
-    <p>bWAPP is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; 2014 MME BVBA / Follow <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive <a href="http://www.mmebvba.com" target="_blank">training</a>?</p>
+    <p><?php echo($temp18) ?> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo($temp19) ?><a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> <?php echo($temp20) ?> <a href="http://www.mmebvba.com" target="_blank"><?php echo($temp21) ?></a>?</p>
 
 </div>
 

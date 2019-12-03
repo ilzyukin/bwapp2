@@ -36,7 +36,7 @@ $temp16 =  _("Passphrase");//echo($temp12)   средний
 $temp17 =  _("bWAPP is licensed under");// echo($temp14)   высокий
 $temp18 =  _("2014 MME BVBA / Follow");//echo($temp12)   средний
 $temp19 =  _("@MME_IT");//echo($temp12)   средний
-$temp20=  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp14)   высокий
+$temp20=  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive ");// echo($temp14)   высокий
 $temp21 =  _("training");//echo($temp12)   средний
 $temp22 =  _("Set your security level:");//echo($temp12)   средний
 $temp23 =  _("low");//echo($temp12)   средний
@@ -55,7 +55,7 @@ $temp33 =  _("It is for security-testing and educational purposes only");//echo(
 $temp34 =  _("Which bug do you want to hack today? :)");//echo($temp12)   средний
 $temp35 =  _("bWAPP");//echo($temp12)   средний
 $temp36 =  _("Hack");//echo($temp12)   средний
-
+$temp37 =  _("Portal");//echo($temp12)   средний
 
 
 //___________________
@@ -113,7 +113,7 @@ include("selections.php");
 
         <tr>
 
-            <td><a href="portal.php"><?php echo("Portal"); ?></a></td>
+            <td><a href="portal.php"><?php echo($temp37) ?></a></td>
             <td><a href="password_change.php"><?php echo($temp5) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp7) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp8) ?></a></td>
@@ -206,7 +206,7 @@ include("selections.php");
 
         </select>
 
-        <button type="submit" name="form_security_level" value="submit"><?php echo($temp261) ?></button>
+        <button type="submit" name="form_security_level" value="submit"><?php echo($temp26) ?></button>
         <font size="4"><?php echo($temp27) ?>: <b><?php echo $security_level?></b></font>
 
     </form>

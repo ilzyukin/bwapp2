@@ -179,6 +179,9 @@ msgstr "Почта:"
 msgid "Forgot"  
 msgstr "Забыл свои данные"
 
+msgid "Registration"  
+msgstr "Регистрация"
+
 msgid "Broken Auth. - Insecure Login Forms"  
 msgstr "Небезопасные формы входа"
 
@@ -649,6 +652,9 @@ msgstr "украсть файл cookie сеанса с помощью XSS. Со�
 msgid "bWAPP - Portal" 
 msgstr "bWAPP портал"
 
+msgid "Portal" 
+msgstr "Портал"
+
 msgid "bWAPP, or a buggy web application, is a free and open source deliberately insecure web application." 
 msgstr "bWAPP, или веб-приложение с ошибками, является намеренно незащищенным веб-приложением с открытым исходным кодом."
 
@@ -912,3 +918,39 @@ msgstr "Юзер агент"
 
 msgid "An overview of our latest visitors:"
 msgstr "Обзор последних посетителей:"
+
+msgid "bWAPP - Talks & Training"
+msgstr "BWAPP - Обсуждение и обучение"
+
+msgid "We are happy to give bWAPP talks and workshops at your security convention or seminar!"
+msgstr "Мы будем рады провести переговоры и семинары bWAPP на вашей конференции или семинаре по безопасности!"
+
+msgid "This year we were at"
+msgstr "В этом году мы были на"
+
+msgid "B-Sides Orlando"
+msgstr "B-Sides Orlando"
+
+msgid "Infosecurity Belgium"
+msgstr "Информационная безопасность Бельгии"
+
+msgid "and the"
+msgstr "и на"
+
+msgid "TDI Symposium"
+msgstr "Симпозиуме по доверенной цифровой идентификации (TDI) "
+
+msgid "Interested in hands-on skills training? We offer the following exclusive courses and workshops:"
+msgstr "Заинтересованы в практическом обучении навыкам? Мы предлагаем следующие эксклюзивные курсы и семинары:"
+
+
+msgid "All our courses and workshops can be scheduled on demand, at your location."
+msgstr "Все наши курсы и семинары могут быть запланированы по вашему запросу, в вашей локации."
+
+msgid "Don't hesitate to contact us for price information."
+msgstr "Не стесняйтесь обращаться к нам за информацией о ценах."
+
+msgid "Hope to see you soon!"
+msgstr "Надеюсь увидеть вас в ближайшее время!"
+
+

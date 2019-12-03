@@ -38,8 +38,8 @@ $temp7 = _("Info");//  echo($temp7) Тренировочные задания
 $temp8 = _("Talks & Training");///  echo($temp8) Блог
 $temp9 =  _("Blog");//echo($temp9) Введите ваши данные
 $temp10 =  _("Create a new user.");// echo($temp10)        Пароль
-$temp11= _("E-mail:");//echo($temp11)        Установите уровень безопасности:
-$temp12=  _("Password");//echo($temp12)   низкий
+$temp11= _("E-mail:");//echo($temp11)      
+$temp12=  _("password");//echo($temp12)   низкий
 $temp13 =  _("Re-type password:");//echo($temp12)   средний
 $temp14 =  _("Secret");// echo($temp14)   высокий
 $temp15=  _("E-mail activation:");//echo($temp12)   низкий
@@ -48,9 +48,9 @@ $temp17 =  _("Secret");// echo($temp14)   высокий
 
 $temp18=  _("bWAPP is licensed under");//echo($temp12)   низкий
 $temp19 =  _("2014 MME BVBA / Follow");//echo($temp12)   средний
-$temp20 =  _("n Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive ");// echo($temp14)   высокий
+$temp20 =  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive ");// echo($temp14)   высокий
 $temp21 =  _("training");//echo($temp12)   средний
-
+$temp22= _("Registration");//echo($temp22) 
 
 
 //___________________
@@ -331,7 +331,7 @@ if(isset($_REQUEST["action"]))
 
     <h1><?php echo($temp10) ?></h1>
 
-    <p><?php echo($temp11) ?></p>
+    <p><?php echo($temp22) ?></p>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
