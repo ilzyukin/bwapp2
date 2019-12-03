@@ -43,6 +43,11 @@ $temp11= _("Check security_level");//echo($temp11)        Установите �
 $temp12=  _("low");//echo($temp12)   низкий
 $temp13 =  _("middle");//echo($temp12)   средний
 $temp14 =  _("high");// echo($temp14)   высокий
+$temp15 =  _("bWAPP is licensed under");// echo($temp15)   Лицензия БИВАП от
+$temp16 =  _("2014 MME BVBA / Follow");// echo($temp16)   2014 MME BVBA / Подписывайтесь
+$temp17 =  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp17)   
+$temp18 =  _("training");// echo($temp18)   Тренировка
+$temp19 =  _("Invalid credentials or user not activated!");// echo($temp19)  
 
 //___________________
 
@@ -154,7 +159,7 @@ if(isset($_POST["form"]))
         else
         {
 
-        $message = "<font color=\"red\">Invalid credentials or user not activated!</font>";
+        $message = $temp19;
 
         }
 
@@ -179,7 +184,7 @@ if(isset($_POST["form"]))
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 
-<title><?php echo  ($temp2) ?></title>
+<title><?php echo($temp2) ?></title>
 
 </head>
 
@@ -187,7 +192,7 @@ if(isset($_POST["form"]))
 
 <header>
 
-<h1><bWAPP</h1>
+<h1>bWAPP</h1>
 
 <h2><?php echo($temp3) ?></h2>
 
@@ -293,7 +298,7 @@ if(isset($_POST["form"]))
 
 <div id="disclaimer">
 
-    <p>bWAPP лицензия <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; 2014 MME BVBA / Follow <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive <a href="http://www.mmebvba.com" target="_blank">training</a>?</p>
+    <p><?php echo($temp15) ?><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo($temp16) ?> <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> <?php echo($temp17) ?> <a href="http://www.mmebvba.com" target="_blank"><?php echo($temp18) ?></a>?</p>
 
 </div>
 

@@ -115,17 +115,23 @@ msgstr "Новый пароль:"
 msgid "Re-type new password:"  
 msgstr "Введите новый пароль повторно:"
 
+msgid "Invalid credentials or user not activated!"  
+msgstr "Неверные учетные данные или пользователь не активирован!"
+
 msgid "bWAPP is licensed under"  
 msgstr "Лицензия БИВАП от"
 
 msgid "2014 MME BVBA / Follow"  
 msgstr "2014 MME BVBA / Подписывайтесь"
 
-msgid"on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive "
+msgid "on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive "
 msgstr "на мой Twitter и попросите нашу шпаргалку, содержащую все решения! / Нужна эксклюзивная"
 
-msgid"on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive"
+msgid "on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive"
 msgstr "на мой Twitter и попросите нашу шпаргалку, содержащую все решения! / Нужна эксклюзивная"
+
+msgid "Check security_level"
+msgstr "Установите уровень безопасности:"
 
 msgid "training"  
 msgstr "тренировка"
