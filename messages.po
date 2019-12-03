@@ -130,7 +130,7 @@ msgstr "на мой Twitter и попросите нашу шпаргалку, �
 msgid "on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive"
 msgstr "на мой Twitter и попросите нашу шпаргалку, содержащую все решения! / Нужна эксклюзивная"
 
-msgid "Check security_level"
+msgid "Check security level"
 msgstr "Установите уровень безопасности:"
 
 msgid "training"  

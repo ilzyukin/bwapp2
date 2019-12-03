@@ -39,7 +39,7 @@ $temp7 = _("Training");//  echo($temp7) Тренировочные задани�
 $temp8 = _("Blog");///  echo($temp8) Блог
 $temp9 =  _("Enter your credentials");//echo($temp9) Введите ваши данные
 $temp10 =  _("password");// echo($temp10)        Пароль
-$temp11= _("Check security_level");//echo($temp11)        Установите уровень безопасности:
+$temp11= _("Check security level");//echo($temp11)        Установите уровень безопасности:
 $temp12=  _("low");//echo($temp12)   низкий
 $temp13 =  _("middle");//echo($temp12)   средний
 $temp14 =  _("high");// echo($temp14)   высокий
@@ -159,7 +159,7 @@ if(isset($_POST["form"]))
         else
         {
 
-        $message = $temp19;
+        $message = "<font color=\"red\">Неверные учетные данные или пользователь не активирован!</font>";
 
         }
 
