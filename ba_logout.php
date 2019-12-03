@@ -39,6 +39,7 @@ $temp12=  _("Broken Auth. - Logout Management");//echo($temp12)   низкий
 $temp13 =  _("Click");//echo($temp12)   средний
 $temp44 =  _("here");//echo($temp12)   средний
 $temp45 =  _("to logout.");//echo($temp12)   средний
+$temp46 =  _("Reset");// echo($temp19)   Сбросить
 $temp14 =  _("Name:");// echo($temp14)   высокий
 $temp15=  _("brucebanner");//echo($temp12)   низкий
 $temp16 =  _("Passphrase");//echo($temp12)   средний
@@ -97,14 +98,14 @@ $temp37 =  _("Enter your credentials.");//echo($temp12)   средний
 
         <tr>
 
-             <td><a href="portal.php"><?php echo($temp5) ?></a></td>
-            <td><a href="password_change.php"><?php echo($temp6) ?></a></td>
+             <td><a href="portal.php"><?php echo($temp6) ?></a></td>
+            <td><a href="password_change.php"><?php echo($temp5) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp7) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp8) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('Все настройки будут сброшены. Вы уверены?');"><?php echo($temp9) ?></a></td>
-            <td><a href="credits.php"><?php echo($temp10) ?></a></td>
-            <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp11) ?></a></td>
-            <td><a href="logout.php" onclick="return confirm('Вы уверены, что хотите выйти?');"><?php echo($temp12) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('Все настройки будут сброшены. Вы уверены?');"><?php echo($temp46) ?></a></td>
+            <td><a href="credits.php"><?php echo($temp9) ?></a></td>
+            <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp10) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Вы уверены, что хотите выйти?');"><?php echo($temp11) ?></a></td>
             <td><font color="red"><?php echo($temp33) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
 

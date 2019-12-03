@@ -86,7 +86,7 @@ msgstr "Изменить пароль"
 msgid "Create User"
 msgstr "Создать пользователя"
 
-msgid "Level"
+msgid "Set Security Level"
 msgstr "Установить уровень безопасности "
 
 msgid "bWAPP - Set Security Level"
