@@ -222,7 +222,7 @@ if(isset($_POST["form"]))
         <p><label for="login"><?php echo($temp4) ?></label><br />
         <input type="text" id="login" name="login" size="20" autocomplete="off"></p> 
 
-        <p><label for="password"><?php echo($temp6) ?></label><br />
+        <p><label for="password"><?php echo($temp10) ?></label><br />
         <input type="password" id="password" name="password" size="20" autocomplete="off"></p>
 
         <p><label for="security_level"><?php echo($temp11) ?></label><br />
