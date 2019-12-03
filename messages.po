@@ -86,8 +86,11 @@ msgstr "Изменить пароль"
 msgid "Create User"
 msgstr "Создать пользователя"
 
-msgid "Set Security Level"
+msgid "Level"
 msgstr "Установить уровень безопасности "
+
+msgid "bWAPP - Set Security Level"
+msgstr "bWAPP - Установка уровня безопасности"
 
 msgid "Reset"
 msgstr "Сбросить"
@@ -129,7 +132,7 @@ msgid "on Twitter and ask for our cheat sheet, containing all solutions! / Need 
 msgstr "на мой Twitter и попросите нашу шпаргалку, содержащую все решения! / Нужна эксклюзивная"
 
 msgid "Check security level"
-msgstr "Установите уровень безопасности:"
+msgstr "Проверьте уровень безопасности:"
 
 msgid "training"  
 msgstr "тренировка"
@@ -159,7 +162,7 @@ msgid "CAPTCHA:"
 msgstr "Капча:"
 
 msgid "Login"  
-msgstr "Вход"
+msgstr "Логин"
 
 msgid "Set your security level:"  
 msgstr "Введите Ваш уровень безопасности:"
@@ -952,5 +955,17 @@ msgstr "Не стесняйтесь обращаться к нам за инфо
 
 msgid "Hope to see you soon!"
 msgstr "Надеюсь увидеть вас в ближайшее время!"
+
+msgid "Your security level is"
+msgstr "Ваш уровень безопасности"
+
+msgid "Check security_level"
+msgstr "Проверьте уровень безопасности"
+
+msgid "Set the security level:"
+msgstr "Установите уровень безопасности"
+
+msgid "not set"
+msgstr "не установлен"
 
 

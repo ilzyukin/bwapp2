@@ -55,7 +55,7 @@ $temp26 =  _("Re-enter CAPTCHA:");// echo($temp26)   Повторно введи
 $temp27 =  _("Login");// echo($temp27)   Логин
 $temp28 =  _("bWAPP is licensed under");// echo($temp28)   Лицензия БИВАП от
 $temp29 =  _("2014 MME BVBA / Follow");// echo($temp29)   2014 MME BVBA / Подписывайтесь
-$temp30 =  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp30)   
+$temp30 =  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive ");// echo($temp30)   
 $temp31 =  _("training");// echo($temp31)   Тренировка
 $temp32 =  _("Set your security level:");// echo($temp32)   Введите Ваш уровень безопасности
 $temp33 =  _("medium");// echo($temp33)   средний
@@ -63,6 +63,7 @@ $temp34 =  _("Set");// echo($temp34)   Установить
 $temp35 =  _("Current:");// echo($temp35)   Текущий
 $temp36 =  _("Enter your credentials.");// echo($temp36)   Введите Ваши данные
 $temp37 =  _("Directory Traversal - Directories");// echo($temp37)   Обход каталогов - Каталоги
+$temp38 =  _("not set");
 
 $bugs = file("bugs.txt");
 
@@ -139,17 +140,17 @@ if(isset($_COOKIE["security_level"]))
 
         case "0" :
 
-            $security_level = "low";
+            $security_level = $temp12;
             break;
 
         case "1" :
 
-            $security_level = "medium";
+            $security_level = $temp13;
             break;
 
         case "2" :
 
-            $security_level = "high";
+            $security_level = $temp14;
             break;
 
         case "666" :
@@ -159,7 +160,7 @@ if(isset($_COOKIE["security_level"]))
 
         default :
 
-            $security_level = "low";
+            $security_level = $temp12;
             break;
 
     }
@@ -169,7 +170,7 @@ if(isset($_COOKIE["security_level"]))
 else
 {
 
-    $security_level = "not set";
+    $security_level = $temp38;
 
 }
 
@@ -202,7 +203,7 @@ function show_directory($directory)
     else
     {
 
-        echo "This directory doesn't exist!";
+        echo "Этот каталог не существует!";
 
     }
 
@@ -247,10 +248,10 @@ function show_directory($directory)
             <td><a href="password_change.php"><?php echo($temp16) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp17) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp18) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp19) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('Все настройки будут сброшены. Вы уверены?');"><?php echo($temp19) ?></a></td>
             <td><a href="credits.php"><?php echo($temp20) ?></a></td>
             <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp21) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Вы уверены, что хотите выйти?');"><?php echo($temp21) ?></a></td>
             <td><font color="red"><?php echo($temp22) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>
