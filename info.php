@@ -31,7 +31,7 @@ $temp11 =  _(", is a free and open source deliberately insecure web application.
 $temp12 =  _("It helps security enthusiasts, developers and students to discover and to prevent web vulnerabilities.");//echo($temp12)   
 $temp13 =  _("bWAPP prepares one to conduct successful penetration testing and ethical hacking projects.");//echo($temp12)   
 $temp14 =  _("What makes bWAPP so unique? Well, it has over 100 web vulnerabilities!");// echo($temp14)   
-$temp15 =  _("It covers all major known web bugs, including all risks from the ");// echo($temp15)   
+$temp15 =  _("It covers all major known web bugs, including all risks from the");// echo($temp15)   
 $temp16 =  _("OWASP");// echo($temp16)  
 $temp17 =  _("Top 10 project.");// echo($temp17)   
 $temp18 =  _("bWAPP is a PHP application that uses a MySQL database. It can be hosted on Linux, Windows and Mac with Apache/IIS and MySQL. It can also be installed with WAMP or XAMPP.");// echo($temp18)   
@@ -46,7 +46,7 @@ $temp26 =  _("Re-enter CAPTCHA:");// echo($temp26)   Повторно введи
 $temp27 =  _("Login");// echo($temp27)   Логин
 $temp28 =  _("bWAPP is licensed under");// echo($temp28)   Лицензия БИВАП от
 $temp29 =  _("2014 MME BVBA / Follow");// echo($temp29)   2014 MME BVBA / Подписывайтесь
-$temp30 =  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp30)   
+$temp30 =  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive ");// echo($temp30)   
 $temp31 =  _("training");// echo($temp31)   Тренировка
 
 
@@ -101,7 +101,7 @@ $temp31 =  _("training");// echo($temp31)   Тренировка
 
     <h1><?php echo($temp6) ?></h1>
 
-    <p><?php echo($temp9) ?> <i><?php echo($temp10) ?></i><?php echo($temp11) ?><br />
+    <p><?php echo($temp9) ?> <i><?php echo($temp10) ?> </i><?php echo($temp11) ?><br />
     <?php echo($temp12) ?><br />
     <?php echo($temp13) ?></p>
 
@@ -109,7 +109,7 @@ $temp31 =  _("training");// echo($temp31)   Тренировка
     <?php echo($temp15) ?> <a href="http://www.owasp.org" target="blank"><?php echo($temp16) ?></a> <?php echo($temp17) ?></p>
 
     <p><?php echo($temp18) ?><br />
-    <?php echo($temp19) ?> <i>bee-box</i><?php echo($temp20) ?></p>
+    <?php echo($temp19) ?> <i></i><?php echo($temp20) ?></p>
 
     <p><?php echo($temp21) ?> <a href="http://goo.gl/uVBGnq" target="_blank"><?php echo($temp22) ?></a> <?php echo($temp23) ?></p>
 

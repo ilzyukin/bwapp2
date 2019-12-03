@@ -39,13 +39,13 @@ $temp7 = _("Training");//  echo($temp7) Тренировочные задани�
 $temp8 = _("Blog");///  echo($temp8) Блог
 $temp9 =  _("Enter your credentials");//echo($temp9) Введите ваши данные
 $temp10 =  _("password");// echo($temp10)        Пароль
-$temp11= _("Check security level");//echo($temp11)        Установите уровень безопасности:
+$temp11= _("Set");//echo($temp11)        Установите уровень безопасности:
 $temp12=  _("low");//echo($temp12)   низкий
 $temp13 =  _("middle");//echo($temp12)   средний
 $temp14 =  _("high");// echo($temp14)   высокий
 $temp15 =  _("bWAPP is licensed under");// echo($temp15)   Лицензия БИВАП от
 $temp16 =  _("2014 MME BVBA / Follow");// echo($temp16)   2014 MME BVBA / Подписывайтесь
-$temp17 =  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp17)   
+$temp17 =  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive ");// echo($temp17)   
 $temp18 =  _("training");// echo($temp18)   Тренировка
 $temp19 =  _("Invalid credentials or user not activated!");// echo($temp19)  
 

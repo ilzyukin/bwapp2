@@ -48,7 +48,7 @@ $temp17 =  _("Secret");// echo($temp14)   высокий
 
 $temp18=  _("bWAPP is licensed under");//echo($temp12)   низкий
 $temp19 =  _("2014 MME BVBA / Follow");//echo($temp12)   средний
-$temp20 =  _("n Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp14)   высокий
+$temp20 =  _("n Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive ");// echo($temp14)   высокий
 $temp21 =  _("training");//echo($temp12)   средний
 
 
@@ -68,7 +68,7 @@ if(isset($_REQUEST["action"]))
     if($login == "" or $email == "" or $password == "" or $secret == "")
     {
 
-        $message = "<font color=\"red\">Please enter all the fields!</font>";
+        $message = "<font color=\"red\">Пожалуйста, заполните все поля!</font>";
 
     }
 
@@ -96,7 +96,7 @@ if(isset($_REQUEST["action"]))
         if(preg_match("/^[a-z\d_]{2,20}$/i", $login) == false)
         {
 
-            $message = "<font color=\"red\">Please choose a valid login name!</font>";
+            $message = "<font color=\"red\">Пожалуйста, выберите действительное имя для входа!</font>";
 
         }
 
@@ -106,7 +106,7 @@ if(isset($_REQUEST["action"]))
             if(!filter_var($email, FILTER_VALIDATE_EMAIL))
             {
 
-                $message = "<font color=\"red\">Please enter a valid e-mail address!</font>";
+                $message = "<font color=\"red\">Пожалуйста, введите верный адрес электронной почты!</font>";
 
             }
 
@@ -116,7 +116,7 @@ if(isset($_REQUEST["action"]))
                 if($password != $password_conf)
                 {
 
-                    $message = "<font color=\"red\">The passwords don't match!</font>";
+                    $message = "<font color=\"red\">Пароли не совпадают!</font>";
 
                 }
 
@@ -146,7 +146,7 @@ if(isset($_REQUEST["action"]))
                     if(!$recordset)
                     {
 
-                        die("Error: " . $link->error);
+                        die("Ошибка: " . $link->error);
 
                     }
 
@@ -177,7 +177,7 @@ if(isset($_REQUEST["action"]))
                             if(!$recordset)
                             {
 
-                                die("Error: " . $link->error);
+                                die("Ошибка: " . $link->error);
 
                             }
 
@@ -185,7 +185,7 @@ if(isset($_REQUEST["action"]))
                             // echo "<br />Affected rows: ";
                             // printf($link->affected_rows);
 
-                            $message = "<font color=\"green\">User successfully created!</font>";
+                            $message = "<font color=\"green\">Пользователь успешно создан!</font>";
                         
                         }
                         
@@ -214,16 +214,16 @@ if(isset($_REQUEST["action"]))
                             $server = $_SERVER["HTTP_HOST"];
                             $sender = $smtp_sender;
 
-                            $content = "Welcome " . ucwords($login) . ",\n\n";
-                            $content.= "Click the link to activate your new user:\n\nhttp://" . $server . "/bWAPP/user_activation.php?user=" . $login . "&activation_code=" . $activation_code . "\n\n";
-                            $content.= "Greets from bWAPP!";
+                            $content = "Добро пожаловать " . ucwords($login) . ",\n\n";
+                            $content.= "Нажмите на ссылку, чтобы активировать нового пользователя:\n\nhttp://" . $server . "/bWAPP/user_activation.php?user=" . $login . "&activation_code=" . $activation_code . "\n\n";
+                            $content.= "Привет от bWAPP!";
 
-                            $status = @mail($email, $subject, $content, "From: $sender");
+                            $status = @mail($email, $subject, $content, "От: $sender");
 
                             if($status != true)
                             {
 
-                                $message = "<font color=\"red\">User not successfully created! An e-mail could not be sent...</font>";
+                                $message = "<font color=\"red\">Пользователь не создан успешно! Не удалось отправить сообщение электронной почты...</font>";
 
                                 // Debugging
                                 // die("Error: mail was NOT send");
@@ -244,7 +244,7 @@ if(isset($_REQUEST["action"]))
                                 if(!$recordset)
                                 {
 
-                                    die("Error: " . $link->error);
+                                    die("Ошибка: " . $link->error);
 
                                 }
 
@@ -255,7 +255,7 @@ if(isset($_REQUEST["action"]))
                                 // Debugging
                                 // echo "Mail was send";
 
-                                $message = "<font color=\"green\">User successfully created! An e-mail with an activation code has been sent.</font>";
+                                $message = "<font color=\"green\">Пользователь успешно создан! Было отправлено электронное письмо с кодом активации.</font>";
 
                             }
 
@@ -266,7 +266,7 @@ if(isset($_REQUEST["action"]))
                     else
                     {
 
-                        $message = "<font color=\"red\">The login or e-mail already exists!</font>";
+                        $message = "<font color=\"red\">Логин или электронная почта уже существует!</font>";
 
                     }
 

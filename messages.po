@@ -44,7 +44,7 @@ msgid "Training"
 msgstr "Тренировочные задания"
 
 msgid "Talks & Training"
-msgstr "Разговоры & Обучение"
+msgstr "Обсуждения & Обучение"
 
 msgid "Blog"
 msgstr "Блог"
@@ -58,8 +58,6 @@ msgstr "Введите Ваши данные."
 msgid "password"
 msgstr "Пароль"
 
-msgid "Сheck security_level"
-msgstr "Установите уровень безопасности:"
 
 msgid "low"
 msgstr "низкий"
@@ -203,10 +201,10 @@ msgid "Secret"
 msgstr "Секретное слово"
 
 msgid "E-mail activation:"  
-msgstr "Активация емэйл"
+msgstr "Активация e-mail"
 
 msgid "Create"  
-msgstr "Создание"
+msgstr "Создать"
 
 msgid "A.I.M., or Authentication Is Missing, is a no-authentication mode that can be used for testing web scanners and crawlers."  
 msgstr "A.I.M., or Authentication Is Missing, безауттонтификационный способоб, используемый для тестирования веб-приложений и поисковиков."
@@ -347,10 +345,10 @@ msgid "We are specialized in Penetration Testing, Ethical Hacking, InfoSec Train
 msgstr "Мы специализируемся на испытании на проникновение, этическом хакинге, обучении информационной безопасности и охоте на злых пчел."
 
 msgid "Download our"
-msgstr "Скачайте наш"
+msgstr "Скачайте нашу книгу"
 
 msgid "What is bWAPP?"
-msgstr "Что такое BWAPP?"
+msgstr "Что такое BWAPP?. Это"
 
 msgid "introduction tutorial, including free materials and exercises..."
 msgstr "Вводное руководство, в том числе бесплатные материалы и упражнения..."
@@ -596,10 +594,10 @@ msgid "It covers all major known web bugs, including all risks from the"
 msgstr "Он охватывает все основные известные веб-ошибки, включая все риски, связанные с"
 
 msgid "OWASP" 
-msgstr "Open Web Application Security Project (Открытый Проект Безопасности Веб-Приложения)"
+msgstr "Open Web Application Security Project (Открытым Проектом Безопасности Веб-Приложения), а именно"
 
 msgid "Top 10 project." 
-msgstr "Топ-10 проектов."
+msgstr "топ-10 проектов."
 
 msgid "bWAPP is a PHP application that uses a MySQL database. It can be hosted on Linux, Windows and Mac with Apache/IIS and MySQL. It can also be installed with WAMP or XAMPP." 
 msgstr "BWAPP-это PHP-приложение, которое использует базу данных MySQL. Оно может быть размещено на Linux, Windows и Mac с Apache / IIS и MySQL. Его можно также установить с WAMP или XAMPP."
@@ -611,7 +609,7 @@ msgid ", a custom Linux VM pre-installed with bWAPP."
 msgstr "пользовательской виртуальной машины Linux с предустановленным BWAPP."
 
 msgid "introduction tutorial, including free exercises..." 
-msgstr "введный курс, в том числе бесплатные упражнения..."
+msgstr "вводный курс, в том числе бесплатные упражнения..."
 
 msgid "bWAPP is for educational purposes. Education, the most powerful weapon which we can use to change the world. Have fun with this free and open source project!" 
 msgstr "BWAPP предназначен для образовательных целей. Образование - самое мощное оружие, которое мы можем использовать, чтобы изменить мир. Удачи с этим бесплатным и открытым исходным кодом проекта!"
