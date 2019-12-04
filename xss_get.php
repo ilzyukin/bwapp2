@@ -180,14 +180,14 @@ function xss($data)
         if($firstname == "" or $lastname == "")
         {
 
-            echo "<font color=\"red\">Please enter both fields...</font>";
+            echo "<font color=\"red\">Пожалуйста заполните оба поля </font>";
 
         }
 
         else
         {
 
-            echo "Welcome " . xss($firstname) . " " . xss($lastname);
+            echo "Добро пожаловать " . xss($firstname) . " " . xss($lastname);
 
         }
 
