@@ -87,7 +87,7 @@ msgid "Create User"
 msgstr "Создать пользователя"
 
 msgid "Set Security Level"
-msgstr "Установить уровень безопасности "
+msgstr "Уровень безопасности "
 
 msgid "bWAPP - Set Security Level"
 msgstr "bWAPP - Установка уровня безопасности"
@@ -186,7 +186,7 @@ msgid "Registration"
 msgstr "Регистрация"
 
 msgid "Broken Auth. - Insecure Login Forms"  
-msgstr "Небезопасные формы входа"
+msgstr "Опасный вход"
 
 msgid "tonystafrk"  
 msgstr "Тони Старк"
