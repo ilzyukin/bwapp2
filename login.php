@@ -252,6 +252,7 @@ if(isset($_POST["form"]))
     echo $message;
 
     $link->close();
+    
 
     ?>
 

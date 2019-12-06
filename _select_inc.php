@@ -10,7 +10,7 @@ div#bug a {font-weight: bold; cursor: pointer;}
 #bug button {display: none;}
 #bug small {font-size: 70%}
 </style>
-<div id="bug2" class="bugs">
+<div id="bug" class="bugs">
 
   <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST" name="got_to_bug" target="_blank">
 

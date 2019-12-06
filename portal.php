@@ -129,52 +129,7 @@ include("selections.php");
 
 </div>
 
-<div id="main">
 
-    <h1><?php echo($temp28) ?></h1>
-
-    <p><?php echo($temp30) ?><br />
-    <?php echo($temp31) ?><br />
-    <?php echo($temp32) ?><br />
-    </p>
-
-    <p><i><?php echo($temp34) ?></i></p>
-
-    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
-
-        <select name="bug" size="9" id="select_portal">
-
-            <?php
-
-            // Lists the options from the array 'bugs' (bugs.txt)
-            foreach ($bugs as $key => $value)
-            {
-
-               $bug = explode(",", trim($value));
-
-               // Debugging
-               // echo "key: " . $key;
-               // echo " value: " . $bug[0];
-               // echo " filename: " . $bug[1] . "<br />";
-              $selected = (mb_stristr($bug[1], basename($_SERVER["SCRIPT_NAME"]))!==false)? ' selected="selected"':'';
-
-
-              echo "
-            <option title='$bug[1]' value='$key' $selected>$bug[0]</option>";
-
-            }
-
-            ?>
-
-        </select>
-
-        <br />
-
-        <button type="submit" name="form" value="submit"><?php echo($temp36); ?></button>
-
-    </form>
-
-</div>
 
 
 
