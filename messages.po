@@ -162,7 +162,7 @@ msgid "CAPTCHA:"
 msgstr "Капча:"
 
 msgid "Login"  
-msgstr "Логин"
+msgstr "Логин/вход"
 
 msgid "Set your security level:"  
 msgstr "Введите Ваш уровень безопасности:"
@@ -513,7 +513,7 @@ msgid "Last name:"
 msgstr "Фамилия:"
 
 msgid "Go" 
-msgstr "Войти"
+msgstr "Подтвердить"
 
 msgid "HTML Injection - Reflected (POST)" 
 msgstr "HTML инъекция - Отраженный (POST)"
@@ -968,4 +968,30 @@ msgstr "Установите уровень безопасности"
 msgid "not set"
 msgstr "не установлен"
 
+msgid "bWAPP - SQL Injection"
+msgstr "bWAPP - SQL инъекция"
+
+msgid "SQL Injection (GET/Search)"
+msgstr "SQL инъекция (GET/Поиск)"
+
+msgid "No movies were found!"
+msgstr "Никаких фильмов не нашли!"
+
+msgid "Link"
+msgstr "Ссылка"
+
+msgid "SQL Injection (GET/Select)"
+msgstr "SQL инъекция (GET/Выбор)"
+
+msgid "Select a movie:"
+msgstr "Выберите фильм:"
+
+msgid "SQL Injection (Login Form/Hero)"
+msgstr "SQL инъекция (Форма Входа / Герой)"
+
+msgid "Enter your 'superhero' credentials."
+msgstr "Введите свои учетные данные "супергероя"."
+
+msgid "SQL Injection - Blind - Boolean-Based"
+msgstr "SQL инъекция - Слепая логическая инъекция"
 
