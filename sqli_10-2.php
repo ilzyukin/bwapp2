@@ -24,6 +24,11 @@ include("security_level_check.php");
 include("functions_external.php");
 include("connect.php");
 
+
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+
+
 function sqli($data)
 {
 

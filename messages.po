@@ -1013,4 +1013,28 @@ msgstr "Добавить запись"
 msgid "SQL Injection - Stored (XML)"
 msgstr "SQL инъекция - Сохраненный (XML)"
 
+msgid "SQL Injection (CAPTCHA)"
+msgstr "SQL инъекция (Капча)"
+
+msgid "Done!"
+msgstr "Готово!"
+
+msgid "SQL Injection (AJAX/JSON/jQuery)"
+msgstr "SQL инъекция (AJAX/JSON/jQuery)"
+
+msgid "SQL Injection (SQLite)"
+msgstr "SQL инъекция (SQLite)"
+
+msgid "(requires the PHP SQLite module)"
+msgstr "(требуется модуль PHP SQLite)"
+
+msgid "SQL Injection - Stored (SQLite)"
+msgstr "SQL инъекция - Сохраненный (SQLite)"
+
+msgid "Delete Entries"
+msgstr "Удаление записей"
+
+msgid "SQL Injection (POST/Select)"
+msgstr "SQL инъекция (POST/Выбор)"
+
 
