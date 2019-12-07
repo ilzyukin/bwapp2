@@ -540,7 +540,7 @@ msgid "Date"
 msgstr "Дата"
 
 msgid "Entry" 
-msgstr "Вход"
+msgstr "Запись"
 
 msgid "bWAPP - HTTP Response Splitting" 
 msgstr "BWAPP - Расщепление HTTP-запроса"
@@ -994,4 +994,23 @@ msgstr "Введите свои учетные данные "супергеро�
 
 msgid "SQL Injection - Blind - Boolean-Based"
 msgstr "SQL инъекция - Слепая логическая инъекция"
+
+msgid "SQL Injection - Blind (WS/SOAP)"
+msgstr "SQL инъекция - Слепая (WS/SOAP) инъекция"
+
+msgid "SQL Injection (POST/Search)"
+msgstr "SQL инъекция (POST/Поиск)"
+
+msgid "SQL Injection - Stored (Blog)"
+msgstr "SQL инъекция - Сохраненный (Блог)"
+
+msgid "Add an entry to our blog:"
+msgstr "Добавьте запись в наш блог:"
+
+msgid "Add Entry"
+msgstr "Добавить запись"
+
+msgid "SQL Injection - Stored (XML)"
+msgstr "SQL инъекция - Сохраненный (XML)"
+
 

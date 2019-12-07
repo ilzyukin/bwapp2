@@ -20,6 +20,16 @@ include("security.php");
 include("security_level_check.php");
 include("connect_i.php");
 
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+
+
+
+//___________________
+
+$temp3 = _("bWAPP - SQL Injection"); 
+$temp4 = _("an extremely buggy web app !");
+
 $message = "";
 $body = file_get_contents("php://input");
 
@@ -50,18 +60,18 @@ if($_COOKIE["security_level"] != "1" && $_COOKIE["security_level"] != "2")
         if(!$recordset)
         {
 
-            die("Connect Error: " . $link->error);
+            die("Ошибка подключения: " . $link->error);
 
         }
 
-        $message = $login . "'s secret has been reset!";
+        $message = $login . "секрет был сброшен!";
 
     }
 
     else
     {
 
-        $message = "An error occured!";
+        $message = "Произошла ошибка!";
 
     }
 
@@ -96,18 +106,18 @@ else
         if(!$recordset)
         {
 
-            die("Connect Error: " . $link->error);
+            die("Ошибка подключения: " . $link->error);
 
         }
 
-        $message = $login . "'s secret has been reset!";
+        $message = $login . "секрет был сброшен!";
 
     }
 
     else
     {
 
-        $message = "An error occured!"; 
+        $message = "Произошла ошибка!"; 
 
     }
 
