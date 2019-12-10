@@ -1037,4 +1037,29 @@ msgstr "Удаление записей"
 msgid "SQL Injection (POST/Select)"
 msgstr "SQL инъекция (POST/Выбор)"
 
+msgid "SQL Injection - Blind (SQLite)"
+msgstr "SQL инъекция - Слепая (SQLite)"
 
+msgid "SQL Injection - Blind - Time-Based"
+msgstr "SQL инъекция - Слепая - Основанная на времени"
+
+msgid "The result will be sent by e-mail..."
+msgstr "Результат был отправлен на Вашу почту..."
+
+msgid "SQL Injection (Login Form/User)"
+msgstr "SQL инъекция (Поле Логин/Пользователь)"
+
+msgid "SQL Injection - Stored (User-Agent)"
+msgstr "SQL-инъекция - Хранилище (User-Agent)" 
+
+msgid "Your IP address and User-Agent string have been logged into the database! "
+msgstr "Ваш IP-адрес и строка User-Agent были зарегистрированы в базе данных! "
+
+msgid "bWAPP - Drupal SQL Injection"
+msgstr "bWAPP - Drupal SQL-инъекция" 
+
+msgid "Drupal SQL Injection (Drupageddon)"
+msgstr "Drupal SQL-инъекция (Drupageddon)"
+
+msgid " version is vulnerable to SQL injection! "
+msgstr " версия уязвима для SQL-инъекций! "
