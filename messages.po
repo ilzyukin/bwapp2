@@ -1063,3 +1063,21 @@ msgstr "Drupal SQL-инъекция (Drupageddon)"
 
 msgid " version is vulnerable to SQL injection! "
 msgstr " версия уязвима для SQL-инъекций! "
+
+msgid "bWAPP - PHP CGI Remote Code Execution"
+msgstr "bWAPP - PHP CGI Удаленное выполнение кода"
+
+msgid "PHP CGI Remote Code Execution"
+msgstr "PHP CGI Удаленное выполнение кода"
+
+msgid "directory is using PHP in CGI mode. ("
+msgstr "каталог использует PHP в режиме CGI. ("
+
+msgid "HINT: a public "
+msgstr "ПОДСКАЗКА: публичный"
+
+msgid "exploit"
+msgstr "exploit" 
+
+msgid "is available..."
+msgstr "доступен"
