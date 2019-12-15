@@ -119,7 +119,7 @@ $temp38 =  _("Reset your secret to");//
 
     <h1><?php echo($temp37) ?></h1>
 
-    <p><?php echo($temp38) ?> <input type="button" OnClick="ResetSecret();" value="Any bugs?"></p>
+    <p><?php echo($temp38) ?> <input type="button" OnClick="ResetSecret();" value="Есть ошибки?"></p>
 
     <script type="text/javascript">
 
@@ -138,7 +138,7 @@ $temp38 =  _("Reset your secret to");//
             }
             xmlHttp.open("POST","sqli_8-2.php",true);
             xmlHttp.setRequestHeader("Content-type","text/xml; charset=UTF-8");
-            xmlHttp.send("<reset><login><?php if(isset($_SESSION["login"])){echo $_SESSION["login"];}?></login><secret>Any bugs?</secret></reset>");
+            xmlHttp.send("<reset><login><?php if(isset($_SESSION["login"])){echo $_SESSION["login"];}?></login><secret>Есть ошибки?</secret></reset>");
         }
 
     </script>

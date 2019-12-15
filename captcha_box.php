@@ -46,7 +46,7 @@ $temp3 = _("bWAPP - CAPTCHA box"); // echo($temp3) Поле ввода капч�
     <tr>
         
         <td><img src="captcha.php"></iframe></td>        
-        <td><input type="button" value="Reload" onClick="window.location.reload()"></td>
+        <td><input type="button" value="Обновить" onClick="window.location.reload()"></td>
         
     </tr>
     

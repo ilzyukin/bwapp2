@@ -91,7 +91,7 @@ if(!(isset($_SESSION["manual_interv"])) || $_SESSION["manual_interv"] != 1)
 {
 
     header("Location: manual_interv.php");
-
+    
     exit;
 
 }

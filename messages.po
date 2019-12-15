@@ -246,7 +246,7 @@ msgid "Click"
 msgstr "Нажмите"
 
 msgid "here"  
-msgstr "на кнопку"
+msgstr "сюда"
 
 msgid "to logout."  
 msgstr "чтобы выйти"
@@ -857,7 +857,7 @@ msgid "bWAPP - Manual Intervention Required!"
 msgstr "bWAPP - требуется ручное вмешательство!"
 
 msgid "Manual Intervention Required!"
-msgstr "требуется ручное вмешательство!"
+msgstr "Требуется ручное вмешательство!"
 
 msgid "Pass the CAPTCHA before proceeding to"
 msgstr "Передайте CAPTCHA, прежде чем перейти"
