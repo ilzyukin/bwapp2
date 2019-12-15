@@ -251,7 +251,7 @@ else
 
                 </td>
 
-                <td width="108" align="center">
+                <td width="140" align="center">
 
                     <label for="entry_all"><?php echo($temp40) ?></label>
                     <input type="checkbox" id="entry_all" name="entry_all" value="">
