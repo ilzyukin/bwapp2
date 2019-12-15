@@ -894,9 +894,6 @@ msgid "Click the button to go to back to the previous page:"
 msgstr "Нажмите на кнопку назад, чтобы перейти на предыдущую страницу"
 
 
-msgid "Enter your 'superhero' credentials."
-msgstr "Введите свои данные "
-
 msgid "The phpMyAdmin version fails to validate BBcode tags in the error.php script!"
 msgstr "Версии phpMyAdmin не удалось проверить тэги BBcodе в скрипте error.php"
 
@@ -990,7 +987,7 @@ msgid "SQL Injection (Login Form/Hero)"
 msgstr "SQL инъекция (Форма Входа / Герой)"
 
 msgid "Enter your 'superhero' credentials."
-msgstr "Введите свои учетные данные "супергероя"."
+msgstr "Введите свои учетные данные."
 
 msgid "SQL Injection - Blind - Boolean-Based"
 msgstr "SQL инъекция - Слепая логическая инъекция"
