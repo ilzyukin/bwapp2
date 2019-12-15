@@ -67,7 +67,7 @@ $temp39 =  _("Go");//
 $temp40 =  _("Title");//   
 $temp41 =  _("Release");//    
 $temp42 =  _("Character");//  
-$temp43 =  _("HINT: ");//   
+$temp43 =  _("HINT:");//   
 $temp44 =  _("An overview of our latest visitors:");// 
 $temp45 =  _(" version is vulnerable to SQL injection!");//
 $temp46 =  _("Drupal SQL Injection (Drupageddon)");//
@@ -128,9 +128,9 @@ $temp46 =  _("Drupal SQL Injection (Drupageddon)");//
 
     <h1><?php echo($temp46) ?></h1>
 
-    <p><a href="../drupal/" target="_blank">Drupal</a><?php echo($temp45) ?>(<a href="http://sourceforge.net/projects/bwapp/files/bee-box/" target="_blank">bee-box</a> only)</p>
+    <p><a href="../drupal/" target="_blank">Drupal</a><?php echo($temp45) ?>(<a href="http://sourceforge.net/projects/bwapp/files/bee-box/" target="_blank"> bee-box</a> only)</p>
 
-    <p><?php echo($temp43) ?><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3704" target="_blank">CVE-2014-3704</a></p>
+    <p><?php echo($temp43) ?><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3704" target="_blank"> CVE-2014-3704</a></p>
 
 </div>
 

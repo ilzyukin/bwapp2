@@ -232,7 +232,7 @@ if(!$recordset)
 
     <h1><?php echo($temp46) ?></h1>
 
-    <p><?php echo($temp49) ?><font size="2">(<a href="logs/visitors.txt" target="_blank"><?php echo($temp50) ?></a><?php echo($temp48) ?></font></p>
+    <p><?php echo($temp49) ?><font size="2">(<a href="logs/visitors.txt" target="_blank"><?php echo($temp50) ?></a> <?php echo($temp48) ?></font></p>
 
     <p><?php echo($temp44) ?></p>
 

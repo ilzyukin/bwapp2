@@ -216,7 +216,7 @@ function sqli($data)
             {
 
                 // $message = "<font color=\"green\">Welcome " . ucwords($row["login"]) . "...</font>";
-                $message =  "<p>Привет <b>" . ucwords($row["login"]) . "</b>, Как дела?</p><p>Твой секрет <b>" . ucwords($row["secret"]) . "</b></p>";
+                $message =  "<p>Привет <b>" . ucwords($row["login"]) . "</b>, Как дела?</p><p>Твой секрет: <b>" . ucwords($row["secret"]) . "</b> </p>";
                 // $message = $row["login"];
 
             }

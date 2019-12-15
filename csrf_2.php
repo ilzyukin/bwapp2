@@ -66,6 +66,7 @@ $temp38 =  _("Amount on your account:");// echo($temp38)   Сумма на ва�
 $temp39 =  _("EUR");// echo($temp39)  Евро
 $temp40 =  _("Account to transfer:");// echo($temp40)   Счет для перевода:
 $temp41 =  _("Amount to transfer:");// echo($temp41) Сумма для перевода:
+$temp42 =  _("Transfer");// 
 
 if(isset($_GET["amount"]))
 {
@@ -141,10 +142,10 @@ if($_COOKIE["security_level"] == "2")
             <td><a href="password_change.php"><?php echo($temp16) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp17) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp18) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp19) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('Все настройки будут сброшены. Вы уверены?');"><?php echo($temp19) ?></a></td>
             <td><a href="credits.php"><?php echo($temp20) ?></a></td>
             <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp21) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Вы уверены, что хотите выйти?');"><?php echo($temp21) ?></a></td>
             <td><font color="red"><?php echo($temp22) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>
@@ -180,7 +181,7 @@ if($_COOKIE["security_level"] == "1" or $_COOKIE["security_level"] == "2")
 }
 
 ?>
-        <button type="submit" name="action" value="transfer">Transfer</button>
+        <button type="submit" name="action" value="transfer"><?php echo($temp42) ?></button>
 
     </form>
 

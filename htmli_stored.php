@@ -118,7 +118,7 @@ if(isset($_POST["entry_add"]))
     if($entry == "")
     {
 
-        $message =  "<font color=\"red\">Please enter some text...</font>";
+        $message =  "<font color=\"red\">Пожалуйста, введите текст...</font>";
 
     }
 
@@ -132,14 +132,14 @@ if(isset($_POST["entry_add"]))
         if(!$recordset)
         {
 
-            die("Error: " . $link->error . "<br /><br />");
+            die("Ошибка: " . $link->error . "<br /><br />");
 
         }
 
         // Debugging
         // echo $sql;
 
-        $message = "<font color=\"green\">Your entry was added to our blog!</font>";
+        $message = "<font color=\"green\">Ваша запись была добавлена в наш блог!</font>";
 
     }
 
@@ -158,14 +158,14 @@ else
         if(!$recordset)
         {
 
-            die("Error: " . $link->error . "<br /><br />");
+            die("Ошибка: " . $link->error . "<br /><br />");
 
         }
 
         // Debugging
         // echo $sql;
 
-        $message = "<font color=\"green\">All your entries were deleted!</font>";
+        $message = "<font color=\"green\">Все ваши записи были удалены!</font>";
 
     }
 
@@ -210,10 +210,10 @@ else
             <td><a href="password_change.php"><?php echo($temp16) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp17) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp18) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp19) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('Все настройки будут сброшены. Вы уверены?');"><?php echo($temp19) ?></a></td>
             <td><a href="credits.php"><?php echo($temp20) ?></a></td>
             <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp21) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Вы уверены, что хотите выйти?');"><?php echo($temp21) ?></a></td>
             <td><font color="red"><?php echo($temp22) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>
@@ -244,14 +244,14 @@ else
 
                 </td>
 
-                <td width="85" align="center">
+                <td width="108" align="center">
 
                     <label for="entry_add"><?php echo($temp39) ?></label>
                     <input type="checkbox" id="entry_add" name="entry_add" value="" checked="on">
 
                 </td>
 
-                <td width="100" align="center">
+                <td width="108" align="center">
 
                     <label for="entry_all"><?php echo($temp40) ?></label>
                     <input type="checkbox" id="entry_all" name="entry_all" value="">
@@ -318,7 +318,7 @@ if(!$recordset)
 ?>
         <tr height="50">
 
-            <td colspan="4" width="665"><?php die("Error: " . $link->error);?></td>
+            <td colspan="4" width="665"><?php die("Ошибка: " . $link->error);?></td>
             <!--
             <td></td>
             <td></td>

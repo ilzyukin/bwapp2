@@ -80,7 +80,7 @@ if(isset($_REQUEST["action"]) && isset($_REQUEST["password_new"]) && isset($_REQ
     if($password_new == "")
     {
 
-        $message = "<font color=\"red\">Please enter a new password...</font>";
+        $message = "<font color=\"red\">Пожалуйста, введите новый пароль...</font>";
 
     }
 
@@ -90,7 +90,7 @@ if(isset($_REQUEST["action"]) && isset($_REQUEST["password_new"]) && isset($_REQ
         if($password_new != $password_conf)
         {
 
-            $message = "<font color=\"red\">The passwords don't match!</font>";
+            $message = "<font color=\"red\">Пароли не совпадают!</font>";
 
         }
 
@@ -119,7 +119,7 @@ if(isset($_REQUEST["action"]) && isset($_REQUEST["password_new"]) && isset($_REQ
 
                 }
 
-                $message = "<font color=\"green\">The password has been changed!</font>";
+                $message = "<font color=\"green\">Пароль был изменен!</font>";
 
             }
 
@@ -143,7 +143,7 @@ if(isset($_REQUEST["action"]) && isset($_REQUEST["password_new"]) && isset($_REQ
                     if(!$recordset)
                     {
 
-                        die("Connect Error: " . $link->error);
+                        die("Ошибка соединения: " . $link->error);
 
                     }
 
@@ -170,7 +170,7 @@ if(isset($_REQUEST["action"]) && isset($_REQUEST["password_new"]) && isset($_REQ
                         if(!$recordset)
                         {
 
-                            die("Connect Error: " . $link->error);
+                            die("Ошибка соединения: " . $link->error);
 
                         }
 
@@ -178,14 +178,14 @@ if(isset($_REQUEST["action"]) && isset($_REQUEST["password_new"]) && isset($_REQ
                         // echo "<br />Affected rows: ";
                         // printf($link->affected_rows);
 
-                        $message = "<font color=\"green\">The password has been changed!</font>";
+                        $message = "<font color=\"green\">Пароль был изменен!</font>";
 
                     }
 
                     else
                     {
 
-                        $message = "<font color=\"red\">The current password is not valid!</font>";
+                        $message = "<font color=\"red\">Текущий пароль не действителен!</font>";
 
                     }
 
@@ -238,10 +238,10 @@ if(isset($_REQUEST["action"]) && isset($_REQUEST["password_new"]) && isset($_REQ
             <td><a href="password_change.php"><?php echo($temp16) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp17) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp18) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp19) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('Все настройки будут сброшены. Вы уверены?');"><?php echo($temp19) ?></a></td>
             <td><a href="credits.php"><?php echo($temp20) ?></a></td>
             <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp21) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Вы уверены, что хотите выйти?');"><?php echo($temp21) ?></a></td>
             <td><font color="red"><?php echo($temp22) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>

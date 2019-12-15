@@ -1078,3 +1078,9 @@ msgstr "exploit"
 
 msgid "is available..."
 msgstr "доступен"
+
+msgid " version is vulnerable to SQL injection!"
+msgstr " версия уязвима для SQL-инъекции!"
+
+msgid "Transfer"
+msgstr "Перевод"
