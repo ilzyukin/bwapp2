@@ -1084,3 +1084,12 @@ msgstr " версия уязвима для SQL-инъекции!"
 
 msgid "Transfer"
 msgstr "Перевод"
+
+msgid "bWAPP - SQLiteManager PHP Code Injection"
+msgstr "bWAPP - SQLiteManager PHP инъекция кода"
+
+msgid "SQLiteManager PHP Code Injection"
+msgstr "SQLiteManager PHP Инъекция кода"
+
+msgid "version is vulnerable to remote PHP code injection! ("
+msgstr "версия уязвима для удаленного внедрения кода PHP! ("
