@@ -182,7 +182,7 @@ if($message != "")
 
             <option value="0"><?php echo($temp12) ?></option>
             <option value="1"><?php echo($temp33) ?></option>
-            <option value="2"><?php echo($temp13) ?></option>
+            <option value="2"><?php echo($temp14) ?></option>
 
         </select>
 

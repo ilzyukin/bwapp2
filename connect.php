@@ -29,7 +29,7 @@ if(!$link)
 
     // @mail($recipient, "Could not connect to server: ", mysqli_error());
 
-    die("Could not connect to the server: " . mysqli_error($link));
+    die("Не удалось подключиться к серверу: " . mysqli_error($link));
 
 
 }

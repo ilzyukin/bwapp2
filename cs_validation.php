@@ -96,7 +96,7 @@ $error = "";
     if($password_new == "")
     {
 
-        $error = "<font color=\"red\">Please enter a new password...</font>";
+        $error = "<font color=\"red\">Пожалуйста, введите новый пароль...</font>";
 
         return $error;
 
@@ -105,7 +105,7 @@ $error = "";
     if($password_new != $password_conf)
     {
 
-        $error = "<font color=\"red\">The passwords don't match!</font>";
+        $error = "<font color=\"red\">Пароли не совпадают!</font>";
 
         return $error;
 
@@ -114,7 +114,7 @@ $error = "";
     if(!check_password($password_new) && $_COOKIE["security_level"] == "2")
     {
 
-        $error = "<font color=\"red\">The new password is not valid!<br />Password policy: minimum 6 characters containing at least one uppercase letter, lowercase letter and number.";
+        $error = "<font color=\"red\">Новый пароль не действителен!<br />Политика паролей: минимум 6 символов, содержащих по крайней мере одну заглавную букву, строчную букву и число.";
 
         return $error;
 
@@ -184,7 +184,7 @@ if(isset($_POST["action"]))
             if(!$recordset)
             {
 
-                die("Error: " . $link->error);
+                die("Ошибка: " . $link->error);
 
             }
 
@@ -192,14 +192,14 @@ if(isset($_POST["action"]))
             // echo "<br />Affected rows: ";
             // printf($link->affected_rows);
 
-            $message = "<font color=\"green\">The password has been changed!</font>";
+            $message = "<font color=\"green\">Пароль был изменен!</font>";
 
         }
 
         else
         {
 
-            $message = "<font color=\"red\">The current password is not valid!</font>";
+            $message = "<font color=\"red\">Текущий пароль не действителен!</font>";
 
         }
 
@@ -242,7 +242,7 @@ function check_form(form)
     {
 
         form.password_new.focus();
-        document.getElementById("message").innerHTML = "<font color=\"red\">Please enter a new password...</font>";
+        document.getElementById("message").innerHTML = "<font color=\"red\">Пожалуйста, введите новый пароль...</font>";
 
         return false;
 
@@ -252,7 +252,7 @@ function check_form(form)
     {
 
         form.password_new.focus();
-        document.getElementById("message").innerHTML = "<font color=\"red\">The passwords don't match!</font>";
+        document.getElementById("message").innerHTML = "<font color=\"red\">Пароли не совпадают!</font>";
 
         return false;
 
@@ -262,7 +262,7 @@ function check_form(form)
     {
 
         form.password_new.focus();
-        document.getElementById("message").innerHTML = "<font color=\"red\">The new password is not valid!<br />Password policy: minimum 6 characters containing at least one uppercase letter, lowercase letter and number.</font>";
+        document.getElementById("message").innerHTML = "<font color=\"red\">Новый пароль не действителен!<br />Политика паролей: минимум 6 символов, содержащих по крайней мере одну заглавную букву, строчную букву и число.</font>";
 
         return false;
 
@@ -296,10 +296,10 @@ function check_form(form)
             <td><font color="#ffb717"><?php echo($temp16) ?></font></td>
             <td><a href="user_extra.php"><?php echo($temp17) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp18) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp19) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('Все настройки будут сброшены. Вы уверены?');"><?php echo($temp19) ?></a></td>
             <td><a href="credits.php"><?php echo($temp20) ?></a></td>
             <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp21) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Вы уверены, что хотите выйти?');"><?php echo($temp21) ?></a></td>
             <td><font color="red"><?php echo($temp22) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>

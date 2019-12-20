@@ -312,7 +312,7 @@ msgid "HINT: open the evil"
 msgstr "ПОДСКАЗКА: откройте зло"
 
 msgid "ClickJacking page"
-msgstr "Кликджекинг страница"
+msgstr ", Кликджекинг страницу,"
 
 msgid "in a new tab..."
 msgstr "в новой вкладке..."
