@@ -59,6 +59,7 @@ $temp34 =  _("Set");// echo($temp34)   Установить
 $temp35 =  _("Current:");// echo($temp35)   Текущий
 $temp36 =  _("Enter your credentials.");// echo($temp36)   Введите Ваши данные
 $temp37 =  _("Information Disclosure - PHP version");// echo($temp37)  Раскрытие информации-Версия PHP
+$temp38 =  _("There's nothing to disclose!");
 
 $message = "";
 
@@ -72,12 +73,12 @@ switch($_COOKIE["security_level"])
 
     case "1" :
 
-        $message = "There's nothing to disclose!";
+        $message = $temp38;
         break;
 
     case "2" :
 
-        $message = "There's nothing to disclose!";
+        $message = $temp38;
         break;
 
     default :
@@ -130,10 +131,10 @@ if($message != "")
             <td><a href="password_change.php"><?php echo($temp16) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp17) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp18) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp19) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('Все настройки будут сброшены. Вы уверены?');"><?php echo($temp19) ?></a></td>
             <td><a href="credits.php"><?php echo($temp20) ?></a></td>
             <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp21) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Вы уверены, что хотите выйти?');"><?php echo($temp21) ?></a></td>
             <td><font color="red"><?php echo($temp22) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>

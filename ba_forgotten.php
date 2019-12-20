@@ -258,7 +258,7 @@ if(isset($_POST["action"]))
             else
             {
 
-                $message = "<font color=\"green\">Было отправлено электронное письмо с кодом сброса. /font>";
+                $message = "<font color=\"green\">Было отправлено электронное письмо с кодом сброса. </font>";
 
             }
 

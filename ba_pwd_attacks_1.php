@@ -78,7 +78,7 @@ if(isset($_POST["form_bug"]) && isset($_POST["bug"]))
             // Debugging
             // print_r($bug);
 
-            header("Местоположение: " . $bug[1]);
+            header("Location: " . $bug[1]);
 
             exit;
 
@@ -128,7 +128,7 @@ if(isset($_POST["form_security_level"]) && isset($_POST["security_level"]))
 
     }
 
-    header("Местоположение: ba_pwd_attacks.php");
+    header("Location: ba_pwd_attacks.php");
 
     exit;
 

@@ -59,6 +59,8 @@ $temp35 =  _("Current:");// echo($temp35)   Текущий
 $temp36 =  _("Enter your credentials.");// echo($temp36)   Введите Ваши данные
 $temp37 =  _("Information Disclosure - Headers");// echo($temp37)  Раскрытие информации-Заголовки
 $temp38 =  _("Information Disclosure - Favicon");// echo($temp38)  Раскрытие информации- Фавикон ((?)значок веб-cайта или веб-страницы в адресной строке перед URL страницы(?))
+$temp39 =  _("There's nothing to disclose!");
+$temp40 =  _("Some default favicons are disclosing the web framework...");
 
 $message = "";
 $favicon = "";
@@ -69,25 +71,25 @@ switch($_COOKIE["security_level"])
     case "0" :
 
         $favicon = "favicon_drupal.ico";
-        $message = "Some default favicons are disclosing the web framework...";
+        $message = $temp40;
         break;
 
     case "1" :
 
         $favicon = "favicon.ico";
-        $message = "There's nothing to disclose!";
+        $message = $temp39;
         break;
 
     case "2" :
 
         $favicon = "favicon.ico";
-        $message = "There's nothing to disclose!";
+        $message = $temp39;
         break;
 
     default :
 
         $favicon = "favicon_drupal.ico";
-        $message = "Some default favicons are disclosing the web framework...";
+        $message = $temp40;
         break;
 
 }
@@ -131,10 +133,10 @@ switch($_COOKIE["security_level"])
             <td><a href="password_change.php"><?php echo($temp16) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp17) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp18) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp19) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('Все настройки будут сброшены. Вы уверены?');"><?php echo($temp19) ?></a></td>
             <td><a href="credits.php"><?php echo($temp20) ?></a></td>
             <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp21) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Вы уверены, что хотите выйти?');"><?php echo($temp21) ?></a></td>
             <td><font color="red"><?php echo($temp22) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>
@@ -187,7 +189,7 @@ switch($_COOKIE["security_level"])
         </select>
 
         <button type="submit" name="form_security_level" value="submit"><?php echo($temp34) ?></button>
-        <font size="4"><?php echo($temp35) ?><b><?php echo $security_level?></b></font>
+        <font size="4"><?php echo($temp35) ?> <b><?php echo $security_level?></b></font>
 
     </form>
 

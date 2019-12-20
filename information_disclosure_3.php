@@ -80,7 +80,7 @@ switch($_COOKIE["security_level"])
         $color_1 = "red";
         $color_2 = "green";
 
-        $message = "Don't place any sensitive files or directories in the <i>robots.txt</i> file!";
+        $message = "Не размещайте конфиденциальные файлы или каталоги в файле <i>robots.txt</i>!";
 
         break;
 
@@ -89,7 +89,7 @@ switch($_COOKIE["security_level"])
         $color_1 = "red";
         $color_2 = "green";
 
-        $message = "Don't place any sensitive files or directories in the <i>robots.txt</i> file!";
+        $message = "Не размещайте конфиденциальные файлы или каталоги в файле <i>robots.txt</i>!";
 
         break;
 
@@ -139,10 +139,10 @@ switch($_COOKIE["security_level"])
             <td><a href="password_change.php"><?php echo($temp16) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp17) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp18) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp19) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('Все настройки будут сброшены. Вы уверены?');"><?php echo($temp19) ?></a></td>
             <td><a href="credits.php"><?php echo($temp20) ?></a></td>
             <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp21) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Вы уверены, что хотите выйти?');"><?php echo($temp21) ?></a></td>
             <td><font color="red"><?php echo($temp22) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>
@@ -155,7 +155,7 @@ switch($_COOKIE["security_level"])
 
     <h1><?php echo($temp38) ?></h1>
 
-    Contents of <i>robots.txt</i>:
+    Содержимое <i>robots.txt</i>:
 
     <br /><br />
 
@@ -168,7 +168,7 @@ if(is_file($file))
     $banned = array("admin", "documents", "passwords");
 
     // Opens the file
-    $fp = fopen($file, "r") or die("Couldn't open $file.");
+    $fp = fopen($file, "r") or die("Не получилось открыть $file.");
 
     while(!feof($fp))
     {
@@ -255,7 +255,7 @@ if(is_file($file))
         </select>
 
         <button type="submit" name="form_security_level" value="submit"><?php echo($temp34) ?></button>
-        <font size="4"><?php echo($temp35) ?><b><?php echo $security_level?></b></font>
+        <font size="4"><?php echo($temp35) ?> <b><?php echo $security_level?></b></font>
 
     </form>
 

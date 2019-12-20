@@ -261,7 +261,7 @@ msgid "bWAPP - Buffer Overflow"
 msgstr "BWAPP - Переполнение буфера"
 
 msgid "Buffer Overflow (Local)"
-msgstr "Переполнение буфера (Локальное)"
+msgstr "Переполнение буфера (Локальное BOF)"
 
 msgid "Search for a movie:"
 msgstr "Поиск фильма:"
@@ -273,7 +273,7 @@ msgid "only"
 msgstr "только"
 
 msgid "Buffer Overflow (Remote)"
-msgstr "Переполнение буфера (Удаленное)"
+msgstr "Переполнение буфера (Удаленное BOF)"
 
 msgid "A specific bWAPP network service is vulnerable to a remote buffer overflow. Get r00t!"
 msgstr "Конкретная сетевая служба bWAPP уязвима к удаленному переполнению буфера. Получите права root!"
@@ -627,13 +627,13 @@ msgid "bWAPP - Information Disclosure"
 msgstr "BWAPP - Раскрытие информации"
 
 msgid "Information Disclosure - PHP version" 
-msgstr "Раскрытие информации-Версия PHP"
+msgstr "Раскрытие информации - Версия PHP"
 
 msgid "Information Disclosure - Headers" 
-msgstr "Раскрытие информации-Заголовки"
+msgstr "Раскрытие информации - Заголовки"
 
 msgid "Information Disclosure - Robots File" 
-msgstr "Раскрытие информации- Индексный файл"
+msgstr "Раскрытие информации - Индексный файл"
 
 msgid "bWAPP - Security Misconfiguration" 
 msgstr "bWAPP - неправильная настройка безопасности"
@@ -1093,3 +1093,12 @@ msgstr "SQLiteManager PHP Инъекция кода"
 
 msgid "version is vulnerable to remote PHP code injection! ("
 msgstr "версия уязвима для удаленного внедрения кода PHP! ("
+
+msgid "There's nothing to disclose!"
+msgstr "Тут нечего раскрывать!"
+
+msgid "Check the server headers..."
+msgstr "Проверьте заголовки сервера..."
+
+msgid "Some default favicons are disclosing the web framework..."
+msgstr "Некоторые фавиконы по умолчанию раскрывают веб-фреймворк..."
