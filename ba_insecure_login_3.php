@@ -15,14 +15,53 @@ Twitter: @MME_IT
 bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (http://creativecommons.org/licenses/by-nc-nd/4.0/). Copyright © 2014 MME BVBA. All rights reserved.
 
 */
-$temp = setlocale(LC_ALL, "ru_RU.utf8");
-$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
-echo($temp);
-$reuslt3 = textdomain("messages");
 
 include("security.php");
 include("security_level_check.php");
 include("admin/settings.php");
+
+$temp = setlocale(LC_ALL, "ru_RU.utf8");
+$temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+echo($temp);
+$reuslt3 = textdomain("messages");
+//___________________
+
+$temp3 = _("bWAPP - Broken Authentication");
+$temp4 = _("an extremely buggy web app !");// echo($temp4) Логин
+$temp6 = _("Bugs");// echo($temp5) Новый пользователь
+$temp5 = _("Change Password");// echo($temp6) Информация
+$temp7 = _("Create User");//  echo($temp7) Тренировочные задания
+$temp8 = _("Set Security Level");///  echo($temp8) Блог
+$temp9 =  _("Credits");//echo($temp9) Введите ваши данные
+$temp10 =  _("Blog");// echo($temp10)        Пароль
+$temp11= _("Logout");//echo($temp11)        Установите уровень безопасности:
+$temp12=  _("Broken Auth. - Insecure Login Forms");//echo($temp12)   низкий
+$temp13 =  _("REnter the correct passphrase to unlock the secret.");//echo($temp12)   средний
+$temp14 =  _("Name:");// echo($temp14)   высокий
+$temp15=  _("brucebanner");//echo($temp12)   низкий
+$temp16 =  _("Passphrase");//echo($temp12)   средний
+$temp17 =  _("bWAPP is licensed under");// echo($temp14)   высокий
+$temp18 =  _("2014 MME BVBA / Follow");//echo($temp12)   средний
+$temp19 =  _("@MME_IT");//echo($temp12)   средний
+$temp20=  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp14)   высокий
+$temp21 =  _("training");//echo($temp12)   средний
+$temp22 =  _("Set your security level:");//echo($temp12)   средний
+$temp23 =  _("low");//echo($temp12)   средний
+$temp24 =  _("medium");//echo($temp12)   средний
+$temp25 =  _("high");//echo($temp12)   средний
+$temp26 =  _("Set");//echo($temp12)   средний
+$temp27 =  _("Current:");//echo($temp12)   средний
+$temp33 =  _("Welcome");//echo($temp12)   средний
+$temp34 =  _("Login");//echo($temp12)   средний
+$temp35 =  _("password");//echo($temp12)   средний
+$temp36 =  _("Enter your credentials.");//echo($temp12)   средний
+$temp37 =  _("Enter your credentials.");//echo($temp12)   средний
+$temp38 =  _("not set");//echo($temp12)   средний
+
+
+
+//___________________
+
 
 $bugs = file("bugs.txt");
 
@@ -99,17 +138,17 @@ if(isset($_COOKIE["security_level"]))
 
         case "0" :
 
-            $security_level = "low";
+            $security_level = $temp23;
             break;
 
         case "1" :
 
-            $security_level = "medium";
+            $security_level = $temp24;
             break;
 
         case "2" :
 
-            $security_level = "high";
+            $security_level = $temp25;
             break;
 
         case "666" :
@@ -119,7 +158,7 @@ if(isset($_COOKIE["security_level"]))
 
         default :
 
-            $security_level = "low";
+            $security_level = $temp23;
             break;
 
     }
@@ -129,11 +168,11 @@ if(isset($_COOKIE["security_level"]))
 else
 {
 
-    $security_level = "not set";
+    $security_level = $temp38;
 
 }
 
-$message = "Remember: <i>a bee is a bug...</i>";
+$message = "Помни: <i>a bee is a bug...</i>";
 
 if(isset($_POST["form"]))
 {
@@ -141,55 +180,18 @@ if(isset($_POST["form"]))
     if($_POST["login"] == $login && $_POST["password"] == $password)
     {
 
-        $message = "<font color=\"green\">Successful login!</font>";
+        $message = "<font color=\"green\">Успешный вход!</font>";
 
     }
 
     else
     {
 
-        $message = "<font color=\"red\">Invalid credentials!</font>";
+        $message = "<font color=\"red\">Неверные учетные данные!</font>";
 
     }
 
 }
-//___________________
-
-$temp3 = _("bWAPP - Broken Authentication");
-$temp4 = _("an extremely buggy web app !");// echo($temp4) Логин
-$temp6 = _("Bugs");// echo($temp5) Новый пользователь
-$temp5 = _("Change Password");// echo($temp6) Информация
-$temp7 = _("Create User");//  echo($temp7) Тренировочные задания
-$temp8 = _("Set Security Level");///  echo($temp8) Блог
-$temp9 =  _("Credits");//echo($temp9) Введите ваши данные
-$temp10 =  _("Blog");// echo($temp10)        Пароль
-$temp11= _("Logout");//echo($temp11)        Установите уровень безопасности:
-$temp12=  _("Broken Auth. - Insecure Login Forms");//echo($temp12)   низкий
-$temp13 =  _("REnter the correct passphrase to unlock the secret.");//echo($temp12)   средний
-$temp14 =  _("Name:");// echo($temp14)   высокий
-$temp15=  _("brucebanner");//echo($temp12)   низкий
-$temp16 =  _("Passphrase");//echo($temp12)   средний
-$temp17 =  _("bWAPP is licensed under");// echo($temp14)   высокий
-$temp18 =  _("2014 MME BVBA / Follow");//echo($temp12)   средний
-$temp19 =  _("@MME_IT");//echo($temp12)   средний
-$temp20=  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp14)   высокий
-$temp21 =  _("training");//echo($temp12)   средний
-$temp22 =  _("Set your security level:");//echo($temp12)   средний
-$temp23 =  _("low");//echo($temp12)   средний
-$temp24 =  _("medium");//echo($temp12)   средний
-$temp25 =  _("high");//echo($temp12)   средний
-$temp26 =  _("Set");//echo($temp12)   средний
-$temp27 =  _("Current:");//echo($temp12)   средний
-$temp33 =  _("Welcome");//echo($temp12)   средний
-$temp34 =  _("Login");//echo($temp12)   средний
-$temp35 =  _("password");//echo($temp12)   средний
-$temp36 =  _("Enter your credentials.");//echo($temp12)   средний
-$temp37 =  _("Enter your credentials.");//echo($temp12)   средний
-
-
-
-
-//___________________
 
 ?>
 <!DOCTYPE html>
@@ -227,13 +229,13 @@ $temp37 =  _("Enter your credentials.");//echo($temp12)   средний
         <tr>
 
             <td><a href="portal.php"><?php echo($temp5) ?></a></td>
-            <td><a href="password_change.php">C<?php echo($temp6) ?></a></td>
+            <td><a href="password_change.php"><?php echo($temp6) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp7) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp8) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp9) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('Все настройки будут сброшены. Вы уверены?');"><?php echo($temp9) ?></a></td>
             <td><a href="credits.php"><?php echo($temp10) ?></a></td>
             <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp11) ?></a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp12) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Вы уверены, что хотите выйти?');"><?php echo($temp12) ?></a></td>
             <td><font color="red"><?php echo($temp33) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>
@@ -278,7 +280,7 @@ $temp37 =  _("Enter your credentials.");//echo($temp12)   средний
 
 <div id="disclaimer">
 
-    <p><?php echo($temp17) ?><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo($temp18) ?> <a href="http://twitter.com/MME_IT" target="_blank"><?php echo($temp19) ?></a><?php echo($temp20) ?><a href="http://www.mmebvba.com" target="_blank"><?php echo($temp21) ?></a>?</p>
+    <p><?php echo($temp17) ?> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo($temp18) ?> <a href="http://twitter.com/MME_IT" target="_blank"><?php echo($temp19) ?> </a><?php echo($temp20) ?> <a href="http://www.mmebvba.com" target="_blank"><?php echo($temp21) ?></a>?</p>
 
 </div>
 

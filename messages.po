@@ -231,7 +231,7 @@ msgid "Name:"
 msgstr "Имя:"
 
 msgid "brucebanner"  
-msgstr "Я - халк"
+msgstr "brucebanner"
 
 msgid "Passphrase"  
 msgstr "Секретная фраза"

@@ -72,7 +72,7 @@ if(isset($_POST["action"]))
     if(!filter_var($email, FILTER_VALIDATE_EMAIL))
     {
 
-    $message = "<font color=\"red\">Please enter a valid e-mail address!</font>";
+    $message = "<font color=\"red\">Пожалуйста, введите действительный адрес электронной почты!</font>";
 
     }
 
@@ -91,7 +91,7 @@ if(isset($_POST["action"]))
         if(!$recordset)
         {
 
-            die("Error: " . $link->error);
+            die("Ошибка: " . $link->error);
 
         }
 
@@ -118,7 +118,7 @@ if(isset($_POST["action"]))
 
                 $secret = $row->secret;
 
-                $message = "Hello " . ucwords($login) . "! Your secret: <b>" . $secret . "</b>";
+                $message = "Привет, " . ucwords($login) . "! Твой секрет: <b>" . $secret . "</b>";
 
             }
 
@@ -307,7 +307,7 @@ if(isset($_POST["action"]))
             <td><a href="password_change.php"><?php echo($temp16) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp17) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp18) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp19) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm($temp18);"><?php echo($temp19) ?></a></td>
             <td><a href="credits.php"><?php echo($temp20) ?></a></td>
             <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
             <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp21) ?></a></td>
@@ -356,7 +356,7 @@ if(isset($_POST["action"]))
 
 <div id="disclaimer">
 
-    <p><?php echo($temp27) ?> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo($temp28) ?> <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> <?php echo($temp29) ?><a href="http://www.mmebvba.com" target="_blank"><?php echo($temp30) ?></a>?</p>
+    <p><?php echo($temp27) ?> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align:middle" src="./images/cc.png"></a> &copy; <?php echo($temp28) ?> <a href="http://twitter.com/MME_IT" target="_blank">@MME_IT</a> <?php echo($temp29) ?><a href="http://www.mmebvba.com" target="_blank"> <?php echo($temp30) ?></a>?</p>
 
 </div>
 

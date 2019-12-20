@@ -21,6 +21,38 @@ include("security_level_check.php");
 include("admin/settings.php");
 $temp = setlocale(LC_ALL, "ru_RU.utf8");
 $temp =bindtextdomain("messages", "./var/www/html/bWAPP/lang/ru_RU/LC_MESSAGES");
+
+//___________________
+$temp3 = _("bWAPP - Broken Authentication");
+
+$temp4 = _("an extremely buggy web app !");// echo($temp4) Логин
+$temp6 = _("Bugs");// echo($temp5) Новый пользователь
+$temp5 = _("Change Password");// echo($temp6) Информация
+$temp7 = _("Create User");//  echo($temp7) Тренировочные задания
+$temp8 = _("Set Security Level");///  echo($temp8) Блог
+$temp9 =  _("Credits");//echo($temp9) Введите ваши данные
+$temp10 =  _("Blog");// echo($temp10)        Пароль
+$temp11= _("Logout");//echo($temp11)        Установите уровень безопасности:
+$temp12=  _("Broken Auth. - Insecure Login Forms");//echo($temp12)   низкий
+$temp13 =  _("REnter the correct passphrase to unlock the secret.");//echo($temp12)   средний
+$temp14 =  _("Name:");// echo($temp14)   высокий
+$temp15=  _("brucebanner");//echo($temp12)   низкий
+$temp16 =  _("Passphrase");//echo($temp12)   средний
+$temp17 =  _("bWAPP is licensed under");// echo($temp14)   высокий
+$temp18 =  _("2014 MME BVBA / Follow");//echo($temp12)   средний
+$temp19 =  _("@MME_IT");//echo($temp12)   средний
+$temp20=  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp14)   высокий
+$temp21 =  _("training");//echo($temp12)   средний
+$temp22 =  _("Set your security level:");//echo($temp12)   средний
+$temp23 =  _("low");//echo($temp12)   средний
+$temp24 =  _("medium");//echo($temp12)   средний
+$temp25 =  _("high");//echo($temp12)   средний
+$temp26 =  _("Set");//echo($temp12)   средний
+$temp27 =  _("Current:");//echo($temp12)   средний
+$temp28 =  _("not set");//echo($temp12)   средний
+$temp29 =  _("Reset");//echo($temp12)   средний
+
+//___________________
 $reuslt3 = textdomain("messages");
 
 $bugs = file("bugs.txt");
@@ -98,17 +130,17 @@ if(isset($_COOKIE["security_level"]))
 
         case "0" :
 
-            $security_level = "low";
+            $security_level = $temp23;
             break;
 
         case "1" :
 
-            $security_level = "medium";
+            $security_level = $temp24;
             break;
 
         case "2" :
 
-            $security_level = "high";
+            $security_level = $temp24;
             break;
 
         case "666" :
@@ -118,7 +150,7 @@ if(isset($_COOKIE["security_level"]))
 
         default :
 
-            $security_level = "low";
+            $security_level = $temp23;
             break;
 
     }
@@ -128,7 +160,7 @@ if(isset($_COOKIE["security_level"]))
 else
 {
 
-    $security_level = "not set";
+    $security_level = $temp28;
 
 }
 
@@ -143,51 +175,20 @@ if(isset($_REQUEST["secret"]))
     if($_REQUEST["secret"] == "hulk smash!")
     {
 
-        $message = "<font color=\"green\">The secret was unlocked: HULK SMASH!</font>";
+        $message = "<font color=\"green\">Секрет был раскрыт: HULK SMASH!</font>";
 
     }
 
     else
     {
 
-        $message = "<font color=\"red\">Still locked... Don't lose your temper Bruce!</font>";
+        $message = "<font color=\"red\">Все еще запрещено в доступе... Не теряй самообладания, Bruce!</font>";
 
     }
 
 }
 
 
-//___________________
-$temp3 = _("bWAPP - Broken Authentication");
-
-$temp4 = _("an extremely buggy web app !");// echo($temp4) Логин
-$temp6 = _("Bugs");// echo($temp5) Новый пользователь
-$temp5 = _("Change Password");// echo($temp6) Информация
-$temp7 = _("Create User");//  echo($temp7) Тренировочные задания
-$temp8 = _("Set Security Level");///  echo($temp8) Блог
-$temp9 =  _("Credits");//echo($temp9) Введите ваши данные
-$temp10 =  _("Blog");// echo($temp10)        Пароль
-$temp11= _("Logout");//echo($temp11)        Установите уровень безопасности:
-$temp12=  _("Broken Auth. - Insecure Login Forms");//echo($temp12)   низкий
-$temp13 =  _("REnter the correct passphrase to unlock the secret.");//echo($temp12)   средний
-$temp14 =  _("Name:");// echo($temp14)   высокий
-$temp15=  _("brucebanner");//echo($temp12)   низкий
-$temp16 =  _("Passphrase");//echo($temp12)   средний
-$temp17 =  _("bWAPP is licensed under");// echo($temp14)   высокий
-$temp18 =  _("2014 MME BVBA / Follow");//echo($temp12)   средний
-$temp19 =  _("@MME_IT");//echo($temp12)   средний
-$temp20=  _("on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive");// echo($temp14)   высокий
-$temp21 =  _("training");//echo($temp12)   средний
-$temp22 =  _("Set your security level:");//echo($temp12)   средний
-$temp23 =  _("low");//echo($temp12)   средний
-$temp24 =  _("medium");//echo($temp12)   средний
-$temp25 =  _("high");//echo($temp12)   средний
-$temp26 =  _("Set");//echo($temp12)   средний
-$temp27 =  _("Current:");//echo($temp12)   средний
-
-
-
-//___________________
 
 ?>
 <!DOCTYPE html>
@@ -274,10 +275,10 @@ function unlock_secret()
             <td><a href="password_change.php"><?php echo($temp6) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp7) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp8) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo("Reset") ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('Все настройки будут сброшены. Вы уверены?');"><?php echo($temp29) ?></a></td>
             <td><a href="credits.php"><?php echo($temp9) ?></a></td>
             <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp10) ?></a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp11) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Вы уверены, что хотите выйти?');"><?php echo($temp11) ?></a></td>
             <td><font color="red"><?php echo($temp12) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>
@@ -300,7 +301,7 @@ function unlock_secret()
         <p><label for="passphrase"><?php echo($temp16) ?>:</label><br />
         <input type="password" id="passphrase" name="passphrase" size="20" /></p>
 
-        <input type="button" name="button" value="Unlock" onclick="unlock_secret()" /><br />
+        <input type="button" name="button" value="Разблокировать" onclick="unlock_secret()" /><br />
 
     </form>
 
