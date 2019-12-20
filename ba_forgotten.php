@@ -140,20 +140,20 @@ if(isset($_POST["action"]))
                 $secret = $row->secret;
 
                 // Sends a mail to the user
-                $subject = "bWAPP - Your Secret";
+                $subject = "bWAPP - Ваш секрет";
 
                 $sender = $smtp_sender;
 
-                $content = "Hello " . ucwords($login) . ",\n\n";
-                $content.= "Your secret: " . $secret . "\n\n";
-                $content.= "Greets from bWAPP!";
+                $content = "Привет, " . ucwords($login) . ",\n\n";
+                $content.= "Ваш секрет: " . $secret . "\n\n";
+                $content.= "Привет от bWAPP!";
 
                 $status = @mail($email, $subject, $content, "From: $sender");
 
                 if($status != true)
                 {
 
-                    $message = "<font color=\"red\">An e-mail could not be sent...</font>";
+                    $message = "<font color=\"red\">Не удалось отправить e-mail...</font>";
 
                     // Debugging
                     // die("Error: mail was NOT send");
@@ -164,7 +164,7 @@ if(isset($_POST["action"]))
                 else
                 {
 
-                    $message = "<font color=\"green\">An e-mail with your secret has been sent.</font>";
+                    $message = "<font color=\"green\">Было отправлено электронное письмо с вашим секретом.</font>";
 
                  }
 
@@ -193,22 +193,22 @@ if(isset($_POST["action"]))
                 // echo $reset_code;
 
                 // Sends a reset mail to the user
-                $subject = "bWAPP - Change Your Secret";
+                $subject = "bWAPP - Измените ваш секрет";
                 $server = $_SERVER["HTTP_HOST"];
                 $sender = $smtp_sender;
 
                 $email_enc = urlencode($email);
 
-                $content = "Hello " . ucwords($login) . ",\n\n";
-                $content.= "Click the link to reset and change your secret: http://" . $server . "/bWAPP/secret_change.php?email=" . $email_enc . "&reset_code=" . $reset_code . "\n\n";
-                $content.= "Greets from bWAPP!";                 
+                $content = "Привет, " . ucwords($login) . ",\n\n";
+                $content.= "Нажмите на ссылку, чтобы сбросить и изменить свой секрет: http://" . $server . "/bWAPP/secret_change.php?email=" . $email_enc . "&reset_code=" . $reset_code . "\n\n";
+                $content.= "Привет от bWAPP!";                 
 
-                $status = @mail($email, $subject, $content, "From: $sender");
+                $status = @mail($email, $subject, $content, "От: $sender");
 
                 if($status != true)
                 {
 
-                    $message = "<font color=\"red\">An e-mail could not be sent...</font>";
+                    $message = "<font color=\"red\">Не удалось отправить e-mail...</font>";
 
                     // Debugging
                     // die("Error: mail was NOT send");
@@ -229,7 +229,7 @@ if(isset($_POST["action"]))
                     if(!$recordset)
                     {
 
-                        die("Error: " . $link->error);
+                        die("Ошибка: " . $link->error);
 
                     }
 
@@ -237,7 +237,7 @@ if(isset($_POST["action"]))
                     // echo "<br />Affected rows: ";
                     // printf($link->affected_rows);
 
-                    $message = "<font color=\"green\">An e-mail with a reset code has been sent.</font>";
+                    $message = "<font color=\"green\">Было отправлено электронное письмо с вашим секретом.</font>";
 
                  }
 
@@ -251,14 +251,14 @@ if(isset($_POST["action"]))
             if($_COOKIE["security_level"] != "1" && $_COOKIE["security_level"] != "2")
             {
 
-                $message = "<font color=\"red\">Invalid user!</font>";
+                $message = "<font color=\"red\">Неверный пользователь!</font>";
 
             }
 
             else
             {
 
-                $message = "<font color=\"green\">An e-mail with a reset code has been sent. Yeah right :)</font>";
+                $message = "<font color=\"green\">Было отправлено электронное письмо с кодом сброса. /font>";
 
             }
 
@@ -307,10 +307,10 @@ if(isset($_POST["action"]))
             <td><a href="password_change.php"><?php echo($temp16) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp17) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp18) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm($temp18);"><?php echo($temp19) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('Все настройки будут сброшены. Вы уверены?');"><?php echo($temp19) ?></a></td>
             <td><a href="credits.php"><?php echo($temp20) ?></a></td>
             <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp21) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Вы уверены, что хотите выйти?');"><?php echo($temp21) ?></a></td>
             <td><font color="red"><?php echo($temp22) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>

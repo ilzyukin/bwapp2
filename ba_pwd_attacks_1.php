@@ -65,6 +65,7 @@ $temp35 =  _("Current:");// echo($temp35)   Текущий
 $temp36 =  _("Enter your credentials.");// echo($temp36)   Введите Ваши данные
 $temp37 =  _("tonystark");// echo($temp37)   Тони Старк
 $temp38 =  _("I am Iron Man");// echo($temp38)   Я - железный человек
+$temp39 =  _("not set");// echo($temp38)   Я - железный человек
 
 $bugs = file("bugs.txt");
 
@@ -77,7 +78,7 @@ if(isset($_POST["form_bug"]) && isset($_POST["bug"]))
             // Debugging
             // print_r($bug);
 
-            header("Location: " . $bug[1]);
+            header("Местоположение: " . $bug[1]);
 
             exit;
 
@@ -127,7 +128,7 @@ if(isset($_POST["form_security_level"]) && isset($_POST["security_level"]))
 
     }
 
-    header("Location: ba_pwd_attacks.php");
+    header("Местоположение: ba_pwd_attacks.php");
 
     exit;
 
@@ -141,17 +142,17 @@ if(isset($_COOKIE["security_level"]))
 
         case "0" :
 
-            $security_level = "low";
+            $security_level = $temp12;
             break;
 
         case "1" :
 
-            $security_level = "medium";
+            $security_level = $temp13;
             break;
 
         case "2" :
 
-            $security_level = "high";
+            $security_level = $temp14;
             break;
 
         case "666" :
@@ -161,7 +162,7 @@ if(isset($_COOKIE["security_level"]))
 
         default :
 
-            $security_level = "low";
+            $security_level = $temp12;
             break;
 
     }
@@ -171,7 +172,7 @@ if(isset($_COOKIE["security_level"]))
 else
 {
 
-    $security_level = "not set";
+    $security_level = $temp39;
 
 }
 
@@ -183,14 +184,14 @@ if(isset($_POST["form"]))
     if($_POST["login"] == $login && $_POST["password"] == $password)
     {
 
-        $message = "<font color=\"green\">Successful login!</font>";
+        $message = "<font color=\"green\">Успешный вход!</font>";
 
     }
 
     else
     {
 
-        $message = echo($temp3);//"<font color=\"red\">Invalid credentials! Did you forgot your password?</font>";
+        $message = "<font color=\"red\">Неверные учетные данные! Вы забыли свой пароль?</font>";
 
     }
 
@@ -235,10 +236,10 @@ if(isset($_POST["form"]))
             <td><a href="password_change.php"><?php echo($temp16) ?></a></td>
             <td><a href="user_extra.php"><?php echo($temp17) ?></a></td>
             <td><a href="security_level_set.php"><?php echo($temp18) ?></a></td>
-            <td><a href="reset.php" onclick="return confirm('All settings will be cleared. Are you sure?');"><?php echo($temp19) ?></a></td>
+            <td><a href="reset.php" onclick="return confirm('Все настройки будут сброшены. Вы уверены?');"><?php echo($temp19) ?></a></td>
             <td><a href="credits.php"><?php echo($temp20) ?></a></td>
             <td><a href="http://itsecgames.blogspot.com" target="_blank"><?php echo($temp8) ?></a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');"><?php echo($temp21) ?></a></td>
+            <td><a href="logout.php" onclick="return confirm('Вы уверены, что хотите выйти?');"><?php echo($temp21) ?></a></td>
             <td><font color="red"><?php echo($temp22) ?> <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
         </tr>

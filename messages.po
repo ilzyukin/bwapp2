@@ -188,11 +188,11 @@ msgstr "Регистрация"
 msgid "Broken Auth. - Insecure Login Forms"  
 msgstr "Опасный вход"
 
-msgid "tonystafrk"  
-msgstr "Тони Старк"
+msgid "tonystark"  
+msgstr "tonystark"
 
 msgid "I am Iron Man"  
-msgstr "Я - железный человек"
+msgstr "I am Iron Man"
 
 msgid "bWAPP - New User"  
 msgstr "BWAPP - новый пользователь"
