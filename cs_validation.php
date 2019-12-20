@@ -157,7 +157,7 @@ if(isset($_POST["action"]))
         if(!$recordset)
         {
 
-            die("Error: " . $link->error);
+            die("Ошибка: " . $link->error);
 
         }
 
