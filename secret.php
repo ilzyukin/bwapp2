@@ -42,7 +42,7 @@ if($row)
 
     $secret = $row->secret;
 
-    echo "Your secret: " . $secret;          
+    echo "Ваш секрет: " . $secret;          
 
 }
 

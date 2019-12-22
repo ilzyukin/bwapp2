@@ -144,7 +144,7 @@ msgid "Current:"
 msgstr "Текущий"
 
 msgid "Change:"  
-msgstr "Изменить"
+msgstr "Изменить:"
 
 msgid "Broken Auth. - CAPTCHA Bypassing"  
 msgstr "Уязвимая аутентификация - обход капчи"
@@ -1102,3 +1102,75 @@ msgstr "Проверьте заголовки сервера..."
 
 msgid "Some default favicons are disclosing the web framework..."
 msgstr "Некоторые фавиконы по умолчанию раскрывают веб-фреймворк..."
+
+msgid "bWAPP - PHP Code Injection"
+msgstr "bWAPP - PHP инъекция кода"
+
+msgid "PHP Code Injection"
+msgstr "PHP инъекция кода"
+
+msgid "This is just a test page, reflecting back your "
+msgstr "Это всего лишь тестовая страница, отражающая ваши "
+
+msgid "message"
+msgstr "сообщения"
+
+msgid "Restrict Device Access"
+msgstr "Ограничить доступ к устройству"
+
+msgid "Only some authorized devices have access to the content of this page."
+msgstr "Только некоторые авторизованные устройства имеют доступ к содержимому этой страницы."
+
+msgid "Restrict Folder Access"
+msgstr "Ограничить доступ к папке"
+
+msgid "Only authorized users have access to the "
+msgstr "Только авторизованные пользователи имеют доступ к"
+
+msgid "folder."
+msgstr "папке."
+
+msgid "Log off and try to access files in this directory..."
+msgstr "Выйдите из системы и попробуйте получить доступ к файлам в этом каталоге ..."
+
+msgid "Remote & Local File Inclusion (RFI/LFI)"
+msgstr "Удаленное и локальное включение файлов (RFI/LFI)"
+
+msgid "Select a language:"
+msgstr "Выберите язык:"
+
+msgid "folder."
+msgstr "папке."
+
+msgid "bWAPP - Change Secret"
+msgstr "bWAPP - Изменение секрета"
+
+msgid "Change Secret"
+msgstr "Изменение секрета"
+
+msgid "Please change your secret."
+msgstr "Пожалуйста, измените свой секрет."
+
+msgid "bWAPP - We Steal Secrets..."
+msgstr "bWAPP - Мы крадем секреты ..."
+
+msgid "We Steal Secrets..."
+msgstr "Мы крадем секреты ..."
+
+msgid "bWAPP - Shellshock Vulnerability"
+msgstr "bWAPP - Уязвимость Shellshock"
+
+msgid "Shellshock Vulnerability (CGI)"
+msgstr "Уязвимость Shellshock (CGI)"
+
+msgid "The version of Bash is vulnerable to the Bash/Shellshock bug! ("
+msgstr "Версия Bash уязвима для ошибки Bash / Shellshock! ("
+
+msgid "HINT: attack the referer header, and pwn this box..."
+msgstr "СОВЕТ: атакуйте заголовок реферера и вставьте этот флажок ..."
+
+msgid "folder."
+msgstr "папке."
+
+msgid "folder."
+msgstr "папке."

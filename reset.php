@@ -38,7 +38,7 @@ setcookie("top_security_ssl", "", time()-3600, "/", "", false, false);
 if($_SESSION["admin"] != "1")
 {
 
-    $message = "<p>You don't have enough privileges for this action!</p><p>Contact your master bee...</p>";
+    $message = "<p>У Вас нет привелегий для этого действия!</p><p>Свяжитесь с вашим bee учителем...</p>";
 
     $link->close();
 

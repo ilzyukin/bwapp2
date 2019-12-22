@@ -23,14 +23,14 @@ if(isset($_SERVER["HTTP_ORIGIN"]) and $_SERVER["HTTP_ORIGIN"] == "http://intrane
 
     header("Access-Control-Allow-Origin: http://intranet.itsecgames.com");
 
-	echo "Wolverine's secret: What's a Magneto?";
+	echo "Секрет Росомахи: что такое Магнето?";
 	
 }
 
 else
 {
 
-    echo "This is just a normal page with no secrets :)";
+    echo "Это просто нормальная страница без секретов :)";
 
 }
 

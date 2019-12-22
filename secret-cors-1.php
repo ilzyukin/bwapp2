@@ -15,11 +15,11 @@ Twitter: @MME_IT
 bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (http://creativecommons.org/licenses/by-nc-nd/4.0/). Copyright © 2014 MME BVBA. All rights reserved.
 
 */
-
+ 
 header("Content-Type: text/plain");
 
 header('Access-Control-Allow-Origin: *');
     
-echo "Neo's secret: Oh why didn't I took that BLACK pill?";
+echo "Секрет Нео: О, почему я не принял эту ЧЕРНУЮ таблетку?";
 
 ?>
