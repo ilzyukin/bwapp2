@@ -58,7 +58,6 @@ msgstr "Введите Ваши данные."
 msgid "password"
 msgstr "Пароль"
 
-
 msgid "low"
 msgstr "низкий"
 
@@ -661,7 +660,6 @@ msgstr "Портал"
 msgid "bWAPP, or a buggy web application, is a free and open source deliberately insecure web application." 
 msgstr "bWAPP, или веб-приложение с ошибками, является намеренно незащищенным веб-приложением с открытым исходным кодом."
 
-
 msgid "bWAPP covers all major known web vulnerabilities, including all risks from the OWASP Top 10 project!" 
 msgstr "bWAPP покрывает все основные известные веб-уязвимости, включая все риски, связанные с проектом OWASP Top 10!"
 
@@ -788,8 +786,6 @@ msgstr "Больше информации:"
 msgid "Exploiting The SSL 3.0 Fallback" 
 msgstr "Использование резервной версии SSL 3.0"
 
-
-
 msgid "Insuff. Transport Layer Protection" 
 msgstr "Недостаточная защита транспортного уровня"
 
@@ -862,8 +858,6 @@ msgstr "Требуется ручное вмешательство!"
 msgid "Pass the CAPTCHA before proceeding to"
 msgstr "Передайте CAPTCHA, прежде чем перейти"
 
-
-
 msgid "Proceed"
 msgstr "Продолжить"
 
@@ -879,13 +873,11 @@ msgstr "Поиск фильма:"
 msgid "Some web clients use custom HTTP request headers..."
 msgstr "Некоторые веб-клиенты используют разнообразные HTTP заголовки:"
 
-
 msgid "Content of our"
 msgstr "Содержимое"
 
 msgid "headers"
 msgstr "заголовки"
-
 
 msgid "XSS - Reflected (Back Button)"
 msgstr "Отраженный XSS (кнопка назад)"
@@ -904,7 +896,6 @@ msgstr "XSS - сохранненный (Юзер - агент 007)"
 msgid "Your IP address and User-Agent string have been logged into the database!"
 msgstr "Ваш IP адрес и юзер-агент были сохранены в базе данных!"
 
-
 msgid "log file)"
 msgstr "файл логов)"
 
@@ -913,8 +904,6 @@ msgstr "IP адрес"
 
 msgid "User-Agent"
 msgstr "Юзер агент"
-
-
 
 msgid "An overview of our latest visitors:"
 msgstr "Обзор последних посетителей:"
@@ -1169,8 +1158,29 @@ msgstr "Версия Bash уязвима для ошибки Bash / Shellshock! 
 msgid "HINT: attack the referer header, and pwn this box..."
 msgstr "СОВЕТ: атакуйте заголовок реферера и вставьте этот флажок ..."
 
-msgid "folder."
-msgstr "папке."
+msgid "Cross-Origin Resource Sharing (AJAX)"
+msgstr "Обмен ресурсами между источниками (AJAX)"
 
-msgid "folder."
-msgstr "папке."
+msgid "Try to steal "
+msgstr "Попробуй украсть"
+
+msgid "secret"
+msgstr "секрет"
+
+msgid " using an AJAX request from a malicious site."
+msgstr "используя AJAX-запрос от вредоносного сайта."
+
+msgid "Cross-Domain Policy File (Flash)"
+msgstr "Файл междоменной политики (Flash)"
+
+msgid "Using an insecure cross-domain policy file could expose this site to various attacks."
+msgstr "Использование незащищенного файла междоменной политики может подвергнуть этот сайт различным атакам."
+
+msgid "Check the cross-domain policy file, and try to the steal the "
+msgstr "Проверьте файл междоменной политики и попытайтесь украсть "
+
+msgid "HINT: "
+msgstr "ПОДСКАЗКА:"
+
+msgid " and Silverlight applications are the source of all evil!"
+msgstr "и приложения Silverlight являются источником всего зла!"
