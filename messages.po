@@ -1180,7 +1180,52 @@ msgid "Check the cross-domain policy file, and try to the steal the "
 msgstr "Проверьте файл междоменной политики и попытайтесь украсть "
 
 msgid "HINT: "
-msgstr "ПОДСКАЗКА:"
+msgstr "ПОДСКАЗКА: "
 
 msgid " and Silverlight applications are the source of all evil!"
 msgstr "и приложения Silverlight являются источником всего зла!"
+
+msgid "Denial-of-Service (Slow HTTP DoS)"
+msgstr "Отказ в обслуживании (медленный DoS HTTP)"
+
+msgid "The Apache web server is vulnerable to Slow HTTP DoS attacks! ("
+msgstr "Веб-сервер Apache уязвим для атак Slow HTTP DoS! ("
+
+msgid "Unleash the beezzz! "
+msgstr "Дайте волю пчелам!"
+
+msgid "Denial-of-Service (XML Bomb)"
+msgstr "Отказ в обслуживании (XML Bomb)"
+
+msgid "The Apache web server is vulnerable to XML DoS attacks! ("
+msgstr "Веб-сервер Apache уязвим к атакам XML DoS! ("
+
+msgid "A billion of laughs? Are you kidding?"
+msgstr "Миллиард смеха? Ты издеваешься?"
+
+msgid "Denial-of-Service (Large Chunk Size)"
+msgstr "Отказ в обслуживании (Large Chunk Size)"
+
+msgid "The Nginx web server allows remote attackers to cause a DoS or to execute arbitrary code "
+msgstr "Веб-сервер Nginx позволяет удаленным злоумышленникам вызывать DoS или выполнять произвольный код "
+
+msgid "via a chunked Transfer-Encoding request with a large chunk size! ("
+msgstr "с помощью фрагментированного запроса Transfer-Encoding с большим размером фрагмента! ("
+
+msgid "HINT: launch the "
+msgstr "ПОДСКАЗКА: запустите "
+
+msgid "DoS attack script"
+msgstr "сценарий DoS атаки"
+
+msgid " on port 8080/8443..."
+msgstr " на порт 8080/8443 ..."
+
+msgid "Denial-of-Service (SSL-Exhaustion)"
+msgstr "Отказ в обслуживании (SSL-Exhaustion)"
+
+msgid "The Lighttpd web server is vulnerable to SSL-exhaustion attacks! ("
+msgstr "Веб-сервер Lighttpd уязвим для атак с истощением SSL! ("
+
+msgid "Unleash the beezzz on port 8443!"
+msgstr "Спускайте пчез на 8443 порт!"
